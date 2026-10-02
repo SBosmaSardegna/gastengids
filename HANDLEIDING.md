@@ -2,7 +2,7 @@
 
 Dit is het systeem achter de gastengidsen van Sardegna Autentica.
 
-- **Gasten** openen een gids via een link of QR-code, bijvoorbeeld `gids.sardinieautentica.nl/casa-marina`. Ze hoeven niets te downloaden. Wie wil, zet de gids op het beginscherm en gebruikt hem als een app, ook offline.
+- **Gasten** openen een gids via een link of QR-code, bijvoorbeeld `guide.sardegnaautentica.com/casa-marina`. Ze hoeven niets te downloaden. Wie wil, zet de gids op het beginscherm en gebruikt hem als een app, ook offline.
 - **Jij** beheert alles in **Pages CMS**, een beheerscherm met formulieren. Klik je op *Save*, dan staat de wijziging na ongeveer een minuut online.
 - **Kosten:** € 0. Je gebruikt een gratis GitHub-account, gratis GitHub Pages-hosting en het gratis Pages CMS.
 
@@ -13,7 +13,7 @@ Dit is het systeem achter de gastengidsen van Sardegna Autentica.
 ## Eenmalig instellen (ongeveer 30 minuten)
 
 ### 1. GitHub-account en repository
-1. Maak een gratis account aan op **github.com**, bijvoorbeeld met sam@sardinieautentica.nl.
+1. Maak een gratis account aan op **github.com**, bijvoorbeeld met je zakelijke e-mailadres.
 2. Klik rechtsboven op **+** → **New repository**.
 3. Naam: `gastengids`. Kies **Public** (gratis hosting werkt alleen met een openbare repository). Vink verder niets aan en klik **Create repository**.
 4. Zet de bestanden erin. Er zijn twee manieren:
@@ -31,13 +31,12 @@ Dit is het systeem achter de gastengidsen van Sardegna Autentica.
 2. Geef Pages CMS toegang tot de repository `gastengids` (*Install* → *Only select repositories* → `gastengids`).
 3. Open de repository in Pages CMS. Links zie je **Woningen**, **Stranden**, **Partners** en **Algemeen**.
 
-### 4. Eigen domein (optioneel, aanbevolen)
-1. Log in bij **TransIP** → domein `sardinieautentica.nl` → DNS.
-2. Voeg een record toe: type **CNAME**, naam **gids**, waarde **sambosma.github.io.** (je eigen GitHub-gebruikersnaam, met een punt aan het eind).
-3. Ga in GitHub naar **Settings → Pages → Custom domain**, vul `gids.sardinieautentica.nl` in en klik **Save**.
-4. Zet **Enforce HTTPS** aan zodra dat kan. Dat kan tot een paar uur duren.
+### 4. Eigen domein (is ingesteld)
+De gidsen staan op **guide.sardegnaautentica.com**. Zo is het ingesteld:
+- **TransIP** → domein `sardegnaautentica.com` → DNS: record `guide`, type **CNAME**, waarde `sbosmasardegna.github.io.`
+- **GitHub** → Settings → Pages → Custom domain: `guide.sardegnaautentica.com`, met **Enforce HTTPS** aan.
 
-Daarna werken korte adressen zoals `gids.sardinieautentica.nl/casa-marina`.
+Verwijder het bestand `CNAME` in de repository niet, want daarmee onthoudt GitHub het domein.
 
 ---
 
@@ -49,7 +48,7 @@ Daarna werken korte adressen zoals `gids.sardinieautentica.nl/casa-marina`.
    - **Webadres:** kleine letters en streepjes, bijv. `villa-sole-pula`. Wijzig dit niet meer zodra de QR-code gedeeld is.
    - **Regio's:** die bepalen welke stranden en partners in de gids komen.
    - **Talen:** standaard alle vier. Laat je een taal leeg, dan valt de gids terug op Engels.
-4. Klik **Save** en open na een minuut `gids.sardinieautentica.nl/<webadres>`.
+4. Klik **Save** en open na een minuut `guide.sardegnaautentica.com/<webadres>`.
 5. Maak een QR-code van die link, bijvoorbeeld met een gratis QR-generator, en stuur die samen met de link naar de verhuurder.
 
 Tip: kopieer de tekst van een bestaande woning als startpunt.

@@ -63,7 +63,7 @@ content:
         label: Webadres
         type: string
         required: true
-        description: "Kleine letters en streepjes, bijv. casa-marina. De gids komt op gids.sardinieautentica.nl/casa-marina. Niet meer wijzigen na het delen van de QR-code."
+        description: "Kleine letters en streepjes, bijv. casa-marina. De gids komt op guide.sardegnaautentica.com/casa-marina. Niet meer wijzigen na het delen van de QR-code."
         pattern: { regex: "^[a-z0-9-]+$", message: "Alleen kleine letters, cijfers en streepjes." }
       - { name: actief, label: "Gids online", type: boolean, default: true, description: "Uitzetten als de verhuurder stopt. De link toont dan een nette melding." }
       - { name: naam, label: "Naam van de woning", type: string, required: true }
