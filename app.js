@@ -4,7 +4,7 @@
 (function () {
   "use strict";
 
-  var LANGS = ["nl", "en", "it", "de"];
+  var LANGS = ["en", "it", "nl", "de"];
   var UI = {
     nl: {
       nav: { aankomst: "Aankomst", wifi: "Wifi", regels: "Huisregels", stranden: "Stranden", tips: "Tips", eten: "Eten", partners: "Uitjes", extras: "Extra's", nood: "Hulp" },
@@ -166,7 +166,8 @@
   }
 
   function pickLang(home) {
-    var allowed = arr(home && home.talen).filter(function (l) { return LANGS.indexOf(l) > -1; });
+    var chosen = arr(home && home.talen);
+    var allowed = LANGS.filter(function (l) { return chosen.indexOf(l) > -1; });
     if (!allowed.length) allowed = LANGS.slice();
     var saved = null;
     try { saved = localStorage.getItem("sa-lang"); } catch (e) {}

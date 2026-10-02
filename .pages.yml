@@ -11,18 +11,18 @@ components:
     label: Tekst
     description: "Vul minimaal Engels in. Een lege taal valt terug op Engels."
     fields:
-      - { name: nl, label: Nederlands, type: string }
       - { name: en, label: English, type: string }
       - { name: it, label: Italiano, type: string }
+      - { name: nl, label: Nederlands, type: string }
       - { name: de, label: Deutsch, type: string }
   langtekst:
     type: object
     label: Tekst
     description: "Vul minimaal Engels in. Een lege taal valt terug op Engels."
     fields:
-      - { name: nl, label: Nederlands, type: text }
       - { name: en, label: English, type: text }
       - { name: it, label: Italiano, type: text }
+      - { name: nl, label: Nederlands, type: text }
       - { name: de, label: Deutsch, type: text }
   zones:
     type: select
@@ -74,13 +74,13 @@ content:
       - name: talen
         label: Talen in deze gids
         type: select
-        default: [nl, en, it, de]
+        default: [en, it, nl, de]
         options:
           multiple: true
           values:
-            - { value: nl, label: Nederlands }
             - { value: en, label: English }
             - { value: it, label: Italiano }
+            - { value: nl, label: Nederlands }
             - { value: de, label: Deutsch }
       - { name: welkom, component: langtekst, label: "Welkomsttekst" }
       - name: host
