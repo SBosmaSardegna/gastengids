@@ -1,0 +1,80 @@
+/* Sardegna Autentica guest guide. Phone-first single column, sticky chip nav. */
+:root{
+  --bg:#f3f6f5; --surface:#ffffff; --ink:#14302f; --muted:#5b706e; --line:#d6e0de;
+  --sea:#0f6b6b; --sea-soft:#dcecea; --saffron:#a8700a; --saffron-soft:#f6ead0;
+  --warn:#b4541c;
+  --display:"Young Serif", Georgia, "Times New Roman", serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#0d1a1a; --surface:#132423; --ink:#e4efed; --muted:#9db3b0; --line:#24403e;
+  --sea:#5cc2bd; --sea-soft:#163a38; --saffron:#e8b04a; --saffron-soft:#3a2e14;
+  --warn:#f0995f; color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%;display:block}
+a{color:var(--sea)}
+.wrap{max-width:640px;margin:0 auto;padding-inline:16px;padding-block:0 48px}
+header{padding-block:28px 18px;display:grid;gap:10px}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.place{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.langs{display:flex;gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px}
+.langs button{font:600 13px var(--body);border:0;background:transparent;color:var(--muted);padding:5px 11px;border-radius:999px;cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--sea);color:var(--bg)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(32px,9vw,46px);line-height:1.08;margin:0;text-wrap:balance}
+.lede{margin:0;color:var(--muted);max-width:52ch;white-space:pre-line}
+.hero{border-radius:14px;aspect-ratio:16/9;object-fit:cover;width:100%;max-width:100%}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;margin-inline:-16px;padding-inline:16px;overflow-x:auto;display:flex;gap:6px;border-bottom:1px solid var(--line);scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{flex:none;font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+nav a:hover,nav a:focus-visible{border-color:var(--sea);color:var(--sea);outline:none}
+section{padding-block:28px 6px;display:grid;gap:14px;scroll-margin-top:60px}
+h2{font-family:var(--display);font-weight:400;font-size:26px;margin:0}
+h3{font-size:16px;margin:0}
+p{margin:0}
+.pre{white-space:pre-line}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;margin:0}
+.kv dt{color:var(--muted);font-size:14px}
+.kv dd{margin:0;font-weight:600;min-width:0;overflow-wrap:anywhere}
+.mono{font-family:var(--mono);font-size:15px}
+.copy{font:600 12px var(--body);margin-left:8px;border:1px solid var(--line);background:var(--bg);color:var(--sea);border-radius:6px;padding:2px 8px;cursor:pointer;vertical-align:middle}
+ol.steps{margin:0;padding-left:22px;display:grid;gap:8px}
+ul.plain{margin:0;padding-left:20px;display:grid;gap:6px}
+.wind{background:var(--sea-soft);border-radius:14px;padding:16px;display:grid;gap:12px}
+.wind-btns{display:flex;flex-wrap:wrap;gap:6px}
+.wind-btns button{font:600 14px var(--body);border:1px solid var(--sea);background:var(--surface);color:var(--sea);padding:7px 12px;border-radius:999px;cursor:pointer}
+.wind-btns button[aria-pressed="true"]{background:var(--sea);color:var(--bg)}
+.wind-out{display:grid;gap:4px;white-space:pre-line}
+.cards{display:grid;gap:10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:6px;min-width:0}
+.card.dim{opacity:.6}
+.card-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.card img{border-radius:8px;aspect-ratio:3/2;object-fit:cover;width:100%}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--sea-soft);color:var(--sea)}
+.tag.book{background:var(--saffron-soft);color:var(--saffron)}
+.tag.calm{background:var(--sea);color:var(--bg)}
+.links{display:flex;gap:14px;flex-wrap:wrap;font-size:14px;font-weight:600}
+.note{font-size:13px;color:var(--muted)}
+.food{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.dish{border-top:2px solid var(--saffron);padding-top:8px;display:grid;gap:2px}
+.dish b{font-family:var(--display);font-weight:400;font-size:18px}
+.dish span{font-size:14px;color:var(--muted)}
+.group-label{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-top:6px}
+.partner-label{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--saffron)}
+.extra{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.extra > div{min-width:0;flex:1 1 200px}
+.price{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--sea);font-size:15px}
+.btn{font:600 14px var(--body);background:var(--sea);color:var(--bg);border:0;border-radius:8px;padding:8px 14px;cursor:pointer;text-decoration:none;display:inline-block}
+.sos{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.sos div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.sos b{display:block;font-family:var(--mono);font-size:22px;color:var(--warn)}
+.sos span{font-size:13px;color:var(--muted)}
+.empty{padding-block:60px;display:grid;gap:10px}
+footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);display:grid;gap:4px}
+button:focus-visible,a:focus-visible{outline:2px solid var(--saffron);outline-offset:2px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}

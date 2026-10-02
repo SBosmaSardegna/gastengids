@@ -1,0 +1,56 @@
+{
+  "partners": [
+    {
+      "naam": "VOORBEELD – Boottocht Villasimius",
+      "actief": true,
+      "soort": "boot",
+      "regio": [
+        "cagliari",
+        "quartu-villasimius"
+      ],
+      "tekst": {
+        "nl": "Halve dag langs de baaien van Capo Carbonara, met zwemstops. Vertrek uit de haven van Villasimius.",
+        "en": "Half-day trip along the coves of Capo Carbonara with swim stops. Departs from Villasimius harbour.",
+        "it": "Mezza giornata tra le cale di Capo Carbonara con soste per il bagno. Partenza dal porto di Villasimius.",
+        "de": "Halbtagestour entlang der Buchten von Capo Carbonara mit Badestopps. Abfahrt am Hafen von Villasimius."
+      },
+      "foto": "",
+      "telefoon": "+39 000 000 0000",
+      "website": ""
+    },
+    {
+      "naam": "VOORBEELD – Trattoria in de Marina",
+      "actief": true,
+      "soort": "restaurant",
+      "regio": [
+        "cagliari"
+      ],
+      "tekst": {
+        "nl": "Familierestaurant met vis van de dag en zelfgemaakte culurgiones.",
+        "en": "Family restaurant with catch of the day and homemade culurgiones.",
+        "it": "Trattoria di famiglia con pescato del giorno e culurgiones fatti in casa.",
+        "de": "Familienrestaurant mit Tagesfang und hausgemachten Culurgiones."
+      },
+      "foto": "",
+      "telefoon": "+39 000 000 0001",
+      "website": ""
+    },
+    {
+      "naam": "VOORBEELD – Fietsverhuur Cagliari",
+      "actief": true,
+      "soort": "verhuur",
+      "regio": [
+        "cagliari"
+      ],
+      "tekst": {
+        "nl": "Stads- en e-bikes per dag. Mooi langs de Poetto en het Molentargius-park met flamingo's.",
+        "en": "City and e-bikes by the day. Great along Poetto and the Molentargius park with flamingos.",
+        "it": "Bici e e-bike a giornata. Bellissimo lungo il Poetto e il parco di Molentargius con i fenicotteri.",
+        "de": "Stadt- und E-Bikes tageweise. Schön entlang des Poetto und durch den Molentargius-Park mit Flamingos."
+      },
+      "foto": "",
+      "telefoon": "+39 000 000 0002",
+      "website": ""
+    }
+  ]
+}

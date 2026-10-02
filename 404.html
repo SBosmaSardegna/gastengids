@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guest guide</title>
+<script>
+// Mooie adressen (bijv. /casa-marina) doorsturen naar de gids: /?w=casa-marina
+(function () {
+  var parts = location.pathname.replace(/\/+$/, "").split("/");
+  var slug = (parts.pop() || "").toLowerCase().replace(/[^a-z0-9-]/g, "");
+  var base = parts.join("/") + "/";
+  location.replace(base + (slug ? "?w=" + slug : "") + location.hash);
+})();
+</script>
+</head>
+<body><p>Loading…</p></body>
+</html>

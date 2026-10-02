@@ -1,0 +1,71 @@
+{
+  "windadvies": {
+    "maestrale": {
+      "nl": "Maestrale komt uit het noordwesten. De zuid- en oostkust liggen dan in de luwte: de Poetto, Villasimius en Costa Rei zijn meestal rustig. De westkust heeft hoge golven.",
+      "en": "The mistral blows from the north-west. The south and east coasts are sheltered: Poetto, Villasimius and Costa Rei are usually calm. The west coast gets big waves.",
+      "it": "Il maestrale soffia da nord-ovest. Le coste sud ed est sono riparate: Poetto, Villasimius e Costa Rei di solito sono calme. Sulla costa ovest il mare è mosso.",
+      "de": "Der Mistral weht aus Nordwesten. Süd- und Ostküste liegen im Windschatten: Poetto, Villasimius und Costa Rei sind meist ruhig. An der Westküste gibt es hohe Wellen."
+    },
+    "ponente": {
+      "nl": "Ponente komt uit het westen. Kies de oostkust of de baaien richting Villasimius.",
+      "en": "The ponente blows from the west. Pick the east coast or the coves toward Villasimius.",
+      "it": "Il ponente soffia da ovest. Scegliete la costa est o le cale verso Villasimius.",
+      "de": "Der Ponente weht aus Westen. Wählt die Ostküste oder die Buchten Richtung Villasimius."
+    },
+    "scirocco": {
+      "nl": "Scirocco komt uit het zuidoosten en brengt golven en wier naar de zuidkust. Ga naar de westkust of een beschutte baai.",
+      "en": "The scirocco blows from the south-east and brings waves and seaweed to the south coast. Head to the west coast or a sheltered cove.",
+      "it": "Lo scirocco soffia da sud-est e porta onde e alghe sulla costa sud. Andate sulla costa ovest o in una cala riparata.",
+      "de": "Der Scirocco weht aus Südosten und bringt Wellen und Seegras an die Südküste. Fahrt an die Westküste oder in eine geschützte Bucht."
+    },
+    "levante": {
+      "nl": "Levante komt uit het oosten. De oostkust en Villasimius worden onrustig; de zuidwestkust en de westkust zijn dan beter.",
+      "en": "The levante blows from the east. The east coast and Villasimius get rough; the south-west and west coasts are better.",
+      "it": "Il levante soffia da est. La costa est e Villasimius sono mosse; meglio la costa sud-ovest e quella ovest.",
+      "de": "Der Levante weht aus Osten. Ostküste und Villasimius werden unruhig; die Südwest- und Westküste sind dann besser."
+    },
+    "calma": {
+      "nl": "Weinig wind: vandaag is elk strand mooi. Een goede dag voor de verre baaien.",
+      "en": "Little wind: every beach is good today. A good day for the more distant coves.",
+      "it": "Poco vento: oggi va bene ogni spiaggia. Giornata ideale per le cale più lontane.",
+      "de": "Wenig Wind: Heute ist jeder Strand schön. Ein guter Tag für die weiter entfernten Buchten."
+    }
+  },
+  "reserveren_uitleg": {
+    "nl": "Bij sommige stranden moet je in het seizoen vooraf reserveren en soms een kleine bijdrage betalen. Regels en prijzen veranderen elk jaar: controleer vóór vertrek de website van de gemeente.",
+    "en": "Some beaches require booking in advance during the season, sometimes with a small fee. Rules and prices change every year: check the town's website before you go.",
+    "it": "Per alcune spiagge in stagione bisogna prenotare in anticipo, a volte con un piccolo contributo. Regole e prezzi cambiano ogni anno: controllate il sito del comune prima di partire.",
+    "de": "Für einige Strände muss man in der Saison vorab reservieren, manchmal gegen eine kleine Gebühr. Regeln und Preise ändern sich jedes Jahr: Prüft vorher die Website der Gemeinde."
+  },
+  "gerechten": [
+    { "naam": "Fregola con arselle", "tekst": { "nl": "Kleine geroosterde pasta met venusschelpen", "en": "Small toasted pasta with clams", "it": "Pasta tostata con arselle", "de": "Kleine geröstete Pasta mit Venusmuscheln" } },
+    { "naam": "Culurgiones", "tekst": { "nl": "Gevulde pasta met aardappel, pecorino en munt", "en": "Filled pasta with potato, pecorino and mint", "it": "Pasta ripiena di patate, pecorino e menta", "de": "Gefüllte Pasta mit Kartoffel, Pecorino und Minze" } },
+    { "naam": "Malloreddus", "tekst": { "nl": "Kleine Sardijnse gnocchi, vaak met worstsaus", "en": "Small Sardinian gnocchi, often with sausage sauce", "it": "Gnocchetti sardi, spesso alla campidanese", "de": "Kleine sardische Gnocchi, oft mit Wurstsoße" } },
+    { "naam": "Bottarga", "tekst": { "nl": "Gedroogde mulkuit, geraspt over pasta", "en": "Dried mullet roe, grated over pasta", "it": "Uova di muggine essiccate, grattugiate sulla pasta", "de": "Getrockneter Meeräschenrogen, über Pasta gerieben" } },
+    { "naam": "Seadas", "tekst": { "nl": "Gefrituurd deeg met kaas en honing als dessert", "en": "Fried pastry with cheese and honey, for dessert", "it": "Sfoglia fritta con formaggio e miele", "de": "Frittiertes Teigtäschchen mit Käse und Honig als Dessert" } }
+  ],
+  "eten_tip": {
+    "nl": "In de zomer gaan restaurants pas rond 20:00 open voor het diner. Reserveer op vrijdag en zaterdag.",
+    "en": "In summer, restaurants open for dinner around 20:00. Book ahead on Fridays and Saturdays.",
+    "it": "D'estate i ristoranti aprono per cena verso le 20:00. Prenotate il venerdì e il sabato.",
+    "de": "Im Sommer öffnen Restaurants zum Abendessen erst gegen 20:00 Uhr. Reserviert freitags und samstags."
+  },
+  "nood": [
+    { "nummer": "112", "tekst": { "nl": "Alle noodgevallen", "en": "All emergencies", "it": "Tutte le emergenze", "de": "Alle Notfälle" } },
+    { "nummer": "118", "tekst": { "nl": "Ambulance", "en": "Ambulance", "it": "Ambulanza", "de": "Rettungsdienst" } },
+    { "nummer": "1530", "tekst": { "nl": "Kustwacht (op zee)", "en": "Coast guard (at sea)", "it": "Guardia costiera (in mare)", "de": "Küstenwache (auf See)" } },
+    { "nummer": "115", "tekst": { "nl": "Brandweer", "en": "Fire brigade", "it": "Vigili del fuoco", "de": "Feuerwehr" } }
+  ],
+  "apotheek": {
+    "nl": "Apotheek met nacht- of weekenddienst: op de deur van elke apotheek staat welke 'farmacia di turno' open is.",
+    "en": "Night or weekend pharmacy: every pharmacy door lists the 'farmacia di turno' that is open.",
+    "it": "Farmacia notturna o festiva: sulla porta di ogni farmacia trovate la farmacia di turno.",
+    "de": "Nacht- oder Wochenendapotheke: An jeder Apothekentür steht, welche 'farmacia di turno' geöffnet hat."
+  },
+  "afzender": {
+    "nl": "Gastengids door Sardegna Autentica",
+    "en": "Guest guide by Sardegna Autentica",
+    "it": "Guida per gli ospiti di Sardegna Autentica",
+    "de": "Gästeguide von Sardegna Autentica"
+  }
+}

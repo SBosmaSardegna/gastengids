@@ -1,0 +1,338 @@
+{
+  "stranden": [
+    {
+      "naam": "Poetto",
+      "regio": [
+        "cagliari"
+      ],
+      "tekst": {
+        "nl": "Stadsstrand van 8 km. Bus PF of PQ vanaf het centrum.",
+        "en": "8 km city beach. Bus PF or PQ from the centre.",
+        "it": "Spiaggia cittadina di 8 km. Bus PF o PQ dal centro.",
+        "de": "8 km langer Stadtstrand. Bus PF oder PQ ab dem Zentrum."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Bus",
+          "en": "Bus",
+          "it": "Bus",
+          "de": "Bus"
+        },
+        {
+          "nl": "Strandtenten",
+          "en": "Beach bars",
+          "it": "Chioschi",
+          "de": "Strandbars"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Poetto+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Calamosca",
+      "regio": [
+        "cagliari"
+      ],
+      "tekst": {
+        "nl": "Kleine baai onder de vuurtoren, vlak bij de stad.",
+        "en": "Small cove below the lighthouse, close to town.",
+        "it": "Piccola cala sotto il faro, vicino alla città.",
+        "de": "Kleine Bucht unter dem Leuchtturm, nah an der Stadt."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Rotsen",
+          "en": "Rocks",
+          "it": "Scogli",
+          "de": "Felsen"
+        },
+        {
+          "nl": "Snorkelen",
+          "en": "Snorkelling",
+          "it": "Snorkeling",
+          "de": "Schnorcheln"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Calamosca+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Mari Pintau",
+      "regio": [
+        "quartu-villasimius"
+      ],
+      "tekst": {
+        "nl": "Kiezelbaai met helder water aan de kustweg naar Villasimius.",
+        "en": "Pebble cove with clear water on the coast road to Villasimius.",
+        "it": "Cala di ciottoli con acqua limpida sulla litoranea per Villasimius.",
+        "de": "Kiesbucht mit klarem Wasser an der Küstenstraße nach Villasimius."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": true,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Kiezels",
+          "en": "Pebbles",
+          "it": "Ciottoli",
+          "de": "Kiesel"
+        },
+        {
+          "nl": "Snorkelen",
+          "en": "Snorkelling",
+          "it": "Snorkeling",
+          "de": "Schnorcheln"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Mari+Pintau+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Solanas",
+      "regio": [
+        "quartu-villasimius"
+      ],
+      "tekst": {
+        "nl": "Brede zandbaai met ondiep water, fijn met kinderen.",
+        "en": "Wide sandy bay with shallow water, good for children.",
+        "it": "Ampia baia di sabbia con acqua bassa, adatta ai bambini.",
+        "de": "Breite Sandbucht mit flachem Wasser, gut für Kinder."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Kinderen",
+          "en": "Families",
+          "it": "Famiglie",
+          "de": "Familien"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Solanas+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Punta Molentis",
+      "regio": [
+        "quartu-villasimius"
+      ],
+      "tekst": {
+        "nl": "Smalle landtong met water aan twee kanten, bij Villasimius.",
+        "en": "Narrow headland with water on both sides, near Villasimius.",
+        "it": "Lingua di terra con il mare su due lati, vicino a Villasimius.",
+        "de": "Schmale Landzunge mit Wasser auf beiden Seiten, bei Villasimius."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": true,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Turquoise water",
+          "en": "Turquoise water",
+          "it": "Acqua turchese",
+          "de": "Türkises Wasser"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Punta+Molentis+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Costa Rei",
+      "regio": [
+        "costa-rei"
+      ],
+      "tekst": {
+        "nl": "Kilometers wit zand aan de oostkust.",
+        "en": "Miles of white sand on the east coast.",
+        "it": "Chilometri di sabbia bianca sulla costa est.",
+        "de": "Kilometerlanger weißer Sand an der Ostküste."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Kinderen",
+          "en": "Families",
+          "it": "Famiglie",
+          "de": "Familien"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Costa+Rei+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Su Guventeddu (Nora)",
+      "regio": [
+        "sud-ovest"
+      ],
+      "tekst": {
+        "nl": "Rustig strand naast de Romeinse ruïnes van Nora.",
+        "en": "Quiet beach next to the Roman ruins of Nora.",
+        "it": "Spiaggia tranquilla accanto all'area archeologica di Nora.",
+        "de": "Ruhiger Strand neben den römischen Ruinen von Nora."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Su+Guventeddu+Nora+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Su Giudeu (Chia)",
+      "regio": [
+        "sud-ovest"
+      ],
+      "tekst": {
+        "nl": "Duinen, lagune en ondiep turquoise water bij Chia.",
+        "en": "Dunes, a lagoon and shallow turquoise water at Chia.",
+        "it": "Dune, laguna e acqua bassa e turchese a Chia.",
+        "de": "Dünen, Lagune und flaches türkises Wasser bei Chia."
+      },
+      "beschut": [
+        "maestrale",
+        "levante"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Turquoise water",
+          "en": "Turquoise water",
+          "it": "Acqua turchese",
+          "de": "Türkises Wasser"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Su+Giudeu+Chia+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Tuerredda",
+      "regio": [
+        "sud-ovest"
+      ],
+      "tekst": {
+        "nl": "Witte zandbaai aan de zuidkust bij Teulada.",
+        "en": "White sand cove on the south coast near Teulada.",
+        "it": "Cala di sabbia bianca sulla costa sud, vicino a Teulada.",
+        "de": "Weiße Sandbucht an der Südküste bei Teulada."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": true,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Turquoise water",
+          "en": "Turquoise water",
+          "it": "Acqua turchese",
+          "de": "Türkises Wasser"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Tuerredda+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Cala Domestica",
+      "regio": [
+        "sulcis"
+      ],
+      "tekst": {
+        "nl": "Beschutte fjordachtige baai bij Buggerru aan de westkust.",
+        "en": "Sheltered fjord-like cove near Buggerru on the west coast.",
+        "it": "Cala riparata simile a un fiordo vicino a Buggerru, sulla costa ovest.",
+        "de": "Geschützte, fjordartige Bucht bei Buggerru an der Westküste."
+      },
+      "beschut": [
+        "scirocco",
+        "levante"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Rotsen",
+          "en": "Rocks",
+          "it": "Scogli",
+          "de": "Felsen"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Cala+Domestica+Sardegna",
+      "gecontroleerd": false
+    }
+  ]
+}

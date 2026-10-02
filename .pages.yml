@@ -1,0 +1,210 @@
+# Beheerscherm (Pages CMS) voor de gastengidsen van Sardegna Autentica.
+# Open https://app.pagescms.org, log in met GitHub en kies deze repository.
+
+media:
+  input: media
+  output: media
+
+components:
+  tekst:
+    type: object
+    label: Tekst
+    description: "Vul minimaal Engels in. Een lege taal valt terug op Engels."
+    fields:
+      - { name: nl, label: Nederlands, type: string }
+      - { name: en, label: English, type: string }
+      - { name: it, label: Italiano, type: string }
+      - { name: de, label: Deutsch, type: string }
+  langtekst:
+    type: object
+    label: Tekst
+    description: "Vul minimaal Engels in. Een lege taal valt terug op Engels."
+    fields:
+      - { name: nl, label: Nederlands, type: text }
+      - { name: en, label: English, type: text }
+      - { name: it, label: Italiano, type: text }
+      - { name: de, label: Deutsch, type: text }
+  zones:
+    type: select
+    label: Regio's
+    options:
+      multiple: true
+      values:
+        - { value: cagliari, label: "Cagliari en Poetto" }
+        - { value: quartu-villasimius, label: "Quartu – Villasimius" }
+        - { value: costa-rei, label: "Costa Rei – Muravera" }
+        - { value: sud-ovest, label: "Pula – Chia – Teulada" }
+        - { value: sulcis, label: "Sulcis – Iglesiente" }
+        - { value: oristano, label: "Oristano – Sinis" }
+        - { value: binnenland, label: "Binnenland" }
+  winden:
+    type: select
+    label: Winden
+    options:
+      multiple: true
+      values:
+        - { value: maestrale, label: "Maestrale (noordwest)" }
+        - { value: ponente, label: "Ponente (west)" }
+        - { value: scirocco, label: "Scirocco (zuidoost)" }
+        - { value: levante, label: "Levante (oost)" }
+
+content:
+  - name: woningen
+    label: Woningen
+    type: collection
+    path: content/woningen
+    format: json
+    filename: "{fields.slug}.json"
+    view:
+      fields: [naam, plaats, actief]
+      primary: naam
+    fields:
+      - name: slug
+        label: Webadres
+        type: string
+        required: true
+        description: "Kleine letters en streepjes, bijv. casa-marina. De gids komt op gids.sardinieautentica.nl/casa-marina. Niet meer wijzigen na het delen van de QR-code."
+        pattern: { regex: "^[a-z0-9-]+$", message: "Alleen kleine letters, cijfers en streepjes." }
+      - { name: actief, label: "Gids online", type: boolean, default: true, description: "Uitzetten als de verhuurder stopt. De link toont dan een nette melding." }
+      - { name: naam, label: "Naam van de woning", type: string, required: true }
+      - { name: plaats, label: "Plaats / wijk", type: string, description: "Bijv. Cagliari · Marina" }
+      - { name: foto, label: "Foto (optioneel)", type: image }
+      - { name: regios, component: zones, label: "Regio's", description: "Bepaalt welke stranden en partners in deze gids verschijnen." }
+      - name: talen
+        label: Talen in deze gids
+        type: select
+        default: [nl, en, it, de]
+        options:
+          multiple: true
+          values:
+            - { value: nl, label: Nederlands }
+            - { value: en, label: English }
+            - { value: it, label: Italiano }
+            - { value: de, label: Deutsch }
+      - { name: welkom, component: langtekst, label: "Welkomsttekst" }
+      - name: host
+        label: Verhuurder
+        type: object
+        fields:
+          - { name: naam, label: Naam, type: string }
+          - { name: telefoon, label: "Telefoon / WhatsApp (met +39)", type: string }
+          - { name: bereikbaar, component: tekst, label: "Bereikbaar (bijv. 08:00–21:00)" }
+      - name: aankomst
+        label: Aankomst en vertrek
+        type: object
+        fields:
+          - { name: adres, label: Adres, type: string }
+          - { name: maps, label: "Google Maps-link", type: string }
+          - { name: checkin, label: "Inchecken vanaf", type: string, default: "15:00" }
+          - { name: checkout, label: "Uitchecken vóór", type: string, default: "10:30" }
+          - { name: stappen, component: tekst, label: "Stap bij aankomst", list: true }
+          - { name: parkeren, component: langtekst, label: Parkeren }
+          - { name: vervoer, component: langtekst, label: "Bereikbaarheid (luchthaven, bus)" }
+      - name: wifi
+        label: Wifi
+        type: object
+        fields:
+          - { name: netwerk, label: Netwerknaam, type: string }
+          - { name: wachtwoord, label: Wachtwoord, type: string }
+      - { name: huisregels, component: tekst, label: Huisregel, list: true }
+      - name: tips
+        label: Eigen tips van de verhuurder
+        type: object
+        list: true
+        fields:
+          - { name: titel, component: tekst, label: Titel }
+          - { name: tekst, component: langtekst, label: Beschrijving }
+          - { name: maps, label: "Google Maps-link (optioneel)", type: string }
+      - name: extras
+        label: "Extra's die de verhuurder aanbiedt"
+        type: object
+        list: true
+        description: "Gasten vragen deze aan via WhatsApp bij de verhuurder."
+        fields:
+          - { name: titel, component: tekst, label: Titel }
+          - { name: tekst, component: tekst, label: "Korte omschrijving" }
+          - { name: prijs, label: "Prijs (bijv. € 25)", type: string }
+
+  - name: stranden
+    label: Stranden
+    type: file
+    path: content/stranden.json
+    format: json
+    fields:
+      - name: stranden
+        label: Strand
+        type: object
+        list: true
+        fields:
+          - { name: naam, label: Naam, type: string, required: true }
+          - { name: regio, component: zones, label: "Regio" }
+          - { name: tekst, component: tekst, label: "Korte omschrijving" }
+          - { name: beschut, component: winden, label: "Rustig bij deze wind" }
+          - { name: reserveren, label: "Reserveren verplicht in het seizoen", type: boolean, default: false }
+          - { name: reserveren_link, label: "Link om te reserveren", type: string }
+          - { name: kenmerken, component: tekst, label: "Kenmerk (bijv. Zand, Snorkelen)", list: true }
+          - { name: maps, label: "Google Maps-link", type: string }
+          - { name: gecontroleerd, label: "Gecontroleerd dit seizoen", type: boolean, default: false, description: "Geheugensteun voor jezelf. Let op: alles in dit systeem is openbaar leesbaar, zet hier geen privégegevens." }
+
+  - name: partners
+    label: Partners
+    type: file
+    path: content/partners.json
+    format: json
+    fields:
+      - name: partners
+        label: Partner
+        type: object
+        list: true
+        fields:
+          - { name: naam, label: Naam, type: string, required: true }
+          - { name: actief, label: "Zichtbaar in gidsen", type: boolean, default: true }
+          - name: soort
+            label: Soort
+            type: select
+            options:
+              values:
+                - { value: boot, label: Boottocht }
+                - { value: excursie, label: "Excursie / gids" }
+                - { value: restaurant, label: Restaurant }
+                - { value: verhuur, label: "Verhuur (fiets, auto, kajak)" }
+                - { value: winkel, label: "Winkel / producten" }
+          - { name: regio, component: zones, label: "Regio's" }
+          - { name: tekst, component: langtekst, label: Omschrijving }
+          - { name: foto, label: Foto, type: image }
+          - { name: telefoon, label: "Telefoon / WhatsApp (met +39)", type: string }
+          - { name: website, label: Website, type: string }
+
+  - name: algemeen
+    label: Algemeen
+    type: file
+    path: content/algemeen.json
+    format: json
+    fields:
+      - name: windadvies
+        label: Windadvies
+        type: object
+        fields:
+          - { name: maestrale, component: langtekst, label: "Maestrale (noordwest)" }
+          - { name: ponente, component: langtekst, label: "Ponente (west)" }
+          - { name: scirocco, component: langtekst, label: "Scirocco (zuidoost)" }
+          - { name: levante, component: langtekst, label: "Levante (oost)" }
+          - { name: calma, component: langtekst, label: "Weinig wind" }
+      - { name: reserveren_uitleg, component: langtekst, label: "Uitleg over reserveren van stranden" }
+      - name: gerechten
+        label: Gerecht
+        type: object
+        list: true
+        fields:
+          - { name: naam, label: Naam, type: string }
+          - { name: tekst, component: tekst, label: Omschrijving }
+      - { name: eten_tip, component: langtekst, label: "Algemene tip over eten" }
+      - name: nood
+        label: Noodnummer
+        type: object
+        list: true
+        fields:
+          - { name: nummer, label: Nummer, type: string }
+          - { name: tekst, component: tekst, label: Omschrijving }
+      - { name: apotheek, component: langtekst, label: "Uitleg apotheek / dokter" }
+      - { name: afzender, component: tekst, label: "Tekst onderaan elke gids" }

@@ -1,0 +1,157 @@
+{
+  "slug": "casa-marina",
+  "actief": true,
+  "naam": "Casa Marina",
+  "plaats": "Cagliari · Marina",
+  "foto": "",
+  "regios": [
+    "cagliari",
+    "quartu-villasimius",
+    "sud-ovest"
+  ],
+  "talen": [
+    "nl",
+    "en",
+    "it",
+    "de"
+  ],
+  "welkom": {
+    "nl": "Welkom! Hier vind je alles voor je verblijf: aankomst, wifi, huisregels en onze tips voor stranden, eten en uitjes rond Cagliari.",
+    "en": "Welcome! Here you'll find everything for your stay: arrival, wifi, house rules and our tips for beaches, food and trips around Cagliari.",
+    "it": "Benvenuti! Qui trovate tutto per il soggiorno: arrivo, wifi, regole della casa e i nostri consigli su spiagge, cibo e gite intorno a Cagliari.",
+    "de": "Willkommen! Hier findet ihr alles für euren Aufenthalt: Anreise, WLAN, Hausregeln und unsere Tipps für Strände, Essen und Ausflüge rund um Cagliari."
+  },
+  "host": {
+    "naam": "Giulia (voorbeeld)",
+    "telefoon": "+39 000 000 0000",
+    "bereikbaar": {
+      "nl": "08:00–21:00",
+      "en": "08:00–21:00",
+      "it": "08:00–21:00",
+      "de": "08:00–21:00"
+    }
+  },
+  "aankomst": {
+    "adres": "Via Sardegna 00, 09124 Cagliari (voorbeeld)",
+    "maps": "https://www.google.com/maps/search/?api=1&query=Via+Sardegna+Cagliari",
+    "checkin": "15:00",
+    "checkout": "10:30",
+    "stappen": [
+      {
+        "nl": "Stuur ons vóór aankomst een foto van ieders paspoort of ID. Dit is wettelijk verplicht in Italië.",
+        "en": "Before arrival, send us a photo of each guest's passport or ID. Italian law requires it.",
+        "it": "Prima dell'arrivo inviateci la foto del documento di ogni ospite. È obbligatorio per legge.",
+        "de": "Schickt uns vor der Anreise ein Foto vom Ausweis jedes Gastes. Das ist in Italien gesetzlich vorgeschrieben."
+      },
+      {
+        "nl": "De sleutelkluis hangt rechts van de voordeur. De code krijg je op de dag van aankomst.",
+        "en": "The key box is to the right of the front door. You get the code on arrival day.",
+        "it": "La cassetta delle chiavi è a destra del portone. Il codice arriva il giorno dell'arrivo.",
+        "de": "Der Schlüsselsafe hängt rechts neben der Haustür. Den Code bekommt ihr am Anreisetag."
+      },
+      {
+        "nl": "Tweede verdieping, geen lift.",
+        "en": "Second floor, no lift.",
+        "it": "Secondo piano, senza ascensore.",
+        "de": "Zweiter Stock, kein Aufzug."
+      },
+      {
+        "nl": "Toeristenbelasting van de gemeente: betalen bij aankomst, per persoon per nacht.",
+        "en": "City tourist tax: paid on arrival, per person per night.",
+        "it": "Imposta di soggiorno comunale: si paga all'arrivo, per persona e per notte.",
+        "de": "Kurtaxe der Stadt: bei Ankunft zu zahlen, pro Person und Nacht."
+      }
+    ],
+    "parkeren": {
+      "nl": "Blauwe vakken in de straat, betalen met de EasyPark-app.",
+      "en": "Blue bays in the street, pay with the EasyPark app.",
+      "it": "Strisce blu in strada, pagamento con l'app EasyPark.",
+      "de": "Blaue Parkplätze auf der Straße, Bezahlung mit der EasyPark-App."
+    },
+    "vervoer": {
+      "nl": "Vanaf de luchthaven: trein van Elmas naar station Cagliari (ongeveer 7 minuten), daarna 5 minuten lopen.",
+      "en": "From the airport: train from Elmas to Cagliari station (about 7 minutes), then a 5-minute walk.",
+      "it": "Dall'aeroporto: treno da Elmas alla stazione di Cagliari (circa 7 minuti), poi 5 minuti a piedi.",
+      "de": "Vom Flughafen: Zug von Elmas zum Bahnhof Cagliari (etwa 7 Minuten), dann 5 Minuten zu Fuß."
+    }
+  },
+  "wifi": {
+    "netwerk": "CasaMarina_5G",
+    "wachtwoord": "sardegna2026"
+  },
+  "huisregels": [
+    {
+      "nl": "Stilte tussen 22:00 en 08:00. De buren wonen hier het hele jaar.",
+      "en": "Quiet hours 22:00 to 08:00. Our neighbours live here all year.",
+      "it": "Silenzio dalle 22:00 alle 08:00. I vicini vivono qui tutto l'anno.",
+      "de": "Ruhezeit von 22:00 bis 08:00. Unsere Nachbarn wohnen hier das ganze Jahr."
+    },
+    {
+      "nl": "Niet roken binnen, ook niet op het balkon.",
+      "en": "No smoking indoors or on the balcony.",
+      "it": "Vietato fumare in casa e sul balcone.",
+      "de": "Rauchen ist drinnen und auf dem Balkon nicht erlaubt."
+    },
+    {
+      "nl": "Afval scheiden: elke dag wordt een andere soort opgehaald. Het schema hangt in de keuken.",
+      "en": "Sort your waste: each day a different type is collected. The schedule is in the kitchen.",
+      "it": "Raccolta differenziata: ogni giorno un tipo diverso. Il calendario è in cucina.",
+      "de": "Mülltrennung: Jeden Tag wird eine andere Sorte abgeholt. Der Plan hängt in der Küche."
+    },
+    {
+      "nl": "Bij vertrek: sleutel terug in de kluis, ramen dicht.",
+      "en": "On departure: key back in the box, windows closed.",
+      "it": "Alla partenza: chiave nella cassetta, finestre chiuse.",
+      "de": "Bei Abreise: Schlüssel zurück in den Safe, Fenster schließen."
+    }
+  ],
+  "tips": [
+    {
+      "titel": {
+        "nl": "Zonsondergang op de Bastione",
+        "en": "Sunset at the Bastione",
+        "it": "Tramonto al Bastione",
+        "de": "Sonnenuntergang an der Bastione"
+      },
+      "tekst": {
+        "nl": "Loop 10 minuten omhoog naar de Bastione di Saint Remy voor het uitzicht over de stad en de lagune.",
+        "en": "Walk 10 minutes up to the Bastione di Saint Remy for views over the city and lagoon.",
+        "it": "Salite in 10 minuti al Bastione di Saint Remy per la vista sulla città e sulla laguna.",
+        "de": "Geht 10 Minuten hinauf zur Bastione di Saint Remy mit Blick über Stadt und Lagune."
+      },
+      "maps": "https://www.google.com/maps/search/?api=1&query=Bastione+di+Saint+Remy+Cagliari"
+    }
+  ],
+  "extras": [
+    {
+      "titel": {
+        "nl": "Vroege check-in",
+        "en": "Early check-in",
+        "it": "Check-in anticipato",
+        "de": "Früher Check-in"
+      },
+      "tekst": {
+        "nl": "Vanaf 11:00, als het appartement vrij is",
+        "en": "From 11:00, if the apartment is free",
+        "it": "Dalle 11:00, se l'appartamento è libero",
+        "de": "Ab 11:00, wenn die Wohnung frei ist"
+      },
+      "prijs": "€ 25"
+    },
+    {
+      "titel": {
+        "nl": "Boodschappenpakket bij aankomst",
+        "en": "Welcome grocery pack",
+        "it": "Spesa di benvenuto",
+        "de": "Willkommens-Einkaufspaket"
+      },
+      "tekst": {
+        "nl": "Ontbijt, water, wijn en lokale kaas",
+        "en": "Breakfast, water, wine and local cheese",
+        "it": "Colazione, acqua, vino e formaggio locale",
+        "de": "Frühstück, Wasser, Wein und lokaler Käse"
+      },
+      "prijs": "€ 40"
+    }
+  ]
+}
