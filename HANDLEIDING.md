@@ -56,6 +56,11 @@ Tip: kopieer de tekst van een bestaande woning als startpunt.
 ## Een partner toevoegen
 Pages CMS → **Partners** → **Add an item**. Kies de soort en de regio's. De partner verschijnt meteen in alle gidsen van die regio's. Stopt een partner? Zet dan **Zichtbaar in gidsen** uit.
 
+
+**Hoe een partner ziet dat gasten via de gids komen**
+- Tikt een gast op WhatsApp bij een partner, dan staat er al een bericht klaar: *"Ciao! Vi ho trovato tramite la guida di Sardegna Autentica (naam woning)."*, met daaronder dezelfde zin in de taal van de gast.
+- De link naar de website van een partner krijgt `?utm_source=sardegnaautentica&utm_medium=guida&utm_campaign=<woning>` mee. Partners met Google Analytics zien zo hoeveel bezoekers via de gids komen.
+- Optioneel veld **Voordeel voor gasten**, bijvoorbeeld een korting of een glaasje mirto. Gasten noemen het zelf, en de partner kan tellen.
 ## Statistieken (Umami)
 De gidsen kunnen bijhouden hoe vaak ze worden geopend en waarop gasten tikken. Dat werkt zonder cookies en zonder persoonsgegevens.
 

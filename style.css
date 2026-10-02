@@ -89,3 +89,5 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--saffron);outline-of
 .install-body{display:grid;gap:8px;min-width:0;flex:1}
 .install-body p{font-size:15px}
 .install-close{flex:none;border:0;background:transparent;color:var(--muted);font-size:22px;line-height:1;cursor:pointer;padding:2px 6px;border-radius:6px}
+.perk{background:var(--saffron-soft);border-radius:8px;padding:8px 10px;font-size:14px}
+.perk b{color:var(--saffron)}

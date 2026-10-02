@@ -35,7 +35,14 @@
       },
       "foto": "",
       "telefoon": "+39 000 000 0001",
-      "website": ""
+      "website": "",
+      "voordeel": {
+        "en": "Free glass of mirto with dinner – mention Sardegna Autentica",
+        "it": "Un bicchierino di mirto offerto a cena – citate Sardegna Autentica",
+        "fr": "Un verre de myrte offert au dîner – mentionnez Sardegna Autentica",
+        "nl": "Gratis glaasje mirto bij het diner – noem Sardegna Autentica",
+        "de": "Ein Glas Mirto gratis zum Abendessen – nennt Sardegna Autentica"
+      }
     },
     {
       "naam": "VOORBEELD – Fietsverhuur Cagliari",

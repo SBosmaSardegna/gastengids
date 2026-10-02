@@ -7,6 +7,7 @@
   var LANGS = ["en", "it", "fr", "nl", "de"];
   var UI = {
     nl: {
+      perk: "Voor gasten van deze gids:",
       nav: { aankomst: "Aankomst", wifi: "Wifi", regels: "Huisregels", stranden: "Stranden", tips: "Tips", eten: "Eten", partners: "Uitjes", extras: "Extra's", nood: "Hulp" },
       arrive: "Aankomst & vertrek", checkin: "Inchecken", checkout: "Uitchecken", address: "Adres", route: "Route openen",
       parking: "Parkeren", transport: "Bereikbaarheid", wifi: "Wifi", network: "Netwerk", password: "Wachtwoord",
@@ -26,6 +27,7 @@
       offline: "Je bent offline. Je ziet de laatst opgeslagen versie.", loadError: "De gids kon niet worden geladen. Probeer het opnieuw."
     },
     en: {
+      perk: "For guests of this guide:",
       nav: { aankomst: "Arrival", wifi: "Wifi", regels: "House rules", stranden: "Beaches", tips: "Tips", eten: "Food", partners: "Things to do", extras: "Extras", nood: "Help" },
       arrive: "Arrival & departure", checkin: "Check-in", checkout: "Check-out", address: "Address", route: "Open route",
       parking: "Parking", transport: "Getting here", wifi: "Wifi", network: "Network", password: "Password",
@@ -45,6 +47,7 @@
       offline: "You're offline. This is the last saved version.", loadError: "The guide couldn't load. Please try again."
     },
     it: {
+      perk: "Per gli ospiti di questa guida:",
       nav: { aankomst: "Arrivo", wifi: "Wifi", regels: "Regole", stranden: "Spiagge", tips: "Consigli", eten: "Cibo", partners: "Da fare", extras: "Extra", nood: "Aiuto" },
       arrive: "Arrivo e partenza", checkin: "Check-in", checkout: "Check-out", address: "Indirizzo", route: "Apri percorso",
       parking: "Parcheggio", transport: "Come arrivare", wifi: "Wifi", network: "Rete", password: "Password",
@@ -64,6 +67,7 @@
       offline: "Siete offline. Questa è l'ultima versione salvata.", loadError: "Impossibile caricare la guida. Riprovate."
     },
     fr: {
+      perk: "Pour les hôtes de ce guide :",
       nav: { aankomst: "Arrivée", wifi: "Wi-Fi", regels: "Règles", stranden: "Plages", tips: "Conseils", eten: "Manger", partners: "À faire", extras: "Extras", nood: "Aide" },
       arrive: "Arrivée et départ", checkin: "Arrivée", checkout: "Départ", address: "Adresse", route: "Ouvrir l'itinéraire",
       parking: "Stationnement", transport: "Comment venir", wifi: "Wi-Fi", network: "Réseau", password: "Mot de passe",
@@ -83,6 +87,7 @@
       offline: "Vous êtes hors ligne. Voici la dernière version enregistrée.", loadError: "Le guide n'a pas pu être chargé. Veuillez réessayer."
     },
     de: {
+      perk: "Für Gäste dieses Guides:",
       nav: { aankomst: "Anreise", wifi: "WLAN", regels: "Hausregeln", stranden: "Strände", tips: "Tipps", eten: "Essen", partners: "Ausflüge", extras: "Extras", nood: "Hilfe" },
       arrive: "Anreise & Abreise", checkin: "Check-in", checkout: "Check-out", address: "Adresse", route: "Route öffnen",
       parking: "Parken", transport: "Anfahrt", wifi: "WLAN", network: "Netzwerk", password: "Passwort",
@@ -178,6 +183,17 @@
     if (!u) return "";
     if (/^https?:\/\//i.test(u)) return u;
     return encodeURI(u.replace(/^\/+/, ""));
+  }
+  function partnerMsg(p) {
+    var home = (state.home && state.home.naam) || "";
+    var it = "Ciao! Vi ho trovato tramite la guida di Sardegna Autentica" + (home ? " (" + home + ")" : "") + ".";
+    var other = { en: "Hello! I found you through the Sardegna Autentica guide", fr: "Bonjour ! Je vous ai trouvé grâce au guide Sardegna Autentica", nl: "Hallo! Ik heb jullie gevonden via de gids van Sardegna Autentica", de: "Hallo! Ich habe euch über den Guide von Sardegna Autentica gefunden" }[state.lang];
+    return it + (other ? "\n" + other + (home ? " (" + home + ")" : "") + "." : "");
+  }
+  function withUtm(url) {
+    if (!url) return url;
+    var slug = (state.home && state.home.slug) || "";
+    return url + (url.indexOf("?") > -1 ? "&" : "?") + "utm_source=sardegnaautentica&utm_medium=guida&utm_campaign=" + encodeURIComponent(slug);
   }
   function digits(n) { return String(n || "").replace(/[^\d]/g, ""); }
   // Tekst in de gekozen taal, anders Engels, Italiaans, Nederlands, Duits.
@@ -378,13 +394,14 @@
           var links = [];
           var d = digits(p.telefoon);
           if (d) {
-            links.push('<a href="https://wa.me/' + d + '" target="_blank" rel="noopener"' + ev("partner-whatsapp", p.naam) + '>' + esc(u.whatsapp) + "</a>");
+            links.push('<a href="https://wa.me/' + d + "?text=" + encodeURIComponent(partnerMsg(p)) + '" target="_blank" rel="noopener"' + ev("partner-whatsapp", p.naam) + '>' + esc(u.whatsapp) + "</a>");
           }
-          if (safeUrl(p.website)) links.push('<a href="' + esc(safeUrl(p.website)) + '" target="_blank" rel="noopener"' + ev("partner-website", p.naam) + '>' + esc(u.website) + "</a>");
+          if (safeUrl(p.website)) links.push('<a href="' + esc(withUtm(safeUrl(p.website))) + '" target="_blank" rel="noopener"' + ev("partner-website", p.naam) + '>' + esc(u.website) + "</a>");
           var img = mediaUrl(p.foto);
           return '<div class="card">' + (img ? '<img src="' + esc(img) + '" alt="" loading="lazy">' : "") +
             '<span class="partner-label">' + esc(u.partnerLabel) + "</span><h3>" + esc(p.naam) + "</h3>" +
             (tx(p.tekst) ? '<p class="pre">' + esc(tx(p.tekst)) + "</p>" : "") +
+            (tx(p.voordeel) ? '<p class="perk"><b>' + esc(u.perk) + "</b> " + esc(tx(p.voordeel)) + "</p>" : "") +
             (p.telefoon ? '<p class="mono">' + esc(p.telefoon) + copyBtn(p.telefoon, "copy-p-" + k + "-" + i) + "</p>" : "") +
             (links.length ? '<div class="links">' + links.join("") + "</div>" : "") + "</div>";
         }).join("") + "</div>";

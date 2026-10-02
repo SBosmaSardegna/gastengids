@@ -175,6 +175,7 @@ content:
                 - { value: winkel, label: "Winkel / producten" }
           - { name: regio, component: zones, label: "Regio's" }
           - { name: tekst, component: langtekst, label: Omschrijving }
+          - { name: voordeel, component: tekst, label: "Voordeel voor gasten (optioneel)", description: "Bijv. '10% korting met de code SARDEGNA' of 'Gratis glas mirto bij het diner'. Zo weet de partner welke gasten via de gids komen." }
           - { name: foto, label: Foto, type: image }
           - { name: telefoon, label: "Telefoon / WhatsApp (met +39)", type: string }
           - { name: website, label: Website, type: string }
