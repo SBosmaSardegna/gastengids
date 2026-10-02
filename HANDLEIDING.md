@@ -49,7 +49,7 @@ Verwijder het bestand `CNAME` in de repository niet, want daarmee onthoudt GitHu
    - **Regio's:** die bepalen welke stranden en partners in de gids komen.
    - **Talen:** standaard alle vier. Laat je een taal leeg, dan valt de gids terug op Engels.
 4. Klik **Save** en open na een minuut `guide.sardegnaautentica.com/<webadres>`.
-5. Maak een QR-code van die link, bijvoorbeeld met een gratis QR-generator, en stuur die samen met de link naar de verhuurder.
+5. Maak de QR-kaart: open `guide.sardegnaautentica.com/qr.html?w=<webadres>`. Je ziet een kaart van 10,5 × 14,8 cm (A6) met de QR-code van de gids en, als je wilt, een wifi-QR waarmee gasten met één scan verbinding maken. Klik op **Afdrukken** of **Download als afbeelding** en stuur die samen met de link naar de verhuurder.
 
 Tip: kopieer de tekst van een bestaande woning als startpunt.
 
