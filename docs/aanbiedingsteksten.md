@@ -42,7 +42,7 @@ Vorrei proporvi di comparire come partner consigliato in tutte le guide della vo
 
 Offro anche consulenza di viaggio a viaggiatori italiani e stranieri: i partner delle guide sono le attività che consiglio anche ai miei clienti.
 
-Costo: €99 all'anno. Per i primi cinque partner la stagione 2027 è gratuita.
+Costo: prezzo di lancio di €49 per la stagione 2027, senza commissioni. Chi entra ora mantiene un prezzo di favore anche negli anni successivi.
 
 Selezioniamo solo attività che consiglieremmo anche ai nostri amici. Possiamo sentirci questa settimana?
 
