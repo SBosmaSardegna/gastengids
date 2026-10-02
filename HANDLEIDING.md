@@ -56,6 +56,28 @@ Tip: kopieer de tekst van een bestaande woning als startpunt.
 ## Een partner toevoegen
 Pages CMS → **Partners** → **Add an item**. Kies de soort en de regio's. De partner verschijnt meteen in alle gidsen van die regio's. Stopt een partner? Zet dan **Zichtbaar in gidsen** uit.
 
+## Statistieken (Umami)
+De gidsen kunnen bijhouden hoe vaak ze worden geopend en waarop gasten tikken. Dat werkt zonder cookies en zonder persoonsgegevens.
+
+**Eenmalig instellen**
+1. Maak een gratis account op **cloud.umami.is** (Hobby-plan: gratis, 1 website, 100.000 gebeurtenissen per maand, gegevens 6 maanden bewaard).
+2. Klik op **Add website**. Naam: `Gastengidsen`, domein: `guide.sardegnaautentica.com`.
+3. Kopieer de **Website ID** (een lange code met streepjes).
+4. Plak die in Pages CMS → **Algemeen → Statistieken: Umami website-ID** en klik op **Save**.
+
+**Wat je ziet in Umami**
+- **Paginabezoeken per gids**: `/casa-marina`, `/villa-sole-pula`, enzovoort.
+- **Events** (gebeurtenissen), elk met de gids en de taal erbij:
+  - `partner-whatsapp` en `partner-website`: een gast tikt op WhatsApp of de website van een partner (de partnernaam staat bij *item*)
+  - `extra-aanvraag`: een gast vraagt een extra aan bij de verhuurder
+  - `host-whatsapp`: een gast neemt contact op met de verhuurder
+  - `strand-kaart`: een gast opent de kaart van een strand
+  - `wind-gekozen` en `taal-gekozen`
+  - `app-installeren` en `app-geinstalleerd`
+  - `website-sardegna-autentica`: een gast klikt door naar je website
+
+**Tip:** het gratis plan bewaart gegevens 6 maanden. Noteer aan het eind van elk seizoen de cijfers per partner en per gids (of exporteer ze), zodat je ze het volgende voorjaar kunt laten zien.
+
 ## Elk voorjaar (vóór mei)
 - **Stranden:** controleer per strand of reserveren nog nodig is en vul de link in. Zet daarna **Gecontroleerd dit seizoen** aan.
 - **Partners:** zet partners die niet verlengd hebben op onzichtbaar.

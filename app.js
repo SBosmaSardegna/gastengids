@@ -105,6 +105,35 @@
 
   var state = { lang: "en", wind: null, home: null, beaches: [], partners: [], general: {} };
   var installEvent = null;
+
+  // Statistieken (Umami, zonder cookies). Alleen actief als er een website-ID in Algemeen staat.
+  var stats = { on: false, queue: [] };
+  function ev(name, item) {
+    return ' data-ev="' + esc(name) + '"' + (item ? ' data-ev-item="' + esc(item) + '"' : "");
+  }
+  function track(name, data) {
+    if (!stats.on) return;
+    var payload = Object.assign({ gids: state.home ? state.home.slug : "", taal: state.lang }, data || {});
+    if (window.umami && window.umami.track) window.umami.track(name, payload);
+    else stats.queue.push([name, payload]);
+  }
+  function startStats(id, slug, title) {
+    id = String(id || "").trim();
+    if (!/^[0-9a-f-]{36}$/i.test(id) || location.hostname === "localhost") return;
+    stats.on = true;
+    var s = document.createElement("script");
+    s.defer = true;
+    s.src = "https://cloud.umami.is/script.js";
+    s.setAttribute("data-website-id", id);
+    s.setAttribute("data-auto-track", "false");
+    s.onload = function () {
+      if (!window.umami) return;
+      window.umami.track(function (p) { return Object.assign({}, p, { url: "/" + slug, title: title }); });
+      stats.queue.forEach(function (q) { window.umami.track(q[0], q[1]); });
+      stats.queue = [];
+    };
+    document.head.appendChild(s);
+  }
   function isStandalone() {
     return (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) || window.navigator.standalone === true;
   }
@@ -129,6 +158,7 @@
     if (state.home) render();
   });
   window.addEventListener("appinstalled", function () {
+    track("app-geinstalleerd", {});
     installEvent = null;
     var el = document.getElementById("install"); if (el) el.remove();
   });
@@ -304,7 +334,7 @@
             (b.reserveren ? '<span class="tag book">' + esc(u.book) + "</span>" : "") +
             arr(b.kenmerken).map(tx).filter(Boolean).map(function (k) { return '<span class="tag">' + esc(k) + "</span>"; }).join("");
           var links = [];
-          if (safeUrl(b.maps)) links.push('<a href="' + esc(safeUrl(b.maps)) + '" target="_blank" rel="noopener">' + esc(u.map) + "</a>");
+          if (safeUrl(b.maps)) links.push('<a href="' + esc(safeUrl(b.maps)) + '" target="_blank" rel="noopener"' + ev("strand-kaart", b.naam) + '>' + esc(u.map) + "</a>");
           if (b.reserveren && safeUrl(b.reserveren_link)) links.push('<a href="' + esc(safeUrl(b.reserveren_link)) + '" target="_blank" rel="noopener">' + esc(u.bookLink) + "</a>");
           return '<div class="card' + (rough ? " dim" : "") + '"><div class="card-head"><h3>' + esc(b.naam) + "</h3></div>" +
             (tx(b.tekst) ? "<p>" + esc(tx(b.tekst)) + "</p>" : "") +
@@ -348,9 +378,9 @@
           var links = [];
           var d = digits(p.telefoon);
           if (d) {
-            links.push('<a href="https://wa.me/' + d + '" target="_blank" rel="noopener">' + esc(u.whatsapp) + "</a>");
+            links.push('<a href="https://wa.me/' + d + '" target="_blank" rel="noopener"' + ev("partner-whatsapp", p.naam) + '>' + esc(u.whatsapp) + "</a>");
           }
-          if (safeUrl(p.website)) links.push('<a href="' + esc(safeUrl(p.website)) + '" target="_blank" rel="noopener">' + esc(u.website) + "</a>");
+          if (safeUrl(p.website)) links.push('<a href="' + esc(safeUrl(p.website)) + '" target="_blank" rel="noopener"' + ev("partner-website", p.naam) + '>' + esc(u.website) + "</a>");
           var img = mediaUrl(p.foto);
           return '<div class="card">' + (img ? '<img src="' + esc(img) + '" alt="" loading="lazy">' : "") +
             '<span class="partner-label">' + esc(u.partnerLabel) + "</span><h3>" + esc(p.naam) + "</h3>" +
@@ -371,7 +401,7 @@
         var msg = u.requestMsg.replace("{home}", h.naam || "").replace("{item}", tx(x.titel));
         return '<div class="card extra"><div><h3>' + esc(tx(x.titel)) + "</h3>" + (tx(x.tekst) ? '<p class="note">' + esc(tx(x.tekst)) + "</p>" : "") + "</div>" +
           (x.prijs ? '<span class="price">' + esc(x.prijs) + "</span>" : "") +
-          (hostDigits ? '<a class="btn" href="https://wa.me/' + hostDigits + "?text=" + encodeURIComponent(msg) + '" target="_blank" rel="noopener">' + esc(u.request) + "</a>" : "") + "</div>";
+          (hostDigits ? '<a class="btn" href="https://wa.me/' + hostDigits + "?text=" + encodeURIComponent(msg) + '" target="_blank" rel="noopener"' + ev("extra-aanvraag", tx(x.titel)) + '>' + esc(u.request) + "</a>" : "") + "</div>";
       }).join("") + "</div>"]);
 
     // Nood
@@ -382,7 +412,7 @@
       (host.naam || host.telefoon ? '<div class="card"><span class="partner-label">' + esc(u.host) + "</span><h3>" + esc(host.naam || "") + "</h3>" +
         (host.telefoon ? '<p class="mono">' + esc(host.telefoon) + copyBtn(host.telefoon, "copy-host") + "</p>" : "") +
         (tx(host.bereikbaar) ? '<p class="note">' + esc(u.reachable) + ": " + esc(tx(host.bereikbaar)) + "</p>" : "") +
-        (hostDigits ? '<div class="links"><a href="https://wa.me/' + hostDigits + '" target="_blank" rel="noopener">' + esc(u.whatsapp) + "</a></div>" : "") + "</div>" : "") +
+        (hostDigits ? '<div class="links"><a href="https://wa.me/' + hostDigits + '" target="_blank" rel="noopener"' + ev("host-whatsapp", "") + '>' + esc(u.whatsapp) + "</a></div>" : "") + "</div>" : "") +
       (tx(g.apotheek) ? '<p class="note pre">' + esc(tx(g.apotheek)) + "</p>" : "");
     if (nh) sections.push(["nood", u.help, nh]);
 
@@ -394,14 +424,17 @@
       sections.map(function (s) { return '<section id="' + s[0] + '"><h2>' + esc(s[1]) + "</h2>" + s[2] + "</section>"; }).join("");
     $("#foot").innerHTML = '<div class="about"><img class="about-logo" src="media/sardegna-autentica-logo.png" alt="Sardegna Autentica">' +
       "<h3>" + esc(u.about.title) + "</h3><p>" + esc(u.about.text) + "</p>" +
-      '<a href="' + esc(safeUrl(tx(g.website)) || "https://www.sardinieautentica.nl/en/") + '" target="_blank" rel="noopener">' + esc(u.about.link) + "</a></div>";
+      '<a href="' + esc(safeUrl(tx(g.website)) || "https://www.sardinieautentica.nl/en/") + '" target="_blank" rel="noopener"' + ev("website-sardegna-autentica", "") + '>' + esc(u.about.link) + "</a></div>";
   }
 
   document.addEventListener("click", function (e) {
     var t = e.target;
+    var tr = t.closest && t.closest("[data-ev]");
+    if (tr) track(tr.getAttribute("data-ev"), tr.getAttribute("data-ev-item") ? { item: tr.getAttribute("data-ev-item") } : {});
     var l = t.closest && t.closest("[data-lang]");
     if (l) {
       state.lang = l.getAttribute("data-lang");
+      track("taal-gekozen", { item: state.lang });
       try { localStorage.setItem("sa-lang", state.lang); } catch (err) {}
       render();
       var b = document.getElementById("lang-" + state.lang); if (b) b.focus();
@@ -411,6 +444,7 @@
     if (w) {
       var k = w.getAttribute("data-wind");
       state.wind = state.wind === k ? null : k;
+      if (state.wind) track("wind-gekozen", { item: state.wind });
       render();
       var wb = document.getElementById("wind-" + k); if (wb) wb.focus();
       return;
@@ -421,6 +455,7 @@
       return;
     }
     if (t.closest && t.closest("[data-install]") && installEvent) {
+      track("app-installeren", {});
       installEvent.prompt();
       installEvent.userChoice.then(function () { installEvent = null; render(); }, function () {});
       return;
@@ -465,6 +500,7 @@
       state.general = res[3] || {};
       state.offline = !navigator.onLine;
       render();
+      startStats(state.general.statistiek_id, slug, home.naam || slug);
       if (location.hash) {
         var el = document.getElementById(location.hash.slice(1));
         if (el) el.scrollIntoView();

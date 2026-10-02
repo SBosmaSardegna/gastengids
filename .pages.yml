@@ -212,6 +212,10 @@ content:
           - { name: tekst, component: tekst, label: Omschrijving }
       - { name: apotheek, component: langtekst, label: "Uitleg apotheek / dokter" }
       - { name: afzender, component: tekst, label: "Tekst onderaan elke gids" }
+      - name: statistiek_id
+        label: "Statistieken: Umami website-ID"
+        type: string
+        description: "Plak hier de Website ID uit Umami (cloud.umami.is → Settings → Websites). Leeg = geen statistieken."
       - name: website
         component: tekst
         label: "Link naar je website per taal"
