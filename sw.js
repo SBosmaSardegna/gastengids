@@ -1,6 +1,6 @@
 /* Offline: app-bestanden uit de cache, inhoud eerst van het netwerk en anders de laatst opgeslagen versie. */
-var VERSION = "gids-v2";
-var SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png"];
+var VERSION = "gids-v3";
+var SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "media/sardegna-autentica-mark.png"];
 
 self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(VERSION).then(function (c) { return c.addAll(SHELL); }).then(function () { return self.skipWaiting(); }));

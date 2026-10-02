@@ -201,6 +201,9 @@
     $("#place").textContent = h.plaats || "Sardegna";
     $("#title").textContent = h.naam || "";
     $("#lede").textContent = tx(h.welkom);
+    var logo = mediaUrl(h.logo);
+    $("#hostLogo").hidden = !logo;
+    if (logo) { $("#hostLogo").src = logo; $("#hostLogo").alt = h.naam || ""; }
     renderLangs(state.allowed);
 
     var regions = arr(h.regios);
@@ -365,7 +368,7 @@
       (state.offline ? '<p class="note">' + esc(u.offline) + "</p>" : "") +
       installHtml() +
       sections.map(function (s) { return '<section id="' + s[0] + '"><h2>' + esc(s[1]) + "</h2>" + s[2] + "</section>"; }).join("");
-    $("#foot").innerHTML = "<span>" + esc(tx(g.afzender) || "Sardegna Autentica") + "</span>";
+    $("#foot").innerHTML = '<img class="sa-mark" src="media/sardegna-autentica-mark.png" alt="">' + "<span>" + esc(tx(g.afzender) || "Sardegna Autentica") + "</span>";
   }
 
   document.addEventListener("click", function (e) {

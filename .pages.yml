@@ -69,6 +69,7 @@ content:
       - { name: naam, label: "Naam van de woning", type: string, required: true }
       - { name: plaats, label: "Plaats / wijk", type: string, description: "Bijv. Cagliari · Marina" }
       - { name: foto, label: "Foto (optioneel)", type: image }
+      - { name: logo, label: "Logo van de verhuurder (optioneel)", type: image, description: "Staat bovenaan de gids en op de QR-kaart. Een PNG met transparante achtergrond werkt het mooist. Leeg = logo van Sardegna Autentica." }
       - { name: regios, component: zones, label: "Regio's", description: "Bepaalt welke stranden en partners in deze gids verschijnen." }
       - name: talen
         label: Talen in deze gids

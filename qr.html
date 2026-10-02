@@ -34,11 +34,11 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--saffron);outlin
 .msg{font-size:13px;color:var(--saffron)}
 /* De kaart: 105 x 148 mm */
 .card{width:105mm;height:148mm;max-width:100%;background:var(--paper);box-shadow:0 2px 14px rgba(20,48,47,.12);
-  display:flex;flex-direction:column;align-items:center;text-align:center;padding:9mm 8mm 7mm;gap:3.2mm;overflow:hidden}
+  display:flex;flex-direction:column;align-items:center;text-align:center;padding:8mm 8mm 5mm;gap:2.8mm;overflow:hidden}
 .brand{font-size:7.5pt;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:700}
 .home{font-family:var(--display);font-size:22pt;line-height:1.05;margin:0;text-wrap:balance}
 .langs{font-size:8pt;color:var(--muted);line-height:1.35}
-.qr{width:52mm;height:52mm;display:block}
+.qr{width:47mm;height:47mm;display:block}
 .scan{font-weight:700;font-size:10pt;color:var(--sea)}
 .url{font-family:var(--mono);font-size:7.5pt;color:var(--ink);word-break:break-all}
 .wifi{margin-top:auto;display:flex;gap:4mm;align-items:center;text-align:left;border-top:1px solid var(--line);padding-top:3.5mm;width:100%}
@@ -46,7 +46,9 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--saffron);outlin
 .wifi-text{font-size:8pt;line-height:1.35;min-width:0}
 .wifi-text b{font-size:9pt}
 .wifi-text .mono{font-family:var(--mono);font-size:8pt;word-break:break-all}
-.sun{width:9mm;height:9mm}
+.top-logo{max-width:62mm;max-height:16mm;object-fit:contain}
+.sa-foot{display:flex;align-items:center;justify-content:center;gap:1.6mm;font-size:6.5pt;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.sa-foot img{width:5mm;height:5mm}
 @media print{
   @page{size:A6;margin:0}
   body{background:#fff}
@@ -74,8 +76,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--saffron);outlin
   </form>
 
   <div class="card" id="card">
-    <svg class="sun" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f6b6b"/><circle cx="32" cy="25.6" r="10.2" fill="#e8b04a"/><path d="M12 39c4-3 8-3 12 0s8 3 12 0 8-3 12 0 6 2 6 2" stroke="#f3f6f5" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M12 45.5c4-3 8-3 12 0s8 3 12 0 8-3 12 0 6 2 6 2" stroke="#f3f6f5" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg>
-    <div class="brand">Sardegna Autentica</div>
+    <img class="top-logo" id="topLogo" src="media/sardegna-autentica-logo.png" alt="Sardegna Autentica">
     <h2 class="home" id="homeName">…</h2>
     <div class="langs">Guida per gli ospiti · Guest guide<br>Gastengids · Gästeguide</div>
     <div id="qrMain"></div>
@@ -90,6 +91,7 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--saffron);outlin
         Scansiona per connetterti · Scan to connect
       </div>
     </div>
+    <div class="sa-foot"><img src="media/sardegna-autentica-mark.png" alt="">Sardegna Autentica</div>
   </div>
 </div>
 
@@ -127,6 +129,9 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--saffron);outlin
     $("qrMain").innerHTML = svgFor(makeQr(url), "qr");
     $("url").textContent = url.replace(/^https?:\/\//, "");
     $("homeName").textContent = (home && home.naam) || slug;
+    var hl = home && home.logo ? String(home.logo).replace(/^\/+/, "") : "";
+    $("topLogo").src = hl || "media/sardegna-autentica-logo.png";
+    $("topLogo").alt = hl ? ((home && home.naam) || "") : "Sardegna Autentica";
     var w = home && home.wifi;
     var showWifi = $("withWifi").checked && w && w.netwerk;
     $("wifiBox").hidden = !showWifi;
@@ -151,59 +156,63 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--saffron);outlin
     try { history.replaceState(null, "", "?w=" + slug); } catch (e) {}
   }
 
-  // Afbeelding (A6 op 300 dpi) tekenen op een canvas
+  // Afbeelding (A6 op 300 dpi) tekenen op een canvas, zelfde opbouw als de kaart
+  function loadImg(src) {
+    return new Promise(function (res) { var i = new Image(); i.onload = function () { res(i); }; i.onerror = function () { res(null); }; i.src = src; });
+  }
+  function fit(g, img, cx, y, maxW, maxH) {
+    if (!img) return 0;
+    var r = Math.min(maxW / img.width, maxH / img.height), w = img.width * r, h = img.height * r;
+    g.drawImage(img, cx - w / 2, y + (maxH - h) / 2, w, h);
+    return maxH;
+  }
   function downloadPng() {
     var W = 1240, H = 1748, mm = W / 105;
-    var cv = document.createElement("canvas"); cv.width = W; cv.height = H;
-    var g = cv.getContext("2d");
     var css = getComputedStyle(document.documentElement);
     var display = css.getPropertyValue("--display"), body = css.getPropertyValue("--body"), mono = css.getPropertyValue("--mono");
-    g.fillStyle = "#fff"; g.fillRect(0, 0, W, H);
-    g.textAlign = "center"; g.textBaseline = "alphabetic";
-    var y = 9 * mm;
-    // logo
-    var s = 9 * mm, x0 = W / 2 - s / 2;
-    g.fillStyle = "#0f6b6b"; roundRect(g, x0, y, s, s, s * .22); g.fill();
-    g.fillStyle = "#e8b04a"; g.beginPath(); g.arc(W / 2, y + s * .4, s * .16, 0, Math.PI * 2); g.fill();
-    g.strokeStyle = "#f3f6f5"; g.lineWidth = s * .04; g.lineCap = "round";
-    [0.61, 0.71].forEach(function (f) {
-      g.beginPath();
-      for (var i = 0; i <= 40; i++) { var px = x0 + s * (0.19 + 0.66 * i / 40), py = y + s * f + Math.sin(i / 40 * Math.PI * 4) * s * 0.025; if (i) g.lineTo(px, py); else g.moveTo(px, py); }
-      g.stroke();
+    Promise.all([loadImg($("topLogo").src), loadImg("media/sardegna-autentica-mark.png")]).then(function (imgs) {
+      var cv = document.createElement("canvas"); cv.width = W; cv.height = H;
+      var g = cv.getContext("2d");
+      g.fillStyle = "#fff"; g.fillRect(0, 0, W, H);
+      g.textAlign = "center"; g.textBaseline = "alphabetic";
+      var y = 8 * mm;
+      y += fit(g, imgs[0], W / 2, y, 62 * mm, 16 * mm) + 9 * mm;
+      g.fillStyle = "#14302f"; g.font = (7.8 * mm) + "px " + display;
+      var lines = wrap(g, $("homeName").textContent, W / 2, y, W - 16 * mm);
+      lines.forEach(function (l, i) { g.fillText(l, W / 2, y + i * 8.6 * mm); });
+      y += (lines.length - 1) * 8.6 * mm + 6.5 * mm;
+      g.fillStyle = "#5b706e"; g.font = (2.9 * mm) + "px " + body;
+      g.fillText("Guida per gli ospiti · Guest guide", W / 2, y); y += 4 * mm;
+      g.fillText("Gastengids · Gästeguide", W / 2, y); y += 3.5 * mm;
+      var qs = 47 * mm; drawQr(g, makeQr(guideUrl($("slug").value.trim())), W / 2 - qs / 2, y, qs); y += qs + 5.5 * mm;
+      g.fillStyle = "#0f6b6b"; g.font = "700 " + (3.6 * mm) + "px " + body; g.fillText("Inquadra · Scan · Scannen", W / 2, y); y += 4.6 * mm;
+      g.fillStyle = "#14302f"; g.font = (2.7 * mm) + "px " + mono; g.fillText($("url").textContent, W / 2, y);
+      // voet: rond logo + naam
+      var fy = H - 5 * mm - 5 * mm;
+      g.font = "700 " + (2.3 * mm) + "px " + body; g.fillStyle = "#5b706e";
+      var label = "SARDEGNA AUTENTICA", tw = g.measureText(label).width + 0.3 * mm * (label.length - 1), total = 5 * mm + 1.6 * mm + tw, fx = W / 2 - total / 2;
+      if (imgs[1]) g.drawImage(imgs[1], fx, fy, 5 * mm, 5 * mm);
+      letter(g, label, fx + 6.6 * mm + tw / 2, fy + 3.6 * mm, 0.3 * mm);
+      if (!$("wifiBox").hidden) {
+        var wy = fy - 3 * mm - 20 * mm;
+        g.strokeStyle = "#d6e0de"; g.lineWidth = 2; g.beginPath(); g.moveTo(8 * mm, wy - 3.5 * mm); g.lineTo(W - 8 * mm, wy - 3.5 * mm); g.stroke();
+        drawQr(g, makeQr(wifiPayload(home.wifi)), 8 * mm, wy, 20 * mm);
+        g.textAlign = "left"; var tx = 32 * mm;
+        g.fillStyle = "#14302f"; g.font = "700 " + (3.2 * mm) + "px " + body; g.fillText("Wi-Fi", tx, wy + 4 * mm);
+        g.font = (2.9 * mm) + "px " + mono; g.fillText(home.wifi.netwerk, tx, wy + 8.5 * mm); g.fillText(home.wifi.wachtwoord || "", tx, wy + 12.5 * mm);
+        g.font = (2.9 * mm) + "px " + body; g.fillText("Scansiona per connetterti · Scan to connect", tx, wy + 17 * mm);
+      }
+      var a = document.createElement("a");
+      a.href = cv.toDataURL("image/png");
+      a.download = "qr-" + ($("slug").value.trim() || "gids") + ".png";
+      document.body.appendChild(a); a.click(); a.remove();
     });
-    y += s + 6 * mm;
-    g.fillStyle = "#5b706e"; g.font = "700 " + (2.7 * mm) + "px " + body; letter(g, "SARDEGNA AUTENTICA", W / 2, y, 0.5 * mm);
-    y += 10 * mm;
-    g.fillStyle = "#14302f"; g.font = (7.8 * mm) + "px " + display;
-    var lines = wrap(g, $("homeName").textContent, W / 2, y, W - 16 * mm);
-    lines.forEach(function (l, i) { g.fillText(l, W / 2, y + i * 8.6 * mm); });
-    y = y + (lines.length - 1) * 8.6 * mm + 7 * mm;
-    g.fillStyle = "#5b706e"; g.font = (2.9 * mm) + "px " + body;
-    g.fillText("Guida per gli ospiti · Guest guide", W / 2, y); y += 4 * mm;
-    g.fillText("Gastengids · Gästeguide", W / 2, y); y += 4 * mm;
-    var qs = 52 * mm; drawQr(g, makeQr(guideUrl($("slug").value.trim())), W / 2 - qs / 2, y, qs); y += qs + 6 * mm;
-    g.fillStyle = "#0f6b6b"; g.font = "700 " + (3.6 * mm) + "px " + body; g.fillText("Inquadra · Scan · Scannen", W / 2, y); y += 4.6 * mm;
-    g.fillStyle = "#14302f"; g.font = (2.7 * mm) + "px " + mono; g.fillText($("url").textContent, W / 2, y);
-    if (!$("wifiBox").hidden) {
-      var wy = H - 7 * mm - 20 * mm;
-      g.strokeStyle = "#d6e0de"; g.lineWidth = 2; g.beginPath(); g.moveTo(8 * mm, wy - 3.5 * mm); g.lineTo(W - 8 * mm, wy - 3.5 * mm); g.stroke();
-      drawQr(g, makeQr(wifiPayload(home.wifi)), 8 * mm, wy, 20 * mm);
-      g.textAlign = "left"; var tx = 32 * mm;
-      g.fillStyle = "#14302f"; g.font = "700 " + (3.2 * mm) + "px " + body; g.fillText("Wi-Fi", tx, wy + 4 * mm);
-      g.font = (2.9 * mm) + "px " + mono; g.fillText(home.wifi.netwerk, tx, wy + 8.5 * mm); g.fillText(home.wifi.wachtwoord || "", tx, wy + 12.5 * mm);
-      g.font = (2.9 * mm) + "px " + body; g.fillText("Scansiona per connetterti · Scan to connect", tx, wy + 17 * mm);
-    }
-    var a = document.createElement("a");
-    a.href = cv.toDataURL("image/png");
-    a.download = "qr-" + ($("slug").value.trim() || "gids") + ".png";
-    document.body.appendChild(a); a.click(); a.remove();
   }
   function drawQr(g, q, x, y, size) {
     var n = q.getModuleCount(), m = 2, cell = size / (n + m * 2);
     g.fillStyle = "#fff"; g.fillRect(x, y, size, size); g.fillStyle = "#14302f";
     for (var r = 0; r < n; r++) for (var c = 0; c < n; c++) if (q.isDark(r, c)) g.fillRect(Math.floor(x + (c + m) * cell), Math.floor(y + (r + m) * cell), Math.ceil(cell), Math.ceil(cell));
   }
-  function roundRect(g, x, y, w, h, r) { g.beginPath(); g.moveTo(x + r, y); g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r); g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath(); }
   function letter(g, t, cx, y, sp) { var w = g.measureText(t).width + sp * (t.length - 1), x = cx - w / 2; g.textAlign = "left"; for (var i = 0; i < t.length; i++) { g.fillText(t[i], x, y); x += g.measureText(t[i]).width + sp; } g.textAlign = "center"; }
   function wrap(g, t, cx, y, maxW) { var words = String(t).split(" "), lines = [], cur = ""; words.forEach(function (w) { var test = cur ? cur + " " + w : w; if (g.measureText(test).width > maxW && cur) { lines.push(cur); cur = w; } else cur = test; }); if (cur) lines.push(cur); return lines; }
 
