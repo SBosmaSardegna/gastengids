@@ -209,3 +209,7 @@ content:
           - { name: tekst, component: tekst, label: Omschrijving }
       - { name: apotheek, component: langtekst, label: "Uitleg apotheek / dokter" }
       - { name: afzender, component: tekst, label: "Tekst onderaan elke gids" }
+      - name: website
+        component: tekst
+        label: "Link naar je website per taal"
+        description: "De knop onderaan elke gids gaat naar het adres in de taal van de gast. Een lege taal gebruikt het Engelse adres."

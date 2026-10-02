@@ -18,7 +18,7 @@
       kinds: { boot: "Boottochten", excursie: "Excursies", restaurant: "Restaurants", verhuur: "Verhuur", winkel: "Winkels & producten" },
       zones: { cagliari: "Cagliari en Poetto", "quartu-villasimius": "Quartu – Villasimius", "costa-rei": "Costa Rei – Muravera", "sud-ovest": "Pula – Chia – Teulada", sulcis: "Sulcis – Iglesiente", oristano: "Oristano – Sinis", binnenland: "Binnenland" },
       install: { title: "Altijd bij de hand", text: "Zet deze gids op je beginscherm. Hij werkt dan als een app, ook zonder internet.", btn: "Zet op beginscherm", ios: "Tik onderaan in Safari op het deelicoon (vierkantje met pijl) en kies 'Zet op beginscherm'.", other: "Open het menu van je browser en kies 'Toevoegen aan startscherm'.", close: "Sluiten" },
-      about: { title: "Gemaakt door Sardegna Autentica", text: "Lokale specialist in Zuid-Sardinië. Meer tips, routes of hulp bij het plannen van je reis?", link: "Bekijk sardegnaautentica.com" },
+      about: { title: "Gemaakt door Sardegna Autentica", text: "Lokale specialist in Zuid-Sardinië. Meer tips, routes of hulp bij het plannen van je reis?", link: "Bekijk de website" },
       call: "Bellen", whatsapp: "WhatsApp", website: "Website", extras: "Extra's voor je verblijf", extrasIntro: "Aanvragen gaat via WhatsApp bij je host.",
       request: "Aanvragen", requestMsg: "Hallo! Ik verblijf in {home} en wil graag aanvragen: {item}.",
       help: "Hulp & nood", host: "Je host", reachable: "Bereikbaar", notFound: "Deze gids bestaat niet.",
@@ -37,7 +37,7 @@
       kinds: { boot: "Boat trips", excursie: "Excursions", restaurant: "Restaurants", verhuur: "Rentals", winkel: "Shops & local products" },
       zones: { cagliari: "Cagliari and Poetto", "quartu-villasimius": "Quartu – Villasimius", "costa-rei": "Costa Rei – Muravera", "sud-ovest": "Pula – Chia – Teulada", sulcis: "Sulcis – Iglesiente", oristano: "Oristano – Sinis", binnenland: "Inland" },
       install: { title: "Always at hand", text: "Add this guide to your home screen. It then works like an app, even offline.", btn: "Add to home screen", ios: "In Safari, tap the share icon at the bottom (square with an arrow) and choose 'Add to Home Screen'.", other: "Open your browser menu and choose 'Add to home screen'.", close: "Close" },
-      about: { title: "Made by Sardegna Autentica", text: "Local specialists in southern Sardinia. Looking for more tips, routes or help planning your trip?", link: "Visit sardegnaautentica.com" },
+      about: { title: "Made by Sardegna Autentica", text: "Local specialists in southern Sardinia. Looking for more tips, routes or help planning your trip?", link: "Visit the website" },
       call: "Call", whatsapp: "WhatsApp", website: "Website", extras: "Extras for your stay", extrasIntro: "Requests go to your host on WhatsApp.",
       request: "Request", requestMsg: "Hello! I'm staying at {home} and would like to request: {item}.",
       help: "Help & emergency", host: "Your host", reachable: "Available", notFound: "This guide doesn't exist.",
@@ -56,7 +56,7 @@
       kinds: { boot: "Gite in barca", excursie: "Escursioni", restaurant: "Ristoranti", verhuur: "Noleggi", winkel: "Negozi e prodotti locali" },
       zones: { cagliari: "Cagliari e Poetto", "quartu-villasimius": "Quartu – Villasimius", "costa-rei": "Costa Rei – Muravera", "sud-ovest": "Pula – Chia – Teulada", sulcis: "Sulcis – Iglesiente", oristano: "Oristano – Sinis", binnenland: "Entroterra" },
       install: { title: "Sempre a portata di mano", text: "Aggiungete questa guida alla schermata Home. Funziona come un'app, anche senza internet.", btn: "Aggiungi alla schermata Home", ios: "In Safari toccate l'icona di condivisione in basso (quadrato con freccia) e scegliete 'Aggiungi alla schermata Home'.", other: "Aprite il menu del browser e scegliete 'Aggiungi alla schermata Home'.", close: "Chiudi" },
-      about: { title: "Realizzata da Sardegna Autentica", text: "Specialisti locali del sud Sardegna. Cercate altri consigli, itinerari o aiuto per organizzare il viaggio?", link: "Visitate sardegnaautentica.com" },
+      about: { title: "Realizzata da Sardegna Autentica", text: "Specialisti locali del sud Sardegna. Cercate altri consigli, itinerari o aiuto per organizzare il viaggio?", link: "Visitate il sito" },
       call: "Chiama", whatsapp: "WhatsApp", website: "Sito web", extras: "Extra per il soggiorno", extrasIntro: "Le richieste vanno al vostro host su WhatsApp.",
       request: "Richiedi", requestMsg: "Ciao! Soggiorno a {home} e vorrei richiedere: {item}.",
       help: "Aiuto ed emergenze", host: "Il vostro host", reachable: "Disponibile", notFound: "Questa guida non esiste.",
@@ -75,7 +75,7 @@
       kinds: { boot: "Bootsausflüge", excursie: "Ausflüge", restaurant: "Restaurants", verhuur: "Verleih", winkel: "Läden & lokale Produkte" },
       zones: { cagliari: "Cagliari und Poetto", "quartu-villasimius": "Quartu – Villasimius", "costa-rei": "Costa Rei – Muravera", "sud-ovest": "Pula – Chia – Teulada", sulcis: "Sulcis – Iglesiente", oristano: "Oristano – Sinis", binnenland: "Hinterland" },
       install: { title: "Immer griffbereit", text: "Legt diesen Guide auf euren Startbildschirm. Er funktioniert dann wie eine App, auch offline.", btn: "Zum Startbildschirm", ios: "Tippt in Safari unten auf das Teilen-Symbol (Quadrat mit Pfeil) und wählt 'Zum Home-Bildschirm'.", other: "Öffnet das Browsermenü und wählt 'Zum Startbildschirm hinzufügen'.", close: "Schließen" },
-      about: { title: "Erstellt von Sardegna Autentica", text: "Lokale Spezialisten für Südsardinien. Mehr Tipps, Routen oder Hilfe bei der Reiseplanung?", link: "sardegnaautentica.com besuchen" },
+      about: { title: "Erstellt von Sardegna Autentica", text: "Lokale Spezialisten für Südsardinien. Mehr Tipps, Routen oder Hilfe bei der Reiseplanung?", link: "Zur Website" },
       call: "Anrufen", whatsapp: "WhatsApp", website: "Website", extras: "Extras für euren Aufenthalt", extrasIntro: "Anfragen gehen per WhatsApp an euren Gastgeber.",
       request: "Anfragen", requestMsg: "Hallo! Ich wohne in {home} und möchte anfragen: {item}.",
       help: "Hilfe & Notfall", host: "Euer Gastgeber", reachable: "Erreichbar", notFound: "Diesen Guide gibt es nicht.",
@@ -374,7 +374,7 @@
       sections.map(function (s) { return '<section id="' + s[0] + '"><h2>' + esc(s[1]) + "</h2>" + s[2] + "</section>"; }).join("");
     $("#foot").innerHTML = '<div class="about"><img class="about-logo" src="media/sardegna-autentica-logo.png" alt="Sardegna Autentica">' +
       "<h3>" + esc(u.about.title) + "</h3><p>" + esc(u.about.text) + "</p>" +
-      '<a href="https://sardegnaautentica.com" target="_blank" rel="noopener">' + esc(u.about.link) + "</a></div>";
+      '<a href="' + esc(safeUrl(tx(g.website)) || "https://www.sardinieautentica.nl/en/") + '" target="_blank" rel="noopener">' + esc(u.about.link) + "</a></div>";
   }
 
   document.addEventListener("click", function (e) {

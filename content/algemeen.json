@@ -38,11 +38,51 @@
     "de": "Für einige Strände muss man in der Saison vorab reservieren, manchmal gegen eine kleine Gebühr. Regeln und Preise ändern sich jedes Jahr: Prüft vorher die Website der Gemeinde."
   },
   "gerechten": [
-    { "naam": "Fregola con arselle", "tekst": { "nl": "Kleine geroosterde pasta met venusschelpen", "en": "Small toasted pasta with clams", "it": "Pasta tostata con arselle", "de": "Kleine geröstete Pasta mit Venusmuscheln" } },
-    { "naam": "Culurgiones", "tekst": { "nl": "Gevulde pasta met aardappel, pecorino en munt", "en": "Filled pasta with potato, pecorino and mint", "it": "Pasta ripiena di patate, pecorino e menta", "de": "Gefüllte Pasta mit Kartoffel, Pecorino und Minze" } },
-    { "naam": "Malloreddus", "tekst": { "nl": "Kleine Sardijnse gnocchi, vaak met worstsaus", "en": "Small Sardinian gnocchi, often with sausage sauce", "it": "Gnocchetti sardi, spesso alla campidanese", "de": "Kleine sardische Gnocchi, oft mit Wurstsoße" } },
-    { "naam": "Bottarga", "tekst": { "nl": "Gedroogde mulkuit, geraspt over pasta", "en": "Dried mullet roe, grated over pasta", "it": "Uova di muggine essiccate, grattugiate sulla pasta", "de": "Getrockneter Meeräschenrogen, über Pasta gerieben" } },
-    { "naam": "Seadas", "tekst": { "nl": "Gefrituurd deeg met kaas en honing als dessert", "en": "Fried pastry with cheese and honey, for dessert", "it": "Sfoglia fritta con formaggio e miele", "de": "Frittiertes Teigtäschchen mit Käse und Honig als Dessert" } }
+    {
+      "naam": "Fregola con arselle",
+      "tekst": {
+        "nl": "Kleine geroosterde pasta met venusschelpen",
+        "en": "Small toasted pasta with clams",
+        "it": "Pasta tostata con arselle",
+        "de": "Kleine geröstete Pasta mit Venusmuscheln"
+      }
+    },
+    {
+      "naam": "Culurgiones",
+      "tekst": {
+        "nl": "Gevulde pasta met aardappel, pecorino en munt",
+        "en": "Filled pasta with potato, pecorino and mint",
+        "it": "Pasta ripiena di patate, pecorino e menta",
+        "de": "Gefüllte Pasta mit Kartoffel, Pecorino und Minze"
+      }
+    },
+    {
+      "naam": "Malloreddus",
+      "tekst": {
+        "nl": "Kleine Sardijnse gnocchi, vaak met worstsaus",
+        "en": "Small Sardinian gnocchi, often with sausage sauce",
+        "it": "Gnocchetti sardi, spesso alla campidanese",
+        "de": "Kleine sardische Gnocchi, oft mit Wurstsoße"
+      }
+    },
+    {
+      "naam": "Bottarga",
+      "tekst": {
+        "nl": "Gedroogde mulkuit, geraspt over pasta",
+        "en": "Dried mullet roe, grated over pasta",
+        "it": "Uova di muggine essiccate, grattugiate sulla pasta",
+        "de": "Getrockneter Meeräschenrogen, über Pasta gerieben"
+      }
+    },
+    {
+      "naam": "Seadas",
+      "tekst": {
+        "nl": "Gefrituurd deeg met kaas en honing als dessert",
+        "en": "Fried pastry with cheese and honey, for dessert",
+        "it": "Sfoglia fritta con formaggio e miele",
+        "de": "Frittiertes Teigtäschchen mit Käse und Honig als Dessert"
+      }
+    }
   ],
   "eten_tip": {
     "nl": "In de zomer gaan restaurants pas rond 20:00 open voor het diner. Reserveer op vrijdag en zaterdag.",
@@ -51,10 +91,42 @@
     "de": "Im Sommer öffnen Restaurants zum Abendessen erst gegen 20:00 Uhr. Reserviert freitags und samstags."
   },
   "nood": [
-    { "nummer": "112", "tekst": { "nl": "Alle noodgevallen", "en": "All emergencies", "it": "Tutte le emergenze", "de": "Alle Notfälle" } },
-    { "nummer": "118", "tekst": { "nl": "Ambulance", "en": "Ambulance", "it": "Ambulanza", "de": "Rettungsdienst" } },
-    { "nummer": "1530", "tekst": { "nl": "Kustwacht (op zee)", "en": "Coast guard (at sea)", "it": "Guardia costiera (in mare)", "de": "Küstenwache (auf See)" } },
-    { "nummer": "115", "tekst": { "nl": "Brandweer", "en": "Fire brigade", "it": "Vigili del fuoco", "de": "Feuerwehr" } }
+    {
+      "nummer": "112",
+      "tekst": {
+        "nl": "Alle noodgevallen",
+        "en": "All emergencies",
+        "it": "Tutte le emergenze",
+        "de": "Alle Notfälle"
+      }
+    },
+    {
+      "nummer": "118",
+      "tekst": {
+        "nl": "Ambulance",
+        "en": "Ambulance",
+        "it": "Ambulanza",
+        "de": "Rettungsdienst"
+      }
+    },
+    {
+      "nummer": "1530",
+      "tekst": {
+        "nl": "Kustwacht (op zee)",
+        "en": "Coast guard (at sea)",
+        "it": "Guardia costiera (in mare)",
+        "de": "Küstenwache (auf See)"
+      }
+    },
+    {
+      "nummer": "115",
+      "tekst": {
+        "nl": "Brandweer",
+        "en": "Fire brigade",
+        "it": "Vigili del fuoco",
+        "de": "Feuerwehr"
+      }
+    }
   ],
   "apotheek": {
     "nl": "Apotheek met nacht- of weekenddienst: op de deur van elke apotheek staat welke 'farmacia di turno' open is.",
@@ -67,5 +139,11 @@
     "en": "Guest guide by Sardegna Autentica",
     "it": "Guida per gli ospiti di Sardegna Autentica",
     "de": "Gästeguide von Sardegna Autentica"
+  },
+  "website": {
+    "nl": "https://www.sardinieautentica.nl/",
+    "en": "https://www.sardinieautentica.nl/en/",
+    "it": "https://www.sardinieautentica.nl/it/",
+    "de": ""
   }
 }
