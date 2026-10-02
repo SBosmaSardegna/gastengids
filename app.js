@@ -113,7 +113,7 @@
 
   function getSlug() {
     var p = new URLSearchParams(location.search);
-    var s = p.get("w") || "";
+    var s = p.get("w") || window.GIDS_SLUG || "";
     return s.toLowerCase().replace(/[^a-z0-9-]/g, "");
   }
 
