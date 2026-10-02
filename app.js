@@ -17,6 +17,7 @@
       food: "Eten & drinken", partners: "Uitjes & adressen", partnerLabel: "Aanbevolen partner",
       kinds: { boot: "Boottochten", excursie: "Excursies", restaurant: "Restaurants", verhuur: "Verhuur", winkel: "Winkels & producten" },
       zones: { cagliari: "Cagliari en Poetto", "quartu-villasimius": "Quartu – Villasimius", "costa-rei": "Costa Rei – Muravera", "sud-ovest": "Pula – Chia – Teulada", sulcis: "Sulcis – Iglesiente", oristano: "Oristano – Sinis", binnenland: "Binnenland" },
+      install: { title: "Altijd bij de hand", text: "Zet deze gids op je beginscherm. Hij werkt dan als een app, ook zonder internet.", btn: "Zet op beginscherm", ios: "Tik onderaan in Safari op het deelicoon (vierkantje met pijl) en kies 'Zet op beginscherm'.", other: "Open het menu van je browser en kies 'Toevoegen aan startscherm'.", close: "Sluiten" },
       call: "Bellen", whatsapp: "WhatsApp", website: "Website", extras: "Extra's voor je verblijf", extrasIntro: "Aanvragen gaat via WhatsApp bij je host.",
       request: "Aanvragen", requestMsg: "Hallo! Ik verblijf in {home} en wil graag aanvragen: {item}.",
       help: "Hulp & nood", host: "Je host", reachable: "Bereikbaar", notFound: "Deze gids bestaat niet.",
@@ -34,6 +35,7 @@
       food: "Food & drink", partners: "Things to do & places", partnerLabel: "Recommended partner",
       kinds: { boot: "Boat trips", excursie: "Excursions", restaurant: "Restaurants", verhuur: "Rentals", winkel: "Shops & local products" },
       zones: { cagliari: "Cagliari and Poetto", "quartu-villasimius": "Quartu – Villasimius", "costa-rei": "Costa Rei – Muravera", "sud-ovest": "Pula – Chia – Teulada", sulcis: "Sulcis – Iglesiente", oristano: "Oristano – Sinis", binnenland: "Inland" },
+      install: { title: "Always at hand", text: "Add this guide to your home screen. It then works like an app, even offline.", btn: "Add to home screen", ios: "In Safari, tap the share icon at the bottom (square with an arrow) and choose 'Add to Home Screen'.", other: "Open your browser menu and choose 'Add to home screen'.", close: "Close" },
       call: "Call", whatsapp: "WhatsApp", website: "Website", extras: "Extras for your stay", extrasIntro: "Requests go to your host on WhatsApp.",
       request: "Request", requestMsg: "Hello! I'm staying at {home} and would like to request: {item}.",
       help: "Help & emergency", host: "Your host", reachable: "Available", notFound: "This guide doesn't exist.",
@@ -51,6 +53,7 @@
       food: "Mangiare e bere", partners: "Cosa fare e indirizzi", partnerLabel: "Partner consigliato",
       kinds: { boot: "Gite in barca", excursie: "Escursioni", restaurant: "Ristoranti", verhuur: "Noleggi", winkel: "Negozi e prodotti locali" },
       zones: { cagliari: "Cagliari e Poetto", "quartu-villasimius": "Quartu – Villasimius", "costa-rei": "Costa Rei – Muravera", "sud-ovest": "Pula – Chia – Teulada", sulcis: "Sulcis – Iglesiente", oristano: "Oristano – Sinis", binnenland: "Entroterra" },
+      install: { title: "Sempre a portata di mano", text: "Aggiungete questa guida alla schermata Home. Funziona come un'app, anche senza internet.", btn: "Aggiungi alla schermata Home", ios: "In Safari toccate l'icona di condivisione in basso (quadrato con freccia) e scegliete 'Aggiungi alla schermata Home'.", other: "Aprite il menu del browser e scegliete 'Aggiungi alla schermata Home'.", close: "Chiudi" },
       call: "Chiama", whatsapp: "WhatsApp", website: "Sito web", extras: "Extra per il soggiorno", extrasIntro: "Le richieste vanno al vostro host su WhatsApp.",
       request: "Richiedi", requestMsg: "Ciao! Soggiorno a {home} e vorrei richiedere: {item}.",
       help: "Aiuto ed emergenze", host: "Il vostro host", reachable: "Disponibile", notFound: "Questa guida non esiste.",
@@ -68,6 +71,7 @@
       food: "Essen & Trinken", partners: "Ausflüge & Adressen", partnerLabel: "Empfohlener Partner",
       kinds: { boot: "Bootsausflüge", excursie: "Ausflüge", restaurant: "Restaurants", verhuur: "Verleih", winkel: "Läden & lokale Produkte" },
       zones: { cagliari: "Cagliari und Poetto", "quartu-villasimius": "Quartu – Villasimius", "costa-rei": "Costa Rei – Muravera", "sud-ovest": "Pula – Chia – Teulada", sulcis: "Sulcis – Iglesiente", oristano: "Oristano – Sinis", binnenland: "Hinterland" },
+      install: { title: "Immer griffbereit", text: "Legt diesen Guide auf euren Startbildschirm. Er funktioniert dann wie eine App, auch offline.", btn: "Zum Startbildschirm", ios: "Tippt in Safari unten auf das Teilen-Symbol (Quadrat mit Pfeil) und wählt 'Zum Home-Bildschirm'.", other: "Öffnet das Browsermenü und wählt 'Zum Startbildschirm hinzufügen'.", close: "Schließen" },
       call: "Anrufen", whatsapp: "WhatsApp", website: "Website", extras: "Extras für euren Aufenthalt", extrasIntro: "Anfragen gehen per WhatsApp an euren Gastgeber.",
       request: "Anfragen", requestMsg: "Hallo! Ich wohne in {home} und möchte anfragen: {item}.",
       help: "Hilfe & Notfall", host: "Euer Gastgeber", reachable: "Erreichbar", notFound: "Diesen Guide gibt es nicht.",
@@ -77,6 +81,34 @@
   };
 
   var state = { lang: "en", wind: null, home: null, beaches: [], partners: [], general: {} };
+  var installEvent = null;
+  function isStandalone() {
+    return (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) || window.navigator.standalone === true;
+  }
+  function isIos() {
+    return /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  }
+  function installDismissed() {
+    try { return localStorage.getItem("sa-install-closed") === "1"; } catch (e) { return false; }
+  }
+  function installHtml() {
+    if (isStandalone() || installDismissed()) return "";
+    var i = UI[state.lang].install;
+    var action = installEvent
+      ? '<button type="button" class="btn" id="install-btn" data-install="1">' + esc(i.btn) + "</button>"
+      : '<p class="note">' + esc(isIos() ? i.ios : i.other) + "</p>";
+    return '<div class="install" id="install"><div class="install-body"><h3>' + esc(i.title) + "</h3><p>" + esc(i.text) + "</p>" + action + "</div>" +
+      '<button type="button" class="install-close" id="install-close" data-install-close="1" aria-label="' + esc(i.close) + '">×</button></div>';
+  }
+  window.addEventListener("beforeinstallprompt", function (e) {
+    e.preventDefault();
+    installEvent = e;
+    if (state.home) render();
+  });
+  window.addEventListener("appinstalled", function () {
+    installEvent = null;
+    var el = document.getElementById("install"); if (el) el.remove();
+  });
   var $ = function (s) { return document.querySelector(s); };
 
   function esc(s) {
@@ -331,6 +363,7 @@
     $("#nav").innerHTML = sections.map(function (s) { return '<a href="#' + s[0] + '">' + esc(u.nav[s[0]] || s[1]) + "</a>"; }).join("");
     $("#main").innerHTML = (img ? '<img class="hero" src="' + esc(img) + '" alt="">' : "") +
       (state.offline ? '<p class="note">' + esc(u.offline) + "</p>" : "") +
+      installHtml() +
       sections.map(function (s) { return '<section id="' + s[0] + '"><h2>' + esc(s[1]) + "</h2>" + s[2] + "</section>"; }).join("");
     $("#foot").innerHTML = "<span>" + esc(tx(g.afzender) || "Sardegna Autentica") + "</span>";
   }
@@ -351,6 +384,16 @@
       state.wind = state.wind === k ? null : k;
       render();
       var wb = document.getElementById("wind-" + k); if (wb) wb.focus();
+      return;
+    }
+    if (t.closest && t.closest("[data-install-close]")) {
+      try { localStorage.setItem("sa-install-closed", "1"); } catch (err) {}
+      var box = document.getElementById("install"); if (box) box.remove();
+      return;
+    }
+    if (t.closest && t.closest("[data-install]") && installEvent) {
+      installEvent.prompt();
+      installEvent.userChoice.then(function () { installEvent = null; render(); }, function () {});
       return;
     }
     var c = t.closest && t.closest("[data-copy]");
