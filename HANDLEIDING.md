@@ -42,7 +42,7 @@ Verwijder het bestand `CNAME` in de repository niet, want daarmee onthoudt GitHu
 
 ## Een nieuwe verhuurder toevoegen (ongeveer 45 minuten)
 
-1. Laat de verhuurder het intakeformulier invullen (zie `docs/intake-domande.md`, in het Italiaans). Zet die vragen in een Google Formulier.
+1. Laat de verhuurder het intakeformulier invullen (zie `docs/intake-domande.md`, in het Italiaans). Maak het Google Formulier automatisch met `docs/maak-intakeformulier.gs` (plakken in script.google.com en uitvoeren).
 2. Open Pages CMS → **Woningen** → **Add an entry**.
 3. Vul in:
    - **Webadres:** kleine letters en streepjes, bijv. `villa-sole-pula`. Wijzig dit niet meer zodra de QR-code gedeeld is.
