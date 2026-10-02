@@ -75,7 +75,12 @@ ul.plain{margin:0;padding-left:20px;display:grid;gap:6px}
 .sos b{display:block;font-family:var(--mono);font-size:22px;color:var(--warn)}
 .sos span{font-size:13px;color:var(--muted)}
 .empty{padding-block:60px;display:grid;gap:10px}
-footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);display:flex;gap:10px;align-items:center}
+footer{margin-top:40px;font-size:14px;color:var(--muted)}
+.about{display:grid;gap:8px;justify-items:center;text-align:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px 18px}
+.about-logo{width:200px;max-width:70%;height:auto}
+.about h3{color:var(--ink)}
+.about p{max-width:40ch}
+.about a{font-weight:600}
 .sa-mark{width:32px;height:32px;flex:none}
 .host-logo{max-height:64px;max-width:220px;width:auto;object-fit:contain;object-position:left}
 button:focus-visible,a:focus-visible{outline:2px solid var(--saffron);outline-offset:2px}
