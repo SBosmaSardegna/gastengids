@@ -6,7 +6,7 @@ Versturen zodra de Partita IVA rond is. Vervang `[link modulo]` door de link naa
 
 Buongiorno, sono Sam di Sardegna Autentica. Sono olandese e vivo in Sardegna con la mia famiglia.
 
-Creo guide digitali per case vacanza: un unico link con tutto quello che serve ai vostri ospiti. Check-in, wifi, regole della casa, spiagge consigliate in base al vento del giorno, ristoranti, escursioni e numeri utili, in italiano, inglese, olandese e tedesco.
+Creo guide digitali per case vacanza: un unico link con tutto quello che serve ai vostri ospiti. Check-in, wifi, regole della casa, spiagge consigliate in base al vento del giorno, ristoranti, escursioni e numeri utili, in italiano, inglese, francese, olandese e tedesco.
 
 Ecco un esempio: https://guide.sardegnaautentica.com/casa-marina
 
@@ -34,7 +34,7 @@ Sam – Sardegna Autentica
 
 Buongiorno, sono Sam di Sardegna Autentica. Sono olandese e vivo in Sardegna con la mia famiglia.
 
-Creo guide digitali per case vacanza nel sud Sardegna. Gli ospiti le usano ogni giorno durante il soggiorno per scegliere spiagge, ristoranti ed escursioni, in quattro lingue.
+Creo guide digitali per case vacanza nel sud Sardegna. Gli ospiti le usano ogni giorno durante il soggiorno per scegliere spiagge, ristoranti ed escursioni, in cinque lingue.
 
 Ecco un esempio: https://guide.sardegnaautentica.com/casa-marina
 

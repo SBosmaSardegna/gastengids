@@ -4,7 +4,7 @@
 (function () {
   "use strict";
 
-  var LANGS = ["en", "it", "nl", "de"];
+  var LANGS = ["en", "it", "fr", "nl", "de"];
   var UI = {
     nl: {
       nav: { aankomst: "Aankomst", wifi: "Wifi", regels: "Huisregels", stranden: "Stranden", tips: "Tips", eten: "Eten", partners: "Uitjes", extras: "Extra's", nood: "Hulp" },
@@ -62,6 +62,25 @@
       help: "Aiuto ed emergenze", host: "Il vostro host", reachable: "Disponibile", notFound: "Questa guida non esiste.",
       notFoundHint: "Controllate il link o chiedete al vostro host quello giusto.", inactive: "Questa guida non è più attiva.",
       offline: "Siete offline. Questa è l'ultima versione salvata.", loadError: "Impossibile caricare la guida. Riprovate."
+    },
+    fr: {
+      nav: { aankomst: "Arrivée", wifi: "Wi-Fi", regels: "Règles", stranden: "Plages", tips: "Conseils", eten: "Manger", partners: "À faire", extras: "Extras", nood: "Aide" },
+      arrive: "Arrivée et départ", checkin: "Arrivée", checkout: "Départ", address: "Adresse", route: "Ouvrir l'itinéraire",
+      parking: "Stationnement", transport: "Comment venir", wifi: "Wi-Fi", network: "Réseau", password: "Mot de passe",
+      copy: "Copier", copied: "Copié", rules: "Règles de la maison", beaches: "Plages", windQ: "Quel vent souffle aujourd'hui ?",
+      windHint: "En Sardaigne, c'est le vent qui décide quelle plage est calme. Consultez une appli de vent le matin et choisissez ci-dessous.",
+      winds: { maestrale: "Mistral (NO)", ponente: "Ponente (O)", scirocco: "Sirocco (SE)", levante: "Levante (E)", calma: "Peu de vent" },
+      calm: "Calme avec ce vent", book: "Réservation obligatoire", bookLink: "Réserver", map: "Carte", tips: "Les conseils de votre hôte",
+      food: "Manger et boire", partners: "Activités et adresses", partnerLabel: "Partenaire recommandé",
+      kinds: { boot: "Excursions en bateau", excursie: "Excursions", restaurant: "Restaurants", verhuur: "Location", winkel: "Boutiques et produits locaux" },
+      zones: { cagliari: "Cagliari et Poetto", "quartu-villasimius": "Quartu – Villasimius", "costa-rei": "Costa Rei – Muravera", "sud-ovest": "Pula – Chia – Teulada", sulcis: "Sulcis – Iglesiente", oristano: "Oristano – Sinis", binnenland: "Arrière-pays" },
+      install: { title: "Toujours à portée de main", text: "Ajoutez ce guide à votre écran d'accueil. Il fonctionne alors comme une appli, même sans internet.", btn: "Ajouter à l'écran d'accueil", ios: "Dans Safari, touchez l'icône de partage en bas (carré avec une flèche) et choisissez « Sur l'écran d'accueil ».", other: "Ouvrez le menu de votre navigateur et choisissez « Ajouter à l'écran d'accueil ».", close: "Fermer" },
+      about: { title: "Réalisé par Sardegna Autentica", text: "Spécialistes locaux du sud de la Sardaigne. Envie de plus de conseils, d'itinéraires ou d'aide pour organiser votre voyage ?", link: "Voir le site" },
+      call: "Appeler", whatsapp: "WhatsApp", website: "Site web", extras: "Extras pour votre séjour", extrasIntro: "Les demandes passent par WhatsApp auprès de votre hôte.",
+      request: "Demander", requestMsg: "Bonjour ! Je séjourne à {home} et je souhaiterais demander : {item}.",
+      help: "Aide et urgences", host: "Votre hôte", reachable: "Joignable", notFound: "Ce guide n'existe pas.",
+      notFoundHint: "Vérifiez le lien ou demandez le bon lien à votre hôte.", inactive: "Ce guide n'est plus actif.",
+      offline: "Vous êtes hors ligne. Voici la dernière version enregistrée.", loadError: "Le guide n'a pas pu être chargé. Veuillez réessayer."
     },
     de: {
       nav: { aankomst: "Anreise", wifi: "WLAN", regels: "Hausregeln", stranden: "Strände", tips: "Tipps", eten: "Essen", partners: "Ausflüge", extras: "Extras", nood: "Hilfe" },
@@ -135,7 +154,7 @@
   function tx(obj) {
     if (!obj) return "";
     if (typeof obj === "string") return obj;
-    var order = [state.lang, "en", "it", "nl", "de"];
+    var order = [state.lang, "en", "it", "nl", "de", "fr"];
     for (var i = 0; i < order.length; i++) {
       var v = obj[order[i]];
       if (v && String(v).trim()) return String(v);

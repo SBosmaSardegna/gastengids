@@ -78,9 +78,9 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--saffron);outlin
   <div class="card" id="card">
     <img class="top-logo" id="topLogo" src="media/sardegna-autentica-logo.png" alt="Sardegna Autentica">
     <h2 class="home" id="homeName">…</h2>
-    <div class="langs">Guida per gli ospiti · Guest guide<br>Gastengids · Gästeguide</div>
+    <div class="langs">Guida per gli ospiti · Guest guide · Livret d'accueil<br>Gastengids · Gästeguide</div>
     <div id="qrMain"></div>
-    <div class="scan">Inquadra · Scan · Scannen</div>
+    <div class="scan">Inquadra · Scan · Scannez · Scannen</div>
     <div class="url" id="url"></div>
     <div class="wifi" id="wifiBox" hidden>
       <div id="qrWifi"></div>
@@ -182,10 +182,10 @@ button:focus-visible,input:focus-visible{outline:2px solid var(--saffron);outlin
       lines.forEach(function (l, i) { g.fillText(l, W / 2, y + i * 8.6 * mm); });
       y += (lines.length - 1) * 8.6 * mm + 6.5 * mm;
       g.fillStyle = "#5b706e"; g.font = (2.9 * mm) + "px " + body;
-      g.fillText("Guida per gli ospiti · Guest guide", W / 2, y); y += 4 * mm;
+      g.fillText("Guida per gli ospiti · Guest guide · Livret d'accueil", W / 2, y); y += 4 * mm;
       g.fillText("Gastengids · Gästeguide", W / 2, y); y += 3.5 * mm;
       var qs = 47 * mm; drawQr(g, makeQr(guideUrl($("slug").value.trim())), W / 2 - qs / 2, y, qs); y += qs + 5.5 * mm;
-      g.fillStyle = "#0f6b6b"; g.font = "700 " + (3.6 * mm) + "px " + body; g.fillText("Inquadra · Scan · Scannen", W / 2, y); y += 4.6 * mm;
+      g.fillStyle = "#0f6b6b"; g.font = "700 " + (3.6 * mm) + "px " + body; g.fillText("Inquadra · Scan · Scannez · Scannen", W / 2, y); y += 4.6 * mm;
       g.fillStyle = "#14302f"; g.font = (2.7 * mm) + "px " + mono; g.fillText($("url").textContent, W / 2, y);
       // voet: rond logo + naam
       var fy = H - 5 * mm - 5 * mm;

@@ -13,6 +13,7 @@ components:
     fields:
       - { name: en, label: English, type: string }
       - { name: it, label: Italiano, type: string }
+      - { name: fr, label: Français, type: string }
       - { name: nl, label: Nederlands, type: string }
       - { name: de, label: Deutsch, type: string }
   langtekst:
@@ -22,6 +23,7 @@ components:
     fields:
       - { name: en, label: English, type: text }
       - { name: it, label: Italiano, type: text }
+      - { name: fr, label: Français, type: text }
       - { name: nl, label: Nederlands, type: text }
       - { name: de, label: Deutsch, type: text }
   zones:
@@ -74,12 +76,13 @@ content:
       - name: talen
         label: Talen in deze gids
         type: select
-        default: [en, it, nl, de]
+        default: [en, it, fr, nl, de]
         options:
           multiple: true
           values:
             - { value: en, label: English }
             - { value: it, label: Italiano }
+            - { value: fr, label: Français }
             - { value: nl, label: Nederlands }
             - { value: de, label: Deutsch }
       - { name: welkom, component: langtekst, label: "Welkomsttekst" }

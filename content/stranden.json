@@ -9,6 +9,7 @@
         "nl": "Stadsstrand van 8 km met strandtenten. Bus PF of PQ vanaf het centrum.",
         "en": "8 km city beach with beach bars. Bus PF or PQ from the centre.",
         "it": "Spiaggia cittadina di 8 km con chioschi. Bus PF o PQ dal centro.",
+        "fr": "Plage urbaine de 8 km avec des buvettes. Bus PF ou PQ depuis le centre.",
         "de": "8 km langer Stadtstrand mit Strandbars. Bus PF oder PQ ab dem Zentrum."
       },
       "beschut": [
@@ -22,18 +23,21 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Bus",
           "en": "Bus",
           "it": "Bus",
+          "fr": "Bus",
           "de": "Bus"
         },
         {
           "nl": "Strandtenten",
           "en": "Beach bars",
           "it": "Chioschi",
+          "fr": "Buvettes",
           "de": "Strandbars"
         }
       ],
@@ -49,6 +53,7 @@
         "nl": "Kleine baai tussen de vuurtoren en de Sella del Diavolo, vlak bij de stad.",
         "en": "Small cove between the lighthouse and the Sella del Diavolo, close to town.",
         "it": "Piccola cala tra il faro e la Sella del Diavolo, vicino alla città.",
+        "fr": "Petite crique entre le phare et la Sella del Diavolo, près de la ville.",
         "de": "Kleine Bucht zwischen Leuchtturm und Sella del Diavolo, nah an der Stadt."
       },
       "beschut": [
@@ -62,18 +67,21 @@
           "nl": "Kiezels",
           "en": "Pebbles",
           "it": "Ciottoli",
+          "fr": "Galets",
           "de": "Kiesel"
         },
         {
           "nl": "Snorkelen",
           "en": "Snorkelling",
           "it": "Snorkeling",
+          "fr": "Snorkeling",
           "de": "Schnorcheln"
         },
         {
           "nl": "Bus",
           "en": "Bus",
           "it": "Bus",
+          "fr": "Bus",
           "de": "Bus"
         }
       ],
@@ -89,6 +97,7 @@
         "nl": "Kiezelbaai met helder blauwgroen water aan de kustweg naar Villasimius. In 2026 vrij toegankelijk; toegangsbeperking kan later komen.",
         "en": "Pebble cove with clear blue-green water on the coast road to Villasimius. Free access in 2026; restrictions may follow later.",
         "it": "Cala di ciottoli con acqua limpida sulla litoranea per Villasimius. Accesso libero nel 2026; il numero chiuso potrebbe arrivare in futuro.",
+        "fr": "Crique de galets à l'eau claire, sur la route côtière vers Villasimius. Accès libre en 2026 ; un accès limité pourrait arriver plus tard.",
         "de": "Kiesbucht mit klarem Wasser an der Küstenstraße nach Villasimius. 2026 frei zugänglich; Zugangsbeschränkungen können folgen."
       },
       "beschut": [
@@ -102,12 +111,14 @@
           "nl": "Kiezels",
           "en": "Pebbles",
           "it": "Ciottoli",
+          "fr": "Galets",
           "de": "Kiesel"
         },
         {
           "nl": "Snorkelen",
           "en": "Snorkelling",
           "it": "Snorkeling",
+          "fr": "Snorkeling",
           "de": "Schnorcheln"
         }
       ],
@@ -123,6 +134,7 @@
         "nl": "Kleine zandbaai tussen granietrotsen, kort lopen vanaf de weg.",
         "en": "Small sandy cove between granite rocks, a short walk from the road.",
         "it": "Piccola cala di sabbia tra rocce di granito, a breve distanza dalla strada.",
+        "fr": "Petite crique de sable entre des rochers de granit, à quelques pas de la route.",
         "de": "Kleine Sandbucht zwischen Granitfelsen, kurzer Fußweg von der Straße."
       },
       "beschut": [
@@ -136,18 +148,21 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Rotsen",
           "en": "Rocks",
           "it": "Scogli",
+          "fr": "Rochers",
           "de": "Felsen"
         },
         {
           "nl": "Stukje lopen",
           "en": "Short walk",
           "it": "Breve camminata",
+          "fr": "Courte marche",
           "de": "Kurzer Fußweg"
         }
       ],
@@ -163,6 +178,7 @@
         "nl": "Rustige baai met kiezels en een oude Spaanse toren.",
         "en": "Quiet cove with pebbles and an old Spanish tower.",
         "it": "Cala tranquilla di ciottoli con un'antica torre spagnola.",
+        "fr": "Crique tranquille de galets avec une ancienne tour espagnole.",
         "de": "Ruhige Kiesbucht mit altem spanischem Turm."
       },
       "beschut": [
@@ -176,12 +192,14 @@
           "nl": "Kiezels",
           "en": "Pebbles",
           "it": "Ciottoli",
+          "fr": "Galets",
           "de": "Kiesel"
         },
         {
           "nl": "Snorkelen",
           "en": "Snorkelling",
           "it": "Snorkeling",
+          "fr": "Snorkeling",
           "de": "Schnorcheln"
         }
       ],
@@ -197,6 +215,7 @@
         "nl": "Twee zandbaaien (Cann'e Sisa en Genn'e Mari) in een rustig vakantiedorp.",
         "en": "Two sandy coves (Cann'e Sisa and Genn'e Mari) in a quiet holiday village.",
         "it": "Due calette di sabbia (Cann'e Sisa e Genn'e Mari) in un tranquillo villaggio turistico.",
+        "fr": "Deux criques de sable (Cann'e Sisa et Genn'e Mari) dans un village de vacances tranquille.",
         "de": "Zwei Sandbuchten (Cann'e Sisa und Genn'e Mari) in einem ruhigen Feriendorf."
       },
       "beschut": [
@@ -210,12 +229,14 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Kinderen",
           "en": "Families",
           "it": "Famiglie",
+          "fr": "Familles",
           "de": "Familien"
         }
       ],
@@ -231,6 +252,7 @@
         "nl": "Brede zandbaai met ondiep water, fijn met kinderen.",
         "en": "Wide sandy bay with shallow water, good for children.",
         "it": "Ampia baia di sabbia con acqua bassa, adatta ai bambini.",
+        "fr": "Large baie de sable à l'eau peu profonde, idéale avec des enfants.",
         "de": "Breite Sandbucht mit flachem Wasser, gut für Kinder."
       },
       "beschut": [
@@ -244,18 +266,21 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Kinderen",
           "en": "Families",
           "it": "Famiglie",
+          "fr": "Familles",
           "de": "Familien"
         },
         {
           "nl": "Strandtenten",
           "en": "Beach bars",
           "it": "Chioschi",
+          "fr": "Buvettes",
           "de": "Strandbars"
         }
       ],
@@ -271,6 +296,7 @@
         "nl": "Lang zandstrand ten westen van Villasimius, vaak rustiger dan de bekende stranden.",
         "en": "Long sandy beach west of Villasimius, often quieter than the famous ones.",
         "it": "Lunga spiaggia di sabbia a ovest di Villasimius, spesso più tranquilla delle più note.",
+        "fr": "Longue plage de sable à l'ouest de Villasimius, souvent plus calme que les plus connues.",
         "de": "Langer Sandstrand westlich von Villasimius, oft ruhiger als die bekannten Strände."
       },
       "beschut": [
@@ -284,6 +310,7 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         }
       ],
@@ -299,6 +326,7 @@
         "nl": "Goudkleurig zand bij de jachthaven van Villasimius, goed om te zwemmen en snorkelen.",
         "en": "Golden sand by the Villasimius marina, good for swimming and snorkelling.",
         "it": "Sabbia dorata vicino al porto di Villasimius, ideale per nuotare e fare snorkeling.",
+        "fr": "Sable doré près du port de plaisance de Villasimius, idéal pour nager et faire du snorkeling.",
         "de": "Goldener Sand am Jachthafen von Villasimius, gut zum Schwimmen und Schnorcheln."
       },
       "beschut": [
@@ -312,18 +340,21 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Snorkelen",
           "en": "Snorkelling",
           "it": "Snorkeling",
+          "fr": "Snorkeling",
           "de": "Schnorcheln"
         },
         {
           "nl": "Kinderen",
           "en": "Families",
           "it": "Famiglie",
+          "fr": "Familles",
           "de": "Familien"
         }
       ],
@@ -339,6 +370,7 @@
         "nl": "Zand van witte kwartskorrels die op rijst lijken, vlak bij de haven.",
         "en": "Sand of white quartz grains that look like rice, close to the harbour.",
         "it": "Sabbia di granelli di quarzo bianco simili a chicchi di riso, vicino al porto.",
+        "fr": "Sable de grains de quartz blanc qui ressemblent à du riz, près du port.",
         "de": "Sand aus weißen Quarzkörnern, die wie Reis aussehen, nah am Hafen."
       },
       "beschut": [
@@ -352,12 +384,14 @@
           "nl": "Kwartskorrels",
           "en": "Quartz grains",
           "it": "Chicchi di quarzo",
+          "fr": "Grains de quartz",
           "de": "Quarzkörner"
         },
         {
           "nl": "Kinderen",
           "en": "Families",
           "it": "Famiglie",
+          "fr": "Familles",
           "de": "Familien"
         }
       ],
@@ -373,6 +407,7 @@
         "nl": "Lang wit zandstrand in Villasimius met veel voorzieningen. Geliefd bij gezinnen.",
         "en": "Long white sandy beach in Villasimius with plenty of facilities. Popular with families.",
         "it": "Lunga spiaggia bianca a Villasimius con molti servizi. Amata dalle famiglie.",
+        "fr": "Longue plage de sable blanc à Villasimius avec de nombreux services. Appréciée des familles.",
         "de": "Langer weißer Sandstrand in Villasimius mit vielen Einrichtungen. Beliebt bei Familien."
       },
       "beschut": [
@@ -386,18 +421,21 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Kinderen",
           "en": "Families",
           "it": "Famiglie",
+          "fr": "Familles",
           "de": "Familien"
         },
         {
           "nl": "Strandtenten",
           "en": "Beach bars",
           "it": "Chioschi",
+          "fr": "Buvettes",
           "de": "Strandbars"
         }
       ],
@@ -413,6 +451,7 @@
         "nl": "Wit zand tussen zee en de lagune van Notteri, waar vaak flamingo's staan. Open bij scirocco en levante.",
         "en": "White sand between the sea and the Notteri lagoon, often with flamingos. Exposed in scirocco and levante.",
         "it": "Sabbia bianca tra il mare e lo stagno di Notteri, spesso con i fenicotteri. Esposta a scirocco e levante.",
+        "fr": "Sable blanc entre la mer et l'étang de Notteri, souvent avec des flamants roses. Exposée au sirocco et au levante.",
         "de": "Weißer Sand zwischen Meer und der Lagune von Notteri, oft mit Flamingos. Offen bei Scirocco und Levante."
       },
       "beschut": [
@@ -426,18 +465,21 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Turquoise water",
           "en": "Turquoise water",
           "it": "Acqua turchese",
+          "fr": "Eau turquoise",
           "de": "Türkises Wasser"
         },
         {
           "nl": "Kinderen",
           "en": "Families",
           "it": "Famiglie",
+          "fr": "Familles",
           "de": "Familien"
         }
       ],
@@ -453,6 +495,7 @@
         "nl": "Aan de andere kant van de landtong van Porto Giunco. Een alternatief als het daar te onrustig is.",
         "en": "On the other side of the Porto Giunco isthmus. An alternative when Porto Giunco is too rough.",
         "it": "Sul lato opposto dell'istmo di Porto Giunco. Un'alternativa quando lì il mare è mosso.",
+        "fr": "De l'autre côté de l'isthme de Porto Giunco. Une alternative quand Porto Giunco est trop agité.",
         "de": "Auf der anderen Seite der Landenge von Porto Giunco. Eine Alternative, wenn es dort zu unruhig ist."
       },
       "beschut": [
@@ -465,6 +508,7 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         }
       ],
@@ -480,6 +524,7 @@
         "nl": "Smalle landtong met water aan twee kanten en roze granietrotsen. Parasols zijn er niet toegestaan.",
         "en": "Narrow headland with water on both sides and pink granite. Umbrellas are not allowed.",
         "it": "Lingua di terra con il mare su due lati e granito rosa. Ombrelloni non ammessi.",
+        "fr": "Étroite langue de terre avec la mer des deux côtés et du granit rose. Les parasols sont interdits.",
         "de": "Schmale Landzunge mit Wasser auf beiden Seiten und rosa Granit. Sonnenschirme sind nicht erlaubt."
       },
       "beschut": [
@@ -493,12 +538,14 @@
           "nl": "Turquoise water",
           "en": "Turquoise water",
           "it": "Acqua turchese",
+          "fr": "Eau turquoise",
           "de": "Türkises Wasser"
         },
         {
           "nl": "Snorkelen",
           "en": "Snorkelling",
           "it": "Snorkeling",
+          "fr": "Snorkeling",
           "de": "Schnorcheln"
         }
       ],
@@ -514,6 +561,7 @@
         "nl": "Kleine baaien tussen de rotsen, beschut bij maestrale.",
         "en": "Small coves between the rocks, sheltered in a mistral.",
         "it": "Piccole cale tra gli scogli, riparate dal maestrale.",
+        "fr": "Petites criques entre les rochers, abritées du mistral.",
         "de": "Kleine Buchten zwischen Felsen, geschützt bei Mistral."
       },
       "beschut": [
@@ -527,12 +575,14 @@
           "nl": "Rotsen",
           "en": "Rocks",
           "it": "Scogli",
+          "fr": "Rochers",
           "de": "Felsen"
         },
         {
           "nl": "Snorkelen",
           "en": "Snorkelling",
           "it": "Snorkeling",
+          "fr": "Snorkeling",
           "de": "Schnorcheln"
         }
       ],
@@ -549,6 +599,7 @@
         "nl": "Baai met licht zand en een pijnbos, bewaakt door een oude toren. Open bij scirocco en levante.",
         "en": "Cove with light sand and a pine wood, watched over by an old tower. Exposed in scirocco and levante.",
         "it": "Baia di sabbia chiara con pineta e un'antica torre. Esposta a scirocco e levante.",
+        "fr": "Crique de sable clair avec une pinède, gardée par une ancienne tour. Exposée au sirocco et au levante.",
         "de": "Bucht mit hellem Sand und Pinienwald, bewacht von einem alten Turm. Offen bei Scirocco und Levante."
       },
       "beschut": [
@@ -562,12 +613,14 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Kinderen",
           "en": "Families",
           "it": "Famiglie",
+          "fr": "Familles",
           "de": "Familien"
         }
       ],
@@ -583,6 +636,7 @@
         "nl": "Brede baai met fijn zand en pijnbomen. Redelijk beschut bij scirocco.",
         "en": "Wide bay with fine sand and pines. Fairly sheltered in a scirocco.",
         "it": "Ampia baia di sabbia fine e pini. Discretamente riparata dallo scirocco.",
+        "fr": "Large baie de sable fin bordée de pins. Assez abritée du sirocco.",
         "de": "Breite Bucht mit feinem Sand und Pinien. Recht geschützt bei Scirocco."
       },
       "beschut": [
@@ -597,12 +651,14 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Kinderen",
           "en": "Families",
           "it": "Famiglie",
+          "fr": "Familles",
           "de": "Familien"
         }
       ],
@@ -618,6 +674,7 @@
         "nl": "Kilometers wit zand aan de oostkust. Open bij scirocco en levante.",
         "en": "Miles of white sand on the east coast. Exposed in scirocco and levante.",
         "it": "Chilometri di sabbia bianca sulla costa est. Esposta a scirocco e levante.",
+        "fr": "Des kilomètres de sable blanc sur la côte est. Exposée au sirocco et au levante.",
         "de": "Kilometerlanger weißer Sand an der Ostküste. Offen bei Scirocco und Levante."
       },
       "beschut": [
@@ -631,18 +688,21 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Kinderen",
           "en": "Families",
           "it": "Famiglie",
+          "fr": "Familles",
           "de": "Familien"
         },
         {
           "nl": "Strandtenten",
           "en": "Beach bars",
           "it": "Chioschi",
+          "fr": "Buvettes",
           "de": "Strandbars"
         }
       ],
@@ -658,6 +718,7 @@
         "nl": "Zuidelijk deel van Costa Rei met rotsen en heel helder water. Redelijk beschut bij scirocco.",
         "en": "Southern end of Costa Rei with rocks and very clear water. Fairly sheltered in a scirocco.",
         "it": "Estremità sud di Costa Rei con scogli e acqua limpidissima. Discretamente riparata dallo scirocco.",
+        "fr": "Extrémité sud de Costa Rei, avec des rochers et une eau très claire. Assez abritée du sirocco.",
         "de": "Südliches Ende der Costa Rei mit Felsen und sehr klarem Wasser. Recht geschützt bei Scirocco."
       },
       "beschut": [
@@ -672,12 +733,14 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Snorkelen",
           "en": "Snorkelling",
           "it": "Snorkeling",
+          "fr": "Snorkeling",
           "de": "Schnorcheln"
         }
       ],
@@ -693,6 +756,7 @@
         "nl": "Kleine baai met rotsen en zand, ten noorden van Costa Rei.",
         "en": "Small cove with rocks and sand, north of Costa Rei.",
         "it": "Piccola cala di sabbia e scogli, a nord di Costa Rei.",
+        "fr": "Petite crique de sable et de rochers, au nord de Costa Rei.",
         "de": "Kleine Bucht mit Felsen und Sand, nördlich der Costa Rei."
       },
       "beschut": [
@@ -706,12 +770,14 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Rotsen",
           "en": "Rocks",
           "it": "Scogli",
+          "fr": "Rochers",
           "de": "Felsen"
         }
       ],
@@ -727,6 +793,7 @@
         "nl": "Lang, rustig zandstrand met duinen bij Muravera.",
         "en": "Long, quiet sandy beach with dunes near Muravera.",
         "it": "Lunga spiaggia tranquilla con dune vicino a Muravera.",
+        "fr": "Longue plage de sable tranquille avec des dunes, près de Muravera.",
         "de": "Langer, ruhiger Sandstrand mit Dünen bei Muravera."
       },
       "beschut": [
@@ -740,18 +807,21 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Duinen",
           "en": "Dunes",
           "it": "Dune",
+          "fr": "Dunes",
           "de": "Dünen"
         },
         {
           "nl": "Ongerept",
           "en": "Unspoilt",
           "it": "Selvaggia",
+          "fr": "Sauvage",
           "de": "Naturbelassen"
         }
       ],
@@ -767,6 +837,7 @@
         "nl": "Breed strand bij Muravera met een oude toren en een lagune erachter.",
         "en": "Wide beach near Muravera with an old tower and a lagoon behind it.",
         "it": "Ampia spiaggia vicino a Muravera con un'antica torre e uno stagno alle spalle.",
+        "fr": "Large plage près de Muravera avec une ancienne tour et un étang à l'arrière.",
         "de": "Breiter Strand bei Muravera mit altem Turm und einer Lagune dahinter."
       },
       "beschut": [
@@ -780,12 +851,14 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Kinderen",
           "en": "Families",
           "it": "Famiglie",
+          "fr": "Familles",
           "de": "Familien"
         }
       ],
@@ -801,6 +874,7 @@
         "nl": "Rustig strand naast de Romeinse ruïnes van Nora.",
         "en": "Quiet beach next to the Roman ruins of Nora.",
         "it": "Spiaggia tranquilla accanto all'area archeologica di Nora.",
+        "fr": "Plage tranquille à côté des ruines romaines de Nora.",
         "de": "Ruhiger Strand neben den römischen Ruinen von Nora."
       },
       "beschut": [
@@ -814,12 +888,14 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Kinderen",
           "en": "Families",
           "it": "Famiglie",
+          "fr": "Familles",
           "de": "Familien"
         }
       ],
@@ -835,6 +911,7 @@
         "nl": "Lange zandstrook met pijnbossen en veel resorts.",
         "en": "Long sandy stretch with pine woods and many resorts.",
         "it": "Lunga distesa di sabbia con pinete e molti resort.",
+        "fr": "Longue bande de sable avec des pinèdes et de nombreux complexes hôteliers.",
         "de": "Langer Sandstreifen mit Pinienwäldern und vielen Resorts."
       },
       "beschut": [
@@ -848,12 +925,14 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Kinderen",
           "en": "Families",
           "it": "Famiglie",
+          "fr": "Familles",
           "de": "Familien"
         }
       ],
@@ -869,6 +948,7 @@
         "nl": "Duinen, lagune en ondiep turquoise water. Mooi op een windstille dag; bij elke wind merk je het hier meteen.",
         "en": "Dunes, a lagoon and shallow turquoise water. Beautiful on a calm day; you feel any wind here straight away.",
         "it": "Dune, laguna e acqua bassa e turchese. Bellissima nelle giornate senza vento; qui si sente subito ogni brezza.",
+        "fr": "Dunes, lagune et eau turquoise peu profonde. Magnifique par temps calme ; ici, on sent tout de suite le moindre vent.",
         "de": "Dünen, Lagune und flaches türkises Wasser. Schön an windstillen Tagen; jeden Wind spürt man hier sofort."
       },
       "beschut": [],
@@ -879,18 +959,21 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Turquoise water",
           "en": "Turquoise water",
           "it": "Acqua turchese",
+          "fr": "Eau turquoise",
           "de": "Türkises Wasser"
         },
         {
           "nl": "Duinen",
           "en": "Dunes",
           "it": "Dune",
+          "fr": "Dunes",
           "de": "Dünen"
         }
       ],
@@ -906,6 +989,7 @@
         "nl": "Kleine baai tussen granietrotsen en jeneverbessen, bereikbaar via een pad.",
         "en": "Small cove between granite rocks and junipers, reached by a footpath.",
         "it": "Piccola cala tra rocce di granito e ginepri, raggiungibile a piedi.",
+        "fr": "Petite crique entre rochers de granit et genévriers, accessible par un sentier.",
         "de": "Kleine Bucht zwischen Granitfelsen und Wacholder, über einen Pfad erreichbar."
       },
       "beschut": [
@@ -918,18 +1002,21 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Stukje lopen",
           "en": "Short walk",
           "it": "Breve camminata",
+          "fr": "Courte marche",
           "de": "Kurzer Fußweg"
         },
         {
           "nl": "Snorkelen",
           "en": "Snorkelling",
           "it": "Snorkeling",
+          "fr": "Snorkeling",
           "de": "Schnorcheln"
         }
       ],
@@ -945,6 +1032,7 @@
         "nl": "Witte zandbaai met een eilandje voor de kust, beschut bij maestrale.",
         "en": "White sand cove with an islet offshore, sheltered in a mistral.",
         "it": "Cala di sabbia bianca con un isolotto di fronte, riparata dal maestrale.",
+        "fr": "Crique de sable blanc avec un îlot au large, abritée du mistral.",
         "de": "Weiße Sandbucht mit vorgelagerter Insel, geschützt bei Mistral."
       },
       "beschut": [
@@ -958,18 +1046,21 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Turquoise water",
           "en": "Turquoise water",
           "it": "Acqua turchese",
+          "fr": "Eau turquoise",
           "de": "Türkises Wasser"
         },
         {
           "nl": "Kinderen",
           "en": "Families",
           "it": "Famiglie",
+          "fr": "Familles",
           "de": "Familien"
         }
       ],
@@ -986,6 +1077,7 @@
         "nl": "Lange stranden met hoge witte duinen en pijnbomen. Ondiep water.",
         "en": "Long beaches with tall white dunes and pines. Shallow water.",
         "it": "Lunghe spiagge con alte dune bianche e pini. Acqua bassa.",
+        "fr": "Longues plages aux hautes dunes blanches et aux pins. Eau peu profonde.",
         "de": "Lange Strände mit hohen weißen Dünen und Pinien. Flaches Wasser."
       },
       "beschut": [
@@ -999,18 +1091,21 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Duinen",
           "en": "Dunes",
           "it": "Dune",
+          "fr": "Dunes",
           "de": "Dünen"
         },
         {
           "nl": "Kinderen",
           "en": "Families",
           "it": "Famiglie",
+          "fr": "Familles",
           "de": "Familien"
         }
       ],
@@ -1026,6 +1121,7 @@
         "nl": "Beschutte fjordachtige baai bij Buggerru, tussen oude mijngebouwen. Open bij maestrale.",
         "en": "Sheltered fjord-like cove near Buggerru among old mine buildings. Exposed in a mistral.",
         "it": "Cala riparata simile a un fiordo vicino a Buggerru, tra vecchi edifici minerari. Esposta al maestrale.",
+        "fr": "Crique abritée en forme de fjord près de Buggerru, entre d'anciens bâtiments miniers. Exposée au mistral.",
         "de": "Geschützte, fjordartige Bucht bei Buggerru zwischen alten Minengebäuden. Offen bei Mistral."
       },
       "beschut": [
@@ -1039,12 +1135,14 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Rotsen",
           "en": "Rocks",
           "it": "Scogli",
+          "fr": "Rochers",
           "de": "Felsen"
         }
       ],
@@ -1060,6 +1158,7 @@
         "nl": "Groot, wild strand met duinen aan de westkust. Golven bij maestrale.",
         "en": "Large wild beach with dunes on the west coast. Waves in a mistral.",
         "it": "Grande spiaggia selvaggia con dune sulla costa ovest. Onde con il maestrale.",
+        "fr": "Grande plage sauvage avec des dunes sur la côte ouest. Vagues par mistral.",
         "de": "Großer, wilder Strand mit Dünen an der Westküste. Wellen bei Mistral."
       },
       "beschut": [
@@ -1073,18 +1172,21 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Duinen",
           "en": "Dunes",
           "it": "Dune",
+          "fr": "Dunes",
           "de": "Dünen"
         },
         {
           "nl": "Golven",
           "en": "Waves",
           "it": "Onde",
+          "fr": "Vagues",
           "de": "Wellen"
         }
       ],
@@ -1100,6 +1202,7 @@
         "nl": "Kiezelstrand met uitzicht op de rots Pan di Zucchero en de mijn Porto Flavia.",
         "en": "Pebble beach facing the Pan di Zucchero rock and the Porto Flavia mine.",
         "it": "Spiaggia di ciottoli davanti al Pan di Zucchero e alla miniera di Porto Flavia.",
+        "fr": "Plage de galets face au rocher du Pan di Zucchero et à la mine de Porto Flavia.",
         "de": "Kiesstrand mit Blick auf den Felsen Pan di Zucchero und die Mine Porto Flavia."
       },
       "beschut": [
@@ -1113,12 +1216,14 @@
           "nl": "Kiezels",
           "en": "Pebbles",
           "it": "Ciottoli",
+          "fr": "Galets",
           "de": "Kiesel"
         },
         {
           "nl": "Snorkelen",
           "en": "Snorkelling",
           "it": "Snorkeling",
+          "fr": "Snorkeling",
           "de": "Schnorcheln"
         }
       ],
@@ -1134,6 +1239,7 @@
         "nl": "Lang zandstrand bij Gonnesa, populair bij surfers als het waait.",
         "en": "Long sandy beach near Gonnesa, popular with surfers when the wind blows.",
         "it": "Lunga spiaggia vicino a Gonnesa, amata dai surfisti quando c'è vento.",
+        "fr": "Longue plage de sable près de Gonnesa, prisée des surfeurs quand le vent souffle.",
         "de": "Langer Sandstrand bei Gonnesa, beliebt bei Surfern, wenn Wind weht."
       },
       "beschut": [
@@ -1147,12 +1253,14 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Golven",
           "en": "Waves",
           "it": "Onde",
+          "fr": "Vagues",
           "de": "Wellen"
         }
       ],
@@ -1168,6 +1276,7 @@
         "nl": "Strand van witte en roze kwartskorrels. Het is verboden korrels mee te nemen; er staan boetes op.",
         "en": "Beach of white and pink quartz grains. Taking grains away is forbidden and fined.",
         "it": "Spiaggia di chicchi di quarzo bianchi e rosa. È vietato portarli via: si rischiano multe.",
+        "fr": "Plage de grains de quartz blancs et roses. Il est interdit d'en emporter : amendes à la clé.",
         "de": "Strand aus weißen und rosa Quarzkörnern. Mitnehmen ist verboten und wird bestraft."
       },
       "beschut": [
@@ -1181,12 +1290,14 @@
           "nl": "Kwartskorrels",
           "en": "Quartz grains",
           "it": "Chicchi di quarzo",
+          "fr": "Grains de quartz",
           "de": "Quarzkörner"
         },
         {
           "nl": "Turquoise water",
           "en": "Turquoise water",
           "it": "Acqua turchese",
+          "fr": "Eau turquoise",
           "de": "Türkises Wasser"
         }
       ],
@@ -1202,6 +1313,7 @@
         "nl": "Kwartsstrand in het Sinis-gebied, rustiger dan Is Arutas.",
         "en": "Quartz beach in the Sinis area, quieter than Is Arutas.",
         "it": "Spiaggia di quarzo nel Sinis, più tranquilla di Is Arutas.",
+        "fr": "Plage de quartz dans la région du Sinis, plus tranquille qu'Is Arutas.",
         "de": "Quarzstrand im Sinis-Gebiet, ruhiger als Is Arutas."
       },
       "beschut": [
@@ -1215,12 +1327,14 @@
           "nl": "Kwartskorrels",
           "en": "Quartz grains",
           "it": "Chicchi di quarzo",
+          "fr": "Grains de quartz",
           "de": "Quarzkörner"
         },
         {
           "nl": "Ongerept",
           "en": "Unspoilt",
           "it": "Selvaggia",
+          "fr": "Sauvage",
           "de": "Naturbelassen"
         }
       ],
@@ -1236,6 +1350,7 @@
         "nl": "Strand naast de ruïnes van Tharros, met een Spaanse toren.",
         "en": "Beach next to the ruins of Tharros, with a Spanish tower.",
         "it": "Spiaggia accanto alle rovine di Tharros, con una torre spagnola.",
+        "fr": "Plage à côté des ruines de Tharros, avec une tour espagnole.",
         "de": "Strand neben den Ruinen von Tharros, mit spanischem Turm."
       },
       "beschut": [
@@ -1249,12 +1364,14 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Kinderen",
           "en": "Families",
           "it": "Famiglie",
+          "fr": "Familles",
           "de": "Familien"
         }
       ],
@@ -1270,6 +1387,7 @@
         "nl": "Zandstrand in een vissersdorp met een lagune vol flamingo's erachter.",
         "en": "Sandy beach in a fishing village with a flamingo lagoon behind it.",
         "it": "Spiaggia di sabbia in un borgo di pescatori con uno stagno di fenicotteri alle spalle.",
+        "fr": "Plage de sable dans un village de pêcheurs, avec un étang aux flamants roses à l'arrière.",
         "de": "Sandstrand in einem Fischerdorf mit einer Flamingo-Lagune dahinter."
       },
       "beschut": [
@@ -1282,12 +1400,14 @@
           "nl": "Zand",
           "en": "Sand",
           "it": "Sabbia",
+          "fr": "Sable",
           "de": "Sand"
         },
         {
           "nl": "Kinderen",
           "en": "Families",
           "it": "Famiglie",
+          "fr": "Familles",
           "de": "Familien"
         }
       ],
