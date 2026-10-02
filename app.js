@@ -16,6 +16,7 @@
       calm: "Rustig bij deze wind", book: "Reserveren", bookLink: "Reserveren", map: "Kaart", tips: "Tips van je host",
       food: "Eten & drinken", partners: "Uitjes & adressen", partnerLabel: "Aanbevolen partner",
       kinds: { boot: "Boottochten", excursie: "Excursies", restaurant: "Restaurants", verhuur: "Verhuur", winkel: "Winkels & producten" },
+      zones: { cagliari: "Cagliari en Poetto", "quartu-villasimius": "Quartu – Villasimius", "costa-rei": "Costa Rei – Muravera", "sud-ovest": "Pula – Chia – Teulada", sulcis: "Sulcis – Iglesiente", oristano: "Oristano – Sinis", binnenland: "Binnenland" },
       call: "Bellen", whatsapp: "WhatsApp", website: "Website", extras: "Extra's voor je verblijf", extrasIntro: "Aanvragen gaat via WhatsApp bij je host.",
       request: "Aanvragen", requestMsg: "Hallo! Ik verblijf in {home} en wil graag aanvragen: {item}.",
       help: "Hulp & nood", host: "Je host", reachable: "Bereikbaar", notFound: "Deze gids bestaat niet.",
@@ -32,6 +33,7 @@
       calm: "Calm in this wind", book: "Booking required", bookLink: "Book", map: "Map", tips: "Tips from your host",
       food: "Food & drink", partners: "Things to do & places", partnerLabel: "Recommended partner",
       kinds: { boot: "Boat trips", excursie: "Excursions", restaurant: "Restaurants", verhuur: "Rentals", winkel: "Shops & local products" },
+      zones: { cagliari: "Cagliari and Poetto", "quartu-villasimius": "Quartu – Villasimius", "costa-rei": "Costa Rei – Muravera", "sud-ovest": "Pula – Chia – Teulada", sulcis: "Sulcis – Iglesiente", oristano: "Oristano – Sinis", binnenland: "Inland" },
       call: "Call", whatsapp: "WhatsApp", website: "Website", extras: "Extras for your stay", extrasIntro: "Requests go to your host on WhatsApp.",
       request: "Request", requestMsg: "Hello! I'm staying at {home} and would like to request: {item}.",
       help: "Help & emergency", host: "Your host", reachable: "Available", notFound: "This guide doesn't exist.",
@@ -48,6 +50,7 @@
       calm: "Calma con questo vento", book: "Su prenotazione", bookLink: "Prenota", map: "Mappa", tips: "Consigli del vostro host",
       food: "Mangiare e bere", partners: "Cosa fare e indirizzi", partnerLabel: "Partner consigliato",
       kinds: { boot: "Gite in barca", excursie: "Escursioni", restaurant: "Ristoranti", verhuur: "Noleggi", winkel: "Negozi e prodotti locali" },
+      zones: { cagliari: "Cagliari e Poetto", "quartu-villasimius": "Quartu – Villasimius", "costa-rei": "Costa Rei – Muravera", "sud-ovest": "Pula – Chia – Teulada", sulcis: "Sulcis – Iglesiente", oristano: "Oristano – Sinis", binnenland: "Entroterra" },
       call: "Chiama", whatsapp: "WhatsApp", website: "Sito web", extras: "Extra per il soggiorno", extrasIntro: "Le richieste vanno al vostro host su WhatsApp.",
       request: "Richiedi", requestMsg: "Ciao! Soggiorno a {home} e vorrei richiedere: {item}.",
       help: "Aiuto ed emergenze", host: "Il vostro host", reachable: "Disponibile", notFound: "Questa guida non esiste.",
@@ -64,6 +67,7 @@
       calm: "Ruhig bei diesem Wind", book: "Reservierung nötig", bookLink: "Reservieren", map: "Karte", tips: "Tipps von eurem Gastgeber",
       food: "Essen & Trinken", partners: "Ausflüge & Adressen", partnerLabel: "Empfohlener Partner",
       kinds: { boot: "Bootsausflüge", excursie: "Ausflüge", restaurant: "Restaurants", verhuur: "Verleih", winkel: "Läden & lokale Produkte" },
+      zones: { cagliari: "Cagliari und Poetto", "quartu-villasimius": "Quartu – Villasimius", "costa-rei": "Costa Rei – Muravera", "sud-ovest": "Pula – Chia – Teulada", sulcis: "Sulcis – Iglesiente", oristano: "Oristano – Sinis", binnenland: "Hinterland" },
       call: "Anrufen", whatsapp: "WhatsApp", website: "Website", extras: "Extras für euren Aufenthalt", extrasIntro: "Anfragen gehen per WhatsApp an euren Gastgeber.",
       request: "Anfragen", requestMsg: "Hallo! Ich wohne in {home} und möchte anfragen: {item}.",
       help: "Hilfe & Notfall", host: "Euer Gastgeber", reachable: "Erreichbar", notFound: "Diesen Guide gibt es nicht.",
@@ -215,17 +219,27 @@
             if (list.indexOf(b) < 0 && arr(b.beschut).indexOf(state.wind) > -1) list.push(b);
           });
         }
-        list.sort(function (x, y) {
-          return (arr(y.beschut).indexOf(state.wind) > -1) - (arr(x.beschut).indexOf(state.wind) > -1);
+      }
+      var isCalm = function (b) { return state.wind && state.wind !== "calma" && arr(b.beschut).indexOf(state.wind) > -1; };
+      // Groeperen per regio: eerst de regio's van de woning (in hun volgorde), daarna overige regio's.
+      var zoneOrder = regions.slice();
+      list.forEach(function (b) { asList(b.regio).forEach(function (z) { if (zoneOrder.indexOf(z) < 0) zoneOrder.push(z); }); });
+      var groups = zoneOrder.map(function (z) {
+        var items = list.filter(function (b) {
+          var own = asList(b.regio).filter(function (r) { return regions.indexOf(r) > -1; });
+          var home = own.length ? own[0] : asList(b.regio)[0];
+          return home === z;
+        });
+        if (state.wind && state.wind !== "calma") items.sort(function (x, y) { return isCalm(y) - isCalm(x); });
+        return [z, items];
+      }).filter(function (gp) { return gp[1].length; });
+      if (state.wind && state.wind !== "calma") {
+        groups.sort(function (a, b) {
+          return (b[1].some(isCalm) ? 1 : 0) - (a[1].some(isCalm) ? 1 : 0);
         });
       }
-      var bh = '<div class="wind"><h3>' + esc(u.windQ) + '</h3><p class="note">' + esc(u.windHint) + "</p>" +
-        '<div class="wind-btns" role="group">' + winds.map(function (k) {
-          return '<button type="button" id="wind-' + k + '" data-wind="' + k + '" aria-pressed="' + (state.wind === k) + '">' + esc(u.winds[k]) + "</button>";
-        }).join("") + "</div>" +
-        (adv ? '<div class="wind-out" aria-live="polite"><p>' + esc(adv) + "</p></div>" : "") + "</div>" +
-        '<div class="cards">' + list.map(function (b) {
-          var calm = state.wind && state.wind !== "calma" && arr(b.beschut).indexOf(state.wind) > -1;
+      var card = function (b) {
+          var calm = isCalm(b);
           var rough = state.wind && state.wind !== "calma" && !calm;
           var tags = (calm ? '<span class="tag calm">' + esc(u.calm) + "</span>" : "") +
             (b.reserveren ? '<span class="tag book">' + esc(u.book) + "</span>" : "") +
@@ -237,7 +251,15 @@
             (tx(b.tekst) ? "<p>" + esc(tx(b.tekst)) + "</p>" : "") +
             (tags ? '<div class="tags">' + tags + "</div>" : "") +
             (links.length ? '<div class="links">' + links.join("") + "</div>" : "") + "</div>";
+      };
+      var bh = '<div class="wind"><h3>' + esc(u.windQ) + '</h3><p class="note">' + esc(u.windHint) + "</p>" +
+        '<div class="wind-btns" role="group">' + winds.map(function (k) {
+          return '<button type="button" id="wind-' + k + '" data-wind="' + k + '" aria-pressed="' + (state.wind === k) + '">' + esc(u.winds[k]) + "</button>";
         }).join("") + "</div>" +
+        (adv ? '<div class="wind-out" aria-live="polite"><p>' + esc(adv) + "</p></div>" : "") + "</div>" +
+        groups.map(function (gp) {
+          return '<p class="group-label">' + esc(u.zones[gp[0]] || gp[0]) + '</p><div class="cards">' + gp[1].map(card).join("") + "</div>";
+        }).join("") +
         (tx(g.reserveren_uitleg) ? '<p class="note pre">' + esc(tx(g.reserveren_uitleg)) + "</p>" : "");
       sections.push(["stranden", u.beaches, bh]);
     }

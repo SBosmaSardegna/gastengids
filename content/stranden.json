@@ -6,10 +6,10 @@
         "cagliari"
       ],
       "tekst": {
-        "nl": "Stadsstrand van 8 km. Bus PF of PQ vanaf het centrum.",
-        "en": "8 km city beach. Bus PF or PQ from the centre.",
-        "it": "Spiaggia cittadina di 8 km. Bus PF o PQ dal centro.",
-        "de": "8 km langer Stadtstrand. Bus PF oder PQ ab dem Zentrum."
+        "nl": "Stadsstrand van 8 km met strandtenten. Bus PF of PQ vanaf het centrum.",
+        "en": "8 km city beach with beach bars. Bus PF or PQ from the centre.",
+        "it": "Spiaggia cittadina di 8 km con chioschi. Bus PF o PQ dal centro.",
+        "de": "8 km langer Stadtstrand mit Strandbars. Bus PF oder PQ ab dem Zentrum."
       },
       "beschut": [
         "maestrale",
@@ -46,10 +46,10 @@
         "cagliari"
       ],
       "tekst": {
-        "nl": "Kleine baai onder de vuurtoren, vlak bij de stad.",
-        "en": "Small cove below the lighthouse, close to town.",
-        "it": "Piccola cala sotto il faro, vicino alla città.",
-        "de": "Kleine Bucht unter dem Leuchtturm, nah an der Stadt."
+        "nl": "Kleine baai tussen de vuurtoren en de Sella del Diavolo, vlak bij de stad.",
+        "en": "Small cove between the lighthouse and the Sella del Diavolo, close to town.",
+        "it": "Piccola cala tra il faro e la Sella del Diavolo, vicino alla città.",
+        "de": "Kleine Bucht zwischen Leuchtturm und Sella del Diavolo, nah an der Stadt."
       },
       "beschut": [
         "maestrale",
@@ -59,16 +59,22 @@
       "reserveren_link": "",
       "kenmerken": [
         {
-          "nl": "Rotsen",
-          "en": "Rocks",
-          "it": "Scogli",
-          "de": "Felsen"
+          "nl": "Kiezels",
+          "en": "Pebbles",
+          "it": "Ciottoli",
+          "de": "Kiesel"
         },
         {
           "nl": "Snorkelen",
           "en": "Snorkelling",
           "it": "Snorkeling",
           "de": "Schnorcheln"
+        },
+        {
+          "nl": "Bus",
+          "en": "Bus",
+          "it": "Bus",
+          "de": "Bus"
         }
       ],
       "maps": "https://www.google.com/maps/search/?api=1&query=Calamosca+Sardegna",
@@ -80,16 +86,16 @@
         "quartu-villasimius"
       ],
       "tekst": {
-        "nl": "Kiezelbaai met helder water aan de kustweg naar Villasimius.",
-        "en": "Pebble cove with clear water on the coast road to Villasimius.",
-        "it": "Cala di ciottoli con acqua limpida sulla litoranea per Villasimius.",
-        "de": "Kiesbucht mit klarem Wasser an der Küstenstraße nach Villasimius."
+        "nl": "Kiezelbaai met helder blauwgroen water aan de kustweg naar Villasimius. In 2026 vrij toegankelijk; toegangsbeperking kan later komen.",
+        "en": "Pebble cove with clear blue-green water on the coast road to Villasimius. Free access in 2026; restrictions may follow later.",
+        "it": "Cala di ciottoli con acqua limpida sulla litoranea per Villasimius. Accesso libero nel 2026; il numero chiuso potrebbe arrivare in futuro.",
+        "de": "Kiesbucht mit klarem Wasser an der Küstenstraße nach Villasimius. 2026 frei zugänglich; Zugangsbeschränkungen können folgen."
       },
       "beschut": [
         "maestrale",
         "ponente"
       ],
-      "reserveren": true,
+      "reserveren": false,
       "reserveren_link": "",
       "kenmerken": [
         {
@@ -106,6 +112,114 @@
         }
       ],
       "maps": "https://www.google.com/maps/search/?api=1&query=Mari+Pintau+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Kal'e Moru",
+      "regio": [
+        "quartu-villasimius"
+      ],
+      "tekst": {
+        "nl": "Kleine zandbaai tussen granietrotsen, kort lopen vanaf de weg.",
+        "en": "Small sandy cove between granite rocks, a short walk from the road.",
+        "it": "Piccola cala di sabbia tra rocce di granito, a breve distanza dalla strada.",
+        "de": "Kleine Sandbucht zwischen Granitfelsen, kurzer Fußweg von der Straße."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Rotsen",
+          "en": "Rocks",
+          "it": "Scogli",
+          "de": "Felsen"
+        },
+        {
+          "nl": "Stukje lopen",
+          "en": "Short walk",
+          "it": "Breve camminata",
+          "de": "Kurzer Fußweg"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Kal%27e+Moru+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Cala Regina",
+      "regio": [
+        "quartu-villasimius"
+      ],
+      "tekst": {
+        "nl": "Rustige baai met kiezels en een oude Spaanse toren.",
+        "en": "Quiet cove with pebbles and an old Spanish tower.",
+        "it": "Cala tranquilla di ciottoli con un'antica torre spagnola.",
+        "de": "Ruhige Kiesbucht mit altem spanischem Turm."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Kiezels",
+          "en": "Pebbles",
+          "it": "Ciottoli",
+          "de": "Kiesel"
+        },
+        {
+          "nl": "Snorkelen",
+          "en": "Snorkelling",
+          "it": "Snorkeling",
+          "de": "Schnorcheln"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Cala+Regina+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Torre delle Stelle",
+      "regio": [
+        "quartu-villasimius"
+      ],
+      "tekst": {
+        "nl": "Twee zandbaaien (Cann'e Sisa en Genn'e Mari) in een rustig vakantiedorp.",
+        "en": "Two sandy coves (Cann'e Sisa and Genn'e Mari) in a quiet holiday village.",
+        "it": "Due calette di sabbia (Cann'e Sisa e Genn'e Mari) in un tranquillo villaggio turistico.",
+        "de": "Zwei Sandbuchten (Cann'e Sisa und Genn'e Mari) in einem ruhigen Feriendorf."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Kinderen",
+          "en": "Families",
+          "it": "Famiglie",
+          "de": "Familien"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Torre+delle+Stelle+Sardegna",
       "gecontroleerd": false
     },
     {
@@ -137,9 +251,224 @@
           "en": "Families",
           "it": "Famiglie",
           "de": "Familien"
+        },
+        {
+          "nl": "Strandtenten",
+          "en": "Beach bars",
+          "it": "Chioschi",
+          "de": "Strandbars"
         }
       ],
       "maps": "https://www.google.com/maps/search/?api=1&query=Solanas+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Campus (Villasimius)",
+      "regio": [
+        "quartu-villasimius"
+      ],
+      "tekst": {
+        "nl": "Lang zandstrand ten westen van Villasimius, vaak rustiger dan de bekende stranden.",
+        "en": "Long sandy beach west of Villasimius, often quieter than the famous ones.",
+        "it": "Lunga spiaggia di sabbia a ovest di Villasimius, spesso più tranquilla delle più note.",
+        "de": "Langer Sandstrand westlich von Villasimius, oft ruhiger als die bekannten Strände."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Campus+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Campulongu",
+      "regio": [
+        "quartu-villasimius"
+      ],
+      "tekst": {
+        "nl": "Goudkleurig zand bij de jachthaven van Villasimius, goed om te zwemmen en snorkelen.",
+        "en": "Golden sand by the Villasimius marina, good for swimming and snorkelling.",
+        "it": "Sabbia dorata vicino al porto di Villasimius, ideale per nuotare e fare snorkeling.",
+        "de": "Goldener Sand am Jachthafen von Villasimius, gut zum Schwimmen und Schnorcheln."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Snorkelen",
+          "en": "Snorkelling",
+          "it": "Snorkeling",
+          "de": "Schnorcheln"
+        },
+        {
+          "nl": "Kinderen",
+          "en": "Families",
+          "it": "Famiglie",
+          "de": "Familien"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Campulongu+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Spiaggia del Riso",
+      "regio": [
+        "quartu-villasimius"
+      ],
+      "tekst": {
+        "nl": "Zand van witte kwartskorrels die op rijst lijken, vlak bij de haven.",
+        "en": "Sand of white quartz grains that look like rice, close to the harbour.",
+        "it": "Sabbia di granelli di quarzo bianco simili a chicchi di riso, vicino al porto.",
+        "de": "Sand aus weißen Quarzkörnern, die wie Reis aussehen, nah am Hafen."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Kwartskorrels",
+          "en": "Quartz grains",
+          "it": "Chicchi di quarzo",
+          "de": "Quarzkörner"
+        },
+        {
+          "nl": "Kinderen",
+          "en": "Families",
+          "it": "Famiglie",
+          "de": "Familien"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Spiaggia+del+Riso+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Simius",
+      "regio": [
+        "quartu-villasimius"
+      ],
+      "tekst": {
+        "nl": "Lang wit zandstrand in Villasimius met veel voorzieningen. Geliefd bij gezinnen.",
+        "en": "Long white sandy beach in Villasimius with plenty of facilities. Popular with families.",
+        "it": "Lunga spiaggia bianca a Villasimius con molti servizi. Amata dalle famiglie.",
+        "de": "Langer weißer Sandstrand in Villasimius mit vielen Einrichtungen. Beliebt bei Familien."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Kinderen",
+          "en": "Families",
+          "it": "Famiglie",
+          "de": "Familien"
+        },
+        {
+          "nl": "Strandtenten",
+          "en": "Beach bars",
+          "it": "Chioschi",
+          "de": "Strandbars"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Simius+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Porto Giunco",
+      "regio": [
+        "quartu-villasimius"
+      ],
+      "tekst": {
+        "nl": "Wit zand tussen zee en de lagune van Notteri, waar vaak flamingo's staan. Open bij scirocco en levante.",
+        "en": "White sand between the sea and the Notteri lagoon, often with flamingos. Exposed in scirocco and levante.",
+        "it": "Sabbia bianca tra il mare e lo stagno di Notteri, spesso con i fenicotteri. Esposta a scirocco e levante.",
+        "de": "Weißer Sand zwischen Meer und der Lagune von Notteri, oft mit Flamingos. Offen bei Scirocco und Levante."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Turquoise water",
+          "en": "Turquoise water",
+          "it": "Acqua turchese",
+          "de": "Türkises Wasser"
+        },
+        {
+          "nl": "Kinderen",
+          "en": "Families",
+          "it": "Famiglie",
+          "de": "Familien"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Porto+Giunco+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Timi Ama",
+      "regio": [
+        "quartu-villasimius"
+      ],
+      "tekst": {
+        "nl": "Aan de andere kant van de landtong van Porto Giunco. Een alternatief als het daar te onrustig is.",
+        "en": "On the other side of the Porto Giunco isthmus. An alternative when Porto Giunco is too rough.",
+        "it": "Sul lato opposto dell'istmo di Porto Giunco. Un'alternativa quando lì il mare è mosso.",
+        "de": "Auf der anderen Seite der Landenge von Porto Giunco. Eine Alternative, wenn es dort zu unruhig ist."
+      },
+      "beschut": [
+        "levante"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Timi+Ama+Sardegna",
       "gecontroleerd": false
     },
     {
@@ -148,10 +477,10 @@
         "quartu-villasimius"
       ],
       "tekst": {
-        "nl": "Smalle landtong met water aan twee kanten, bij Villasimius.",
-        "en": "Narrow headland with water on both sides, near Villasimius.",
-        "it": "Lingua di terra con il mare su due lati, vicino a Villasimius.",
-        "de": "Schmale Landzunge mit Wasser auf beiden Seiten, bei Villasimius."
+        "nl": "Smalle landtong met water aan twee kanten en roze granietrotsen. Parasols zijn er niet toegestaan.",
+        "en": "Narrow headland with water on both sides and pink granite. Umbrellas are not allowed.",
+        "it": "Lingua di terra con il mare su due lati e granito rosa. Ombrelloni non ammessi.",
+        "de": "Schmale Landzunge mit Wasser auf beiden Seiten und rosa Granit. Sonnenschirme sind nicht erlaubt."
       },
       "beschut": [
         "maestrale",
@@ -165,21 +494,62 @@
           "en": "Turquoise water",
           "it": "Acqua turchese",
           "de": "Türkises Wasser"
+        },
+        {
+          "nl": "Snorkelen",
+          "en": "Snorkelling",
+          "it": "Snorkeling",
+          "de": "Schnorcheln"
         }
       ],
       "maps": "https://www.google.com/maps/search/?api=1&query=Punta+Molentis+Sardegna",
       "gecontroleerd": false
     },
     {
-      "naam": "Costa Rei",
+      "naam": "Porto Sa Ruxi",
       "regio": [
+        "quartu-villasimius"
+      ],
+      "tekst": {
+        "nl": "Kleine baaien tussen de rotsen, beschut bij maestrale.",
+        "en": "Small coves between the rocks, sheltered in a mistral.",
+        "it": "Piccole cale tra gli scogli, riparate dal maestrale.",
+        "de": "Kleine Buchten zwischen Felsen, geschützt bei Mistral."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": true,
+      "reserveren_link": "https://villasimiussrl.it",
+      "kenmerken": [
+        {
+          "nl": "Rotsen",
+          "en": "Rocks",
+          "it": "Scogli",
+          "de": "Felsen"
+        },
+        {
+          "nl": "Snorkelen",
+          "en": "Snorkelling",
+          "it": "Snorkeling",
+          "de": "Schnorcheln"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Porto+Sa+Ruxi+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Cala Pira",
+      "regio": [
+        "quartu-villasimius",
         "costa-rei"
       ],
       "tekst": {
-        "nl": "Kilometers wit zand aan de oostkust.",
-        "en": "Miles of white sand on the east coast.",
-        "it": "Chilometri di sabbia bianca sulla costa est.",
-        "de": "Kilometerlanger weißer Sand an der Ostküste."
+        "nl": "Baai met licht zand en een pijnbos, bewaakt door een oude toren. Open bij scirocco en levante.",
+        "en": "Cove with light sand and a pine wood, watched over by an old tower. Exposed in scirocco and levante.",
+        "it": "Baia di sabbia chiara con pineta e un'antica torre. Esposta a scirocco e levante.",
+        "de": "Bucht mit hellem Sand und Pinienwald, bewacht von einem alten Turm. Offen bei Scirocco und Levante."
       },
       "beschut": [
         "maestrale",
@@ -201,7 +571,225 @@
           "de": "Familien"
         }
       ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Cala+Pira+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Cala Sinzias",
+      "regio": [
+        "costa-rei"
+      ],
+      "tekst": {
+        "nl": "Brede baai met fijn zand en pijnbomen. Redelijk beschut bij scirocco.",
+        "en": "Wide bay with fine sand and pines. Fairly sheltered in a scirocco.",
+        "it": "Ampia baia di sabbia fine e pini. Discretamente riparata dallo scirocco.",
+        "de": "Breite Bucht mit feinem Sand und Pinien. Recht geschützt bei Scirocco."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente",
+        "scirocco"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Kinderen",
+          "en": "Families",
+          "it": "Famiglie",
+          "de": "Familien"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Cala+Sinzias+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Costa Rei",
+      "regio": [
+        "costa-rei"
+      ],
+      "tekst": {
+        "nl": "Kilometers wit zand aan de oostkust. Open bij scirocco en levante.",
+        "en": "Miles of white sand on the east coast. Exposed in scirocco and levante.",
+        "it": "Chilometri di sabbia bianca sulla costa est. Esposta a scirocco e levante.",
+        "de": "Kilometerlanger weißer Sand an der Ostküste. Offen bei Scirocco und Levante."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Kinderen",
+          "en": "Families",
+          "it": "Famiglie",
+          "de": "Familien"
+        },
+        {
+          "nl": "Strandtenten",
+          "en": "Beach bars",
+          "it": "Chioschi",
+          "de": "Strandbars"
+        }
+      ],
       "maps": "https://www.google.com/maps/search/?api=1&query=Costa+Rei+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Monte Turnu (Piscina Rei)",
+      "regio": [
+        "costa-rei"
+      ],
+      "tekst": {
+        "nl": "Zuidelijk deel van Costa Rei met rotsen en heel helder water. Redelijk beschut bij scirocco.",
+        "en": "Southern end of Costa Rei with rocks and very clear water. Fairly sheltered in a scirocco.",
+        "it": "Estremità sud di Costa Rei con scogli e acqua limpidissima. Discretamente riparata dallo scirocco.",
+        "de": "Südliches Ende der Costa Rei mit Felsen und sehr klarem Wasser. Recht geschützt bei Scirocco."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente",
+        "scirocco"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Snorkelen",
+          "en": "Snorkelling",
+          "it": "Snorkeling",
+          "de": "Schnorcheln"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Monte+Turnu+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Porto Pirastu",
+      "regio": [
+        "costa-rei"
+      ],
+      "tekst": {
+        "nl": "Kleine baai met rotsen en zand, ten noorden van Costa Rei.",
+        "en": "Small cove with rocks and sand, north of Costa Rei.",
+        "it": "Piccola cala di sabbia e scogli, a nord di Costa Rei.",
+        "de": "Kleine Bucht mit Felsen und Sand, nördlich der Costa Rei."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Rotsen",
+          "en": "Rocks",
+          "it": "Scogli",
+          "de": "Felsen"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Porto+Pirastu+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Feraxi",
+      "regio": [
+        "costa-rei"
+      ],
+      "tekst": {
+        "nl": "Lang, rustig zandstrand met duinen bij Muravera.",
+        "en": "Long, quiet sandy beach with dunes near Muravera.",
+        "it": "Lunga spiaggia tranquilla con dune vicino a Muravera.",
+        "de": "Langer, ruhiger Sandstrand mit Dünen bei Muravera."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Duinen",
+          "en": "Dunes",
+          "it": "Dune",
+          "de": "Dünen"
+        },
+        {
+          "nl": "Ongerept",
+          "en": "Unspoilt",
+          "it": "Selvaggia",
+          "de": "Naturbelassen"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Feraxi+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Torre Salinas",
+      "regio": [
+        "costa-rei"
+      ],
+      "tekst": {
+        "nl": "Breed strand bij Muravera met een oude toren en een lagune erachter.",
+        "en": "Wide beach near Muravera with an old tower and a lagoon behind it.",
+        "it": "Ampia spiaggia vicino a Muravera con un'antica torre e uno stagno alle spalle.",
+        "de": "Breiter Strand bei Muravera mit altem Turm und einer Lagune dahinter."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Kinderen",
+          "en": "Families",
+          "it": "Famiglie",
+          "de": "Familien"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Torre+Salinas+Sardegna",
       "gecontroleerd": false
     },
     {
@@ -227,9 +815,49 @@
           "en": "Sand",
           "it": "Sabbia",
           "de": "Sand"
+        },
+        {
+          "nl": "Kinderen",
+          "en": "Families",
+          "it": "Famiglie",
+          "de": "Familien"
         }
       ],
-      "maps": "https://www.google.com/maps/search/?api=1&query=Su+Guventeddu+Nora+Sardegna",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Su+Guventeddu+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Santa Margherita di Pula",
+      "regio": [
+        "sud-ovest"
+      ],
+      "tekst": {
+        "nl": "Lange zandstrook met pijnbossen en veel resorts.",
+        "en": "Long sandy stretch with pine woods and many resorts.",
+        "it": "Lunga distesa di sabbia con pinete e molti resort.",
+        "de": "Langer Sandstreifen mit Pinienwäldern und vielen Resorts."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Kinderen",
+          "en": "Families",
+          "it": "Famiglie",
+          "de": "Familien"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Santa+Margherita+di+Pula+Sardegna",
       "gecontroleerd": false
     },
     {
@@ -238,15 +866,12 @@
         "sud-ovest"
       ],
       "tekst": {
-        "nl": "Duinen, lagune en ondiep turquoise water bij Chia.",
-        "en": "Dunes, a lagoon and shallow turquoise water at Chia.",
-        "it": "Dune, laguna e acqua bassa e turchese a Chia.",
-        "de": "Dünen, Lagune und flaches türkises Wasser bei Chia."
+        "nl": "Duinen, lagune en ondiep turquoise water. Mooi op een windstille dag; bij elke wind merk je het hier meteen.",
+        "en": "Dunes, a lagoon and shallow turquoise water. Beautiful on a calm day; you feel any wind here straight away.",
+        "it": "Dune, laguna e acqua bassa e turchese. Bellissima nelle giornate senza vento; qui si sente subito ogni brezza.",
+        "de": "Dünen, Lagune und flaches türkises Wasser. Schön an windstillen Tagen; jeden Wind spürt man hier sofort."
       },
-      "beschut": [
-        "maestrale",
-        "levante"
-      ],
+      "beschut": [],
       "reserveren": false,
       "reserveren_link": "",
       "kenmerken": [
@@ -261,9 +886,54 @@
           "en": "Turquoise water",
           "it": "Acqua turchese",
           "de": "Türkises Wasser"
+        },
+        {
+          "nl": "Duinen",
+          "en": "Dunes",
+          "it": "Dune",
+          "de": "Dünen"
         }
       ],
-      "maps": "https://www.google.com/maps/search/?api=1&query=Su+Giudeu+Chia+Sardegna",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Su+Giudeu+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Cala Cipolla (Chia)",
+      "regio": [
+        "sud-ovest"
+      ],
+      "tekst": {
+        "nl": "Kleine baai tussen granietrotsen en jeneverbessen, bereikbaar via een pad.",
+        "en": "Small cove between granite rocks and junipers, reached by a footpath.",
+        "it": "Piccola cala tra rocce di granito e ginepri, raggiungibile a piedi.",
+        "de": "Kleine Bucht zwischen Granitfelsen und Wacholder, über einen Pfad erreichbar."
+      },
+      "beschut": [
+        "maestrale"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Stukje lopen",
+          "en": "Short walk",
+          "it": "Breve camminata",
+          "de": "Kurzer Fußweg"
+        },
+        {
+          "nl": "Snorkelen",
+          "en": "Snorkelling",
+          "it": "Snorkeling",
+          "de": "Schnorcheln"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Cala+Cipolla+Sardegna",
       "gecontroleerd": false
     },
     {
@@ -272,10 +942,10 @@
         "sud-ovest"
       ],
       "tekst": {
-        "nl": "Witte zandbaai aan de zuidkust bij Teulada.",
-        "en": "White sand cove on the south coast near Teulada.",
-        "it": "Cala di sabbia bianca sulla costa sud, vicino a Teulada.",
-        "de": "Weiße Sandbucht an der Südküste bei Teulada."
+        "nl": "Witte zandbaai met een eilandje voor de kust, beschut bij maestrale.",
+        "en": "White sand cove with an islet offshore, sheltered in a mistral.",
+        "it": "Cala di sabbia bianca con un isolotto di fronte, riparata dal maestrale.",
+        "de": "Weiße Sandbucht mit vorgelagerter Insel, geschützt bei Mistral."
       },
       "beschut": [
         "maestrale",
@@ -295,9 +965,56 @@
           "en": "Turquoise water",
           "it": "Acqua turchese",
           "de": "Türkises Wasser"
+        },
+        {
+          "nl": "Kinderen",
+          "en": "Families",
+          "it": "Famiglie",
+          "de": "Familien"
         }
       ],
       "maps": "https://www.google.com/maps/search/?api=1&query=Tuerredda+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Porto Pino",
+      "regio": [
+        "sud-ovest",
+        "sulcis"
+      ],
+      "tekst": {
+        "nl": "Lange stranden met hoge witte duinen en pijnbomen. Ondiep water.",
+        "en": "Long beaches with tall white dunes and pines. Shallow water.",
+        "it": "Lunghe spiagge con alte dune bianche e pini. Acqua bassa.",
+        "de": "Lange Strände mit hohen weißen Dünen und Pinien. Flaches Wasser."
+      },
+      "beschut": [
+        "maestrale",
+        "ponente"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Duinen",
+          "en": "Dunes",
+          "it": "Dune",
+          "de": "Dünen"
+        },
+        {
+          "nl": "Kinderen",
+          "en": "Families",
+          "it": "Famiglie",
+          "de": "Familien"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Porto+Pino+Sardegna",
       "gecontroleerd": false
     },
     {
@@ -306,10 +1023,10 @@
         "sulcis"
       ],
       "tekst": {
-        "nl": "Beschutte fjordachtige baai bij Buggerru aan de westkust.",
-        "en": "Sheltered fjord-like cove near Buggerru on the west coast.",
-        "it": "Cala riparata simile a un fiordo vicino a Buggerru, sulla costa ovest.",
-        "de": "Geschützte, fjordartige Bucht bei Buggerru an der Westküste."
+        "nl": "Beschutte fjordachtige baai bij Buggerru, tussen oude mijngebouwen. Open bij maestrale.",
+        "en": "Sheltered fjord-like cove near Buggerru among old mine buildings. Exposed in a mistral.",
+        "it": "Cala riparata simile a un fiordo vicino a Buggerru, tra vecchi edifici minerari. Esposta al maestrale.",
+        "de": "Geschützte, fjordartige Bucht bei Buggerru zwischen alten Minengebäuden. Offen bei Mistral."
       },
       "beschut": [
         "scirocco",
@@ -332,6 +1049,249 @@
         }
       ],
       "maps": "https://www.google.com/maps/search/?api=1&query=Cala+Domestica+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Portixeddu",
+      "regio": [
+        "sulcis"
+      ],
+      "tekst": {
+        "nl": "Groot, wild strand met duinen aan de westkust. Golven bij maestrale.",
+        "en": "Large wild beach with dunes on the west coast. Waves in a mistral.",
+        "it": "Grande spiaggia selvaggia con dune sulla costa ovest. Onde con il maestrale.",
+        "de": "Großer, wilder Strand mit Dünen an der Westküste. Wellen bei Mistral."
+      },
+      "beschut": [
+        "scirocco",
+        "levante"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Duinen",
+          "en": "Dunes",
+          "it": "Dune",
+          "de": "Dünen"
+        },
+        {
+          "nl": "Golven",
+          "en": "Waves",
+          "it": "Onde",
+          "de": "Wellen"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Portixeddu+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Masua",
+      "regio": [
+        "sulcis"
+      ],
+      "tekst": {
+        "nl": "Kiezelstrand met uitzicht op de rots Pan di Zucchero en de mijn Porto Flavia.",
+        "en": "Pebble beach facing the Pan di Zucchero rock and the Porto Flavia mine.",
+        "it": "Spiaggia di ciottoli davanti al Pan di Zucchero e alla miniera di Porto Flavia.",
+        "de": "Kiesstrand mit Blick auf den Felsen Pan di Zucchero und die Mine Porto Flavia."
+      },
+      "beschut": [
+        "scirocco",
+        "levante"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Kiezels",
+          "en": "Pebbles",
+          "it": "Ciottoli",
+          "de": "Kiesel"
+        },
+        {
+          "nl": "Snorkelen",
+          "en": "Snorkelling",
+          "it": "Snorkeling",
+          "de": "Schnorcheln"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Masua+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Fontanamare",
+      "regio": [
+        "sulcis"
+      ],
+      "tekst": {
+        "nl": "Lang zandstrand bij Gonnesa, populair bij surfers als het waait.",
+        "en": "Long sandy beach near Gonnesa, popular with surfers when the wind blows.",
+        "it": "Lunga spiaggia vicino a Gonnesa, amata dai surfisti quando c'è vento.",
+        "de": "Langer Sandstrand bei Gonnesa, beliebt bei Surfern, wenn Wind weht."
+      },
+      "beschut": [
+        "scirocco",
+        "levante"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Golven",
+          "en": "Waves",
+          "it": "Onde",
+          "de": "Wellen"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Fontanamare+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Is Arutas",
+      "regio": [
+        "oristano"
+      ],
+      "tekst": {
+        "nl": "Strand van witte en roze kwartskorrels. Het is verboden korrels mee te nemen; er staan boetes op.",
+        "en": "Beach of white and pink quartz grains. Taking grains away is forbidden and fined.",
+        "it": "Spiaggia di chicchi di quarzo bianchi e rosa. È vietato portarli via: si rischiano multe.",
+        "de": "Strand aus weißen und rosa Quarzkörnern. Mitnehmen ist verboten und wird bestraft."
+      },
+      "beschut": [
+        "scirocco",
+        "levante"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Kwartskorrels",
+          "en": "Quartz grains",
+          "it": "Chicchi di quarzo",
+          "de": "Quarzkörner"
+        },
+        {
+          "nl": "Turquoise water",
+          "en": "Turquoise water",
+          "it": "Acqua turchese",
+          "de": "Türkises Wasser"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Is+Arutas+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Mari Ermi",
+      "regio": [
+        "oristano"
+      ],
+      "tekst": {
+        "nl": "Kwartsstrand in het Sinis-gebied, rustiger dan Is Arutas.",
+        "en": "Quartz beach in the Sinis area, quieter than Is Arutas.",
+        "it": "Spiaggia di quarzo nel Sinis, più tranquilla di Is Arutas.",
+        "de": "Quarzstrand im Sinis-Gebiet, ruhiger als Is Arutas."
+      },
+      "beschut": [
+        "scirocco",
+        "levante"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Kwartskorrels",
+          "en": "Quartz grains",
+          "it": "Chicchi di quarzo",
+          "de": "Quarzkörner"
+        },
+        {
+          "nl": "Ongerept",
+          "en": "Unspoilt",
+          "it": "Selvaggia",
+          "de": "Naturbelassen"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Mari+Ermi+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "San Giovanni di Sinis",
+      "regio": [
+        "oristano"
+      ],
+      "tekst": {
+        "nl": "Strand naast de ruïnes van Tharros, met een Spaanse toren.",
+        "en": "Beach next to the ruins of Tharros, with a Spanish tower.",
+        "it": "Spiaggia accanto alle rovine di Tharros, con una torre spagnola.",
+        "de": "Strand neben den Ruinen von Tharros, mit spanischem Turm."
+      },
+      "beschut": [
+        "scirocco",
+        "levante"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Kinderen",
+          "en": "Families",
+          "it": "Famiglie",
+          "de": "Familien"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=San+Giovanni+di+Sinis+Sardegna",
+      "gecontroleerd": false
+    },
+    {
+      "naam": "Putzu Idu",
+      "regio": [
+        "oristano"
+      ],
+      "tekst": {
+        "nl": "Zandstrand in een vissersdorp met een lagune vol flamingo's erachter.",
+        "en": "Sandy beach in a fishing village with a flamingo lagoon behind it.",
+        "it": "Spiaggia di sabbia in un borgo di pescatori con uno stagno di fenicotteri alle spalle.",
+        "de": "Sandstrand in einem Fischerdorf mit einer Flamingo-Lagune dahinter."
+      },
+      "beschut": [
+        "levante"
+      ],
+      "reserveren": false,
+      "reserveren_link": "",
+      "kenmerken": [
+        {
+          "nl": "Zand",
+          "en": "Sand",
+          "it": "Sabbia",
+          "de": "Sand"
+        },
+        {
+          "nl": "Kinderen",
+          "en": "Families",
+          "it": "Famiglie",
+          "de": "Familien"
+        }
+      ],
+      "maps": "https://www.google.com/maps/search/?api=1&query=Putzu+Idu+Sardegna",
       "gecontroleerd": false
     }
   ]
