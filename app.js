@@ -7,9 +7,10 @@
   var LANGS = ["en", "it", "fr", "nl", "de"];
   var UI = {
     nl: {
+      review: { title: "Voor je vertrek", text: "Bedankt voor je verblijf. Een eerlijke review helpt andere reizigers en je host.", on: "Review op" }, windLink: "Bekijk de wind op Windy",
       game: { title: "Spelletje voor je vakantie", text: "Elke dag één plek op Sardinië raden in zes pogingen. Leuk op het strand of aan tafel, en je ontdekt meteen nieuwe plekken om naartoe te gaan.", btn: "Speel Aundi?" },
       perk: "Voor gasten van deze gids:",
-      nav: { aankomst: "Aankomst", wifi: "Wifi", regels: "Huisregels", stranden: "Stranden", tips: "Tips", eten: "Eten", partners: "Uitjes", extras: "Extra's", spel: "Spel", nood: "Hulp" },
+      nav: { aankomst: "Aankomst", wifi: "Wifi", regels: "Huisregels", stranden: "Stranden", tips: "Tips", eten: "Eten", partners: "Uitjes", extras: "Extra's", review: "Review", spel: "Spel", nood: "Hulp" },
       arrive: "Aankomst & vertrek", checkin: "Inchecken", checkout: "Uitchecken", address: "Adres", route: "Route openen",
       parking: "Parkeren", transport: "Bereikbaarheid", wifi: "Wifi", network: "Netwerk", password: "Wachtwoord",
       copy: "Kopieer", copied: "Gekopieerd", rules: "Huisregels", beaches: "Stranden", windQ: "Welke wind waait er vandaag?",
@@ -28,9 +29,10 @@
       offline: "Je bent offline. Je ziet de laatst opgeslagen versie.", loadError: "De gids kon niet worden geladen. Probeer het opnieuw."
     },
     en: {
+      review: { title: "Before you leave", text: "Thank you for staying. An honest review helps other travellers and your host.", on: "Review on" }, windLink: "Check the wind on Windy",
       game: { title: "A game for your holiday", text: "Guess one place in Sardinia every day, in six tries. Fun on the beach or at dinner, and you will find new places to visit.", btn: "Play Aundi?" },
       perk: "For guests of this guide:",
-      nav: { aankomst: "Arrival", wifi: "Wifi", regels: "House rules", stranden: "Beaches", tips: "Tips", eten: "Food", partners: "Things to do", extras: "Extras", spel: "Game", nood: "Help" },
+      nav: { aankomst: "Arrival", wifi: "Wifi", regels: "House rules", stranden: "Beaches", tips: "Tips", eten: "Food", partners: "Things to do", extras: "Extras", review: "Review", spel: "Game", nood: "Help" },
       arrive: "Arrival & departure", checkin: "Check-in", checkout: "Check-out", address: "Address", route: "Open route",
       parking: "Parking", transport: "Getting here", wifi: "Wifi", network: "Network", password: "Password",
       copy: "Copy", copied: "Copied", rules: "House rules", beaches: "Beaches", windQ: "Which wind is blowing today?",
@@ -49,9 +51,10 @@
       offline: "You're offline. This is the last saved version.", loadError: "The guide couldn't load. Please try again."
     },
     it: {
+      review: { title: "Prima di partire", text: "Grazie per il soggiorno. Una recensione sincera aiuta altri viaggiatori e il vostro host.", on: "Recensione su" }, windLink: "Guarda il vento su Windy",
       game: { title: "Un gioco per la vacanza", text: "Ogni giorno un luogo della Sardegna da indovinare in sei tentativi. Perfetto in spiaggia o a tavola, e scoprirete nuovi posti da visitare.", btn: "Gioca ad Aundi?" },
       perk: "Per gli ospiti di questa guida:",
-      nav: { aankomst: "Arrivo", wifi: "Wifi", regels: "Regole", stranden: "Spiagge", tips: "Consigli", eten: "Cibo", partners: "Da fare", extras: "Extra", spel: "Gioco", nood: "Aiuto" },
+      nav: { aankomst: "Arrivo", wifi: "Wifi", regels: "Regole", stranden: "Spiagge", tips: "Consigli", eten: "Cibo", partners: "Da fare", extras: "Extra", review: "Recensione", spel: "Gioco", nood: "Aiuto" },
       arrive: "Arrivo e partenza", checkin: "Check-in", checkout: "Check-out", address: "Indirizzo", route: "Apri percorso",
       parking: "Parcheggio", transport: "Come arrivare", wifi: "Wifi", network: "Rete", password: "Password",
       copy: "Copia", copied: "Copiato", rules: "Regole della casa", beaches: "Spiagge", windQ: "Che vento tira oggi?",
@@ -70,9 +73,10 @@
       offline: "Siete offline. Questa è l'ultima versione salvata.", loadError: "Impossibile caricare la guida. Riprovate."
     },
     fr: {
+      review: { title: "Avant de partir", text: "Merci pour votre séjour. Un avis sincère aide d'autres voyageurs et votre hôte.", on: "Avis sur" }, windLink: "Voir le vent sur Windy",
       game: { title: "Un jeu pour vos vacances", text: "Chaque jour, un lieu de Sardaigne à deviner en six essais. Idéal à la plage ou à table, et vous découvrirez de nouveaux endroits.", btn: "Jouer à Aundi ?" },
       perk: "Pour les hôtes de ce guide :",
-      nav: { aankomst: "Arrivée", wifi: "Wi-Fi", regels: "Règles", stranden: "Plages", tips: "Conseils", eten: "Manger", partners: "À faire", extras: "Extras", spel: "Jeu", nood: "Aide" },
+      nav: { aankomst: "Arrivée", wifi: "Wi-Fi", regels: "Règles", stranden: "Plages", tips: "Conseils", eten: "Manger", partners: "À faire", extras: "Extras", review: "Avis", spel: "Jeu", nood: "Aide" },
       arrive: "Arrivée et départ", checkin: "Arrivée", checkout: "Départ", address: "Adresse", route: "Ouvrir l'itinéraire",
       parking: "Stationnement", transport: "Comment venir", wifi: "Wi-Fi", network: "Réseau", password: "Mot de passe",
       copy: "Copier", copied: "Copié", rules: "Règles de la maison", beaches: "Plages", windQ: "Quel vent souffle aujourd'hui ?",
@@ -91,9 +95,10 @@
       offline: "Vous êtes hors ligne. Voici la dernière version enregistrée.", loadError: "Le guide n'a pas pu être chargé. Veuillez réessayer."
     },
     de: {
+      review: { title: "Vor der Abreise", text: "Danke für euren Aufenthalt. Eine ehrliche Bewertung hilft anderen Reisenden und eurem Gastgeber.", on: "Bewertung auf" }, windLink: "Wind auf Windy ansehen",
       game: { title: "Ein Spiel für den Urlaub", text: "Jeden Tag einen Ort auf Sardinien in sechs Versuchen erraten. Schön am Strand oder bei Tisch, und ihr entdeckt neue Orte.", btn: "Aundi? spielen" },
       perk: "Für Gäste dieses Guides:",
-      nav: { aankomst: "Anreise", wifi: "WLAN", regels: "Hausregeln", stranden: "Strände", tips: "Tipps", eten: "Essen", partners: "Ausflüge", extras: "Extras", spel: "Spiel", nood: "Hilfe" },
+      nav: { aankomst: "Anreise", wifi: "WLAN", regels: "Hausregeln", stranden: "Strände", tips: "Tipps", eten: "Essen", partners: "Ausflüge", extras: "Extras", review: "Bewertung", spel: "Spiel", nood: "Hilfe" },
       arrive: "Anreise & Abreise", checkin: "Check-in", checkout: "Check-out", address: "Adresse", route: "Route öffnen",
       parking: "Parken", transport: "Anfahrt", wifi: "WLAN", network: "Netzwerk", password: "Passwort",
       copy: "Kopieren", copied: "Kopiert", rules: "Hausregeln", beaches: "Strände", windQ: "Welcher Wind weht heute?",
@@ -362,7 +367,7 @@
             (tags ? '<div class="tags">' + tags + "</div>" : "") +
             (links.length ? '<div class="links">' + links.join("") + "</div>" : "") + "</div>";
       };
-      var bh = '<div class="wind"><h3>' + esc(u.windQ) + '</h3><p class="note">' + esc(u.windHint) + "</p>" +
+      var bh = '<div class="wind"><h3>' + esc(u.windQ) + '</h3><p class="note">' + esc(u.windHint) + '</p><div class="links"><a href="https://www.windy.com/?39.2,9.1,8" target="_blank" rel="noopener"' + ev("wind-windy", "") + '>' + esc(u.windLink) + "</a></div>" +
         '<div class="wind-btns" role="group">' + winds.map(function (k) {
           return '<button type="button" id="wind-' + k + '" data-wind="' + k + '" aria-pressed="' + (state.wind === k) + '">' + esc(u.winds[k]) + "</button>";
         }).join("") + "</div>" +
@@ -425,6 +430,12 @@
           (x.prijs ? '<span class="price">' + esc(x.prijs) + "</span>" : "") +
           (hostDigits ? '<a class="btn" href="https://wa.me/' + hostDigits + "?text=" + encodeURIComponent(msg) + '" target="_blank" rel="noopener"' + ev("extra-aanvraag", tx(x.titel)) + '>' + esc(u.request) + "</a>" : "") + "</div>";
       }).join("") + "</div>"]);
+
+    // Review
+    var rv = h.reviews || {};
+    var rvLinks = [["Airbnb", rv.airbnb], ["Booking", rv.booking], ["Google", rv.google]].filter(function (r) { return safeUrl(r[1]); });
+    if (rvLinks.length) sections.push(["review", u.review.title, '<div class="card"><p>' + esc(u.review.text) + '</p><div class="links">' +
+      rvLinks.map(function (r) { return '<a href="' + esc(safeUrl(r[1])) + '" target="_blank" rel="noopener"' + ev("review-klik", r[0]) + '>' + esc(u.review.on + " " + r[0]) + "</a>"; }).join("") + "</div></div>"]);
 
     // Spel
     sections.push(["spel", u.game.title, '<div class="card"><p>' + esc(u.game.text) + '</p><div><a class="btn" href="' + esc(withUtm("https://aundi.sardegnaautentica.com/")) + '" target="_blank" rel="noopener"' + ev("spel-openen", "") + '>' + esc(u.game.btn) + "</a></div></div>"]);

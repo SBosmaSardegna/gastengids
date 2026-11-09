@@ -128,6 +128,14 @@ content:
           - { name: titel, component: tekst, label: Titel }
           - { name: tekst, component: tekst, label: "Korte omschrijving" }
           - { name: prijs, label: "Prijs (bijv. € 25)", type: string }
+      - name: reviews
+        label: "Reviewlinks (optioneel)"
+        type: object
+        description: "Vul de links in waar gasten een review kunnen achterlaten. Leeg = geen blok in de gids. Bied nooit iets aan in ruil voor een review."
+        fields:
+          - { name: airbnb, label: "Airbnb-link", type: string }
+          - { name: booking, label: "Booking-link", type: string }
+          - { name: google, label: "Google-link", type: string }
 
   - name: stranden
     label: Stranden
