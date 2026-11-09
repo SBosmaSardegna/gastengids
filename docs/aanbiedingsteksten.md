@@ -6,7 +6,7 @@ Versturen zodra de Partita IVA rond is. Vervang `[link modulo]` door de link naa
 
 Buongiorno, sono Sam di Sardegna Autentica. Sono olandese e vivo in Sardegna con la mia famiglia.
 
-Creo guide digitali per case vacanza: un unico link con tutto quello che serve ai vostri ospiti. Check-in, wifi, regole della casa, spiagge consigliate in base al vento del giorno, ristoranti, escursioni e numeri utili, in italiano, inglese, francese, olandese e tedesco.
+Creo guide digitali per case vacanza: un unico link con tutto quello che serve ai vostri ospiti. Arrivo e partenza, wifi, regole della casa, spiagge consigliate in base al vento del giorno, ristoranti, escursioni e numeri utili, in italiano, inglese, francese, olandese e tedesco.
 
 Ecco un esempio: https://guide.sardegnaautentica.com/casa-marina
 
@@ -16,7 +16,7 @@ Ecco un esempio: https://guide.sardegnaautentica.com/casa-marina
 - Un secondo QR-code per collegarsi al wifi senza digitare la password
 - La guida si salva sul telefono come un'app e funziona anche senza internet, per esempio in spiaggia
 
-**La guida funziona per tutti i vostri ospiti, da qualsiasi piattaforma arrivino: Airbnb, Booking o prenotazione diretta. Basta inquadrare il QR-code in casa.**
+**La guida funziona per tutti i vostri ospiti, da qualsiasi piattaforma arrivino: Airbnb, Booking o prenotazione diretta. Basta inquadrare il QR-code in casa. Se volete, potete inviare lo stesso link anche prima dell'arrivo, per percorso e parcheggio.**
 
 La scrivo e la aggiorno io ogni stagione: voi non dovete fare niente. Meno domande dagli ospiti, recensioni migliori.
 

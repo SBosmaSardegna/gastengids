@@ -51,6 +51,9 @@ Verwijder het bestand `CNAME` in de repository niet, want daarmee onthoudt GitHu
 4. Klik **Save** en open na een minuut `guide.sardegnaautentica.com/<webadres>`.
 5. Maak de QR-kaart: open `guide.sardegnaautentica.com/qr.html?w=<webadres>`. Je ziet een kaart van 10,5 × 14,8 cm (A6) met de QR-code van de gids en, als je wilt, een wifi-QR waarmee gasten met één scan verbinding maken. Klik op **Afdrukken** of **Download als afbeelding** en stuur die samen met de link naar de verhuurder.
 
+**Hoe gasten de gids krijgen:** standaard scant de gast de QR-kaart in de woning. De verhuurder kan dezelfde link ook vooraf sturen via Airbnb of WhatsApp, voor route en parkeren. Zet nooit identificatie, documenten, sleutelkluizen of codes in de gids: die regelt de verhuurder zelf, en de gids is openbaar.
+
+
 Tip: kopieer de tekst van een bestaande woning als startpunt.
 
 ## Een partner toevoegen
