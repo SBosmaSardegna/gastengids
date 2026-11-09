@@ -101,7 +101,7 @@ content:
           - { name: maps, label: "Google Maps-link", type: string }
           - { name: checkin, label: "Inchecken vanaf", type: string, default: "15:00" }
           - { name: checkout, label: "Uitchecken vóór", type: string, default: "10:30" }
-          - { name: stappen, component: tekst, label: "Stap bij aankomst", list: true }
+          - { name: stappen, component: tekst, label: "Stap bij aankomst", list: true, description: "Alleen praktische informatie, zoals verdieping of toeristenbelasting. Geen identificatie, documenten, sleutelkluis of codes: dat regelt de verhuurder zelf en de gids is openbaar." }
           - { name: parkeren, component: langtekst, label: Parkeren }
           - { name: vervoer, component: langtekst, label: "Bereikbaarheid (luchthaven, bus)" }
       - name: wifi

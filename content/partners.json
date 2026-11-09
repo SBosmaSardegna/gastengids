@@ -1,7 +1,7 @@
 {
   "partners": [
     {
-      "naam": "VOORBEELD – Boottocht Villasimius",
+      "naam": "ESEMPIO – Gita in barca a Villasimius",
       "actief": true,
       "soort": "boot",
       "regio": [
@@ -20,7 +20,7 @@
       "website": ""
     },
     {
-      "naam": "VOORBEELD – Trattoria in de Marina",
+      "naam": "ESEMPIO – Trattoria alla Marina",
       "actief": true,
       "soort": "restaurant",
       "regio": [
@@ -45,7 +45,7 @@
       }
     },
     {
-      "naam": "VOORBEELD – Fietsverhuur Cagliari",
+      "naam": "ESEMPIO – Noleggio bici a Cagliari",
       "actief": true,
       "soort": "verhuur",
       "regio": [
