@@ -7,8 +7,9 @@
   var LANGS = ["en", "it", "fr", "nl", "de"];
   var UI = {
     nl: {
+      game: { title: "Spelletje voor je vakantie", text: "Elke dag één plek op Sardinië raden in zes pogingen. Leuk op het strand of aan tafel, en je ontdekt meteen nieuwe plekken om naartoe te gaan.", btn: "Speel Aundi?" },
       perk: "Voor gasten van deze gids:",
-      nav: { aankomst: "Aankomst", wifi: "Wifi", regels: "Huisregels", stranden: "Stranden", tips: "Tips", eten: "Eten", partners: "Uitjes", extras: "Extra's", nood: "Hulp" },
+      nav: { aankomst: "Aankomst", wifi: "Wifi", regels: "Huisregels", stranden: "Stranden", tips: "Tips", eten: "Eten", partners: "Uitjes", extras: "Extra's", spel: "Spel", nood: "Hulp" },
       arrive: "Aankomst & vertrek", checkin: "Inchecken", checkout: "Uitchecken", address: "Adres", route: "Route openen",
       parking: "Parkeren", transport: "Bereikbaarheid", wifi: "Wifi", network: "Netwerk", password: "Wachtwoord",
       copy: "Kopieer", copied: "Gekopieerd", rules: "Huisregels", beaches: "Stranden", windQ: "Welke wind waait er vandaag?",
@@ -27,8 +28,9 @@
       offline: "Je bent offline. Je ziet de laatst opgeslagen versie.", loadError: "De gids kon niet worden geladen. Probeer het opnieuw."
     },
     en: {
+      game: { title: "A game for your holiday", text: "Guess one place in Sardinia every day, in six tries. Fun on the beach or at dinner, and you will find new places to visit.", btn: "Play Aundi?" },
       perk: "For guests of this guide:",
-      nav: { aankomst: "Arrival", wifi: "Wifi", regels: "House rules", stranden: "Beaches", tips: "Tips", eten: "Food", partners: "Things to do", extras: "Extras", nood: "Help" },
+      nav: { aankomst: "Arrival", wifi: "Wifi", regels: "House rules", stranden: "Beaches", tips: "Tips", eten: "Food", partners: "Things to do", extras: "Extras", spel: "Game", nood: "Help" },
       arrive: "Arrival & departure", checkin: "Check-in", checkout: "Check-out", address: "Address", route: "Open route",
       parking: "Parking", transport: "Getting here", wifi: "Wifi", network: "Network", password: "Password",
       copy: "Copy", copied: "Copied", rules: "House rules", beaches: "Beaches", windQ: "Which wind is blowing today?",
@@ -47,8 +49,9 @@
       offline: "You're offline. This is the last saved version.", loadError: "The guide couldn't load. Please try again."
     },
     it: {
+      game: { title: "Un gioco per la vacanza", text: "Ogni giorno un luogo della Sardegna da indovinare in sei tentativi. Perfetto in spiaggia o a tavola, e scoprirete nuovi posti da visitare.", btn: "Gioca ad Aundi?" },
       perk: "Per gli ospiti di questa guida:",
-      nav: { aankomst: "Arrivo", wifi: "Wifi", regels: "Regole", stranden: "Spiagge", tips: "Consigli", eten: "Cibo", partners: "Da fare", extras: "Extra", nood: "Aiuto" },
+      nav: { aankomst: "Arrivo", wifi: "Wifi", regels: "Regole", stranden: "Spiagge", tips: "Consigli", eten: "Cibo", partners: "Da fare", extras: "Extra", spel: "Gioco", nood: "Aiuto" },
       arrive: "Arrivo e partenza", checkin: "Check-in", checkout: "Check-out", address: "Indirizzo", route: "Apri percorso",
       parking: "Parcheggio", transport: "Come arrivare", wifi: "Wifi", network: "Rete", password: "Password",
       copy: "Copia", copied: "Copiato", rules: "Regole della casa", beaches: "Spiagge", windQ: "Che vento tira oggi?",
@@ -67,8 +70,9 @@
       offline: "Siete offline. Questa è l'ultima versione salvata.", loadError: "Impossibile caricare la guida. Riprovate."
     },
     fr: {
+      game: { title: "Un jeu pour vos vacances", text: "Chaque jour, un lieu de Sardaigne à deviner en six essais. Idéal à la plage ou à table, et vous découvrirez de nouveaux endroits.", btn: "Jouer à Aundi ?" },
       perk: "Pour les hôtes de ce guide :",
-      nav: { aankomst: "Arrivée", wifi: "Wi-Fi", regels: "Règles", stranden: "Plages", tips: "Conseils", eten: "Manger", partners: "À faire", extras: "Extras", nood: "Aide" },
+      nav: { aankomst: "Arrivée", wifi: "Wi-Fi", regels: "Règles", stranden: "Plages", tips: "Conseils", eten: "Manger", partners: "À faire", extras: "Extras", spel: "Jeu", nood: "Aide" },
       arrive: "Arrivée et départ", checkin: "Arrivée", checkout: "Départ", address: "Adresse", route: "Ouvrir l'itinéraire",
       parking: "Stationnement", transport: "Comment venir", wifi: "Wi-Fi", network: "Réseau", password: "Mot de passe",
       copy: "Copier", copied: "Copié", rules: "Règles de la maison", beaches: "Plages", windQ: "Quel vent souffle aujourd'hui ?",
@@ -87,8 +91,9 @@
       offline: "Vous êtes hors ligne. Voici la dernière version enregistrée.", loadError: "Le guide n'a pas pu être chargé. Veuillez réessayer."
     },
     de: {
+      game: { title: "Ein Spiel für den Urlaub", text: "Jeden Tag einen Ort auf Sardinien in sechs Versuchen erraten. Schön am Strand oder bei Tisch, und ihr entdeckt neue Orte.", btn: "Aundi? spielen" },
       perk: "Für Gäste dieses Guides:",
-      nav: { aankomst: "Anreise", wifi: "WLAN", regels: "Hausregeln", stranden: "Strände", tips: "Tipps", eten: "Essen", partners: "Ausflüge", extras: "Extras", nood: "Hilfe" },
+      nav: { aankomst: "Anreise", wifi: "WLAN", regels: "Hausregeln", stranden: "Strände", tips: "Tipps", eten: "Essen", partners: "Ausflüge", extras: "Extras", spel: "Spiel", nood: "Hilfe" },
       arrive: "Anreise & Abreise", checkin: "Check-in", checkout: "Check-out", address: "Adresse", route: "Route öffnen",
       parking: "Parken", transport: "Anfahrt", wifi: "WLAN", network: "Netzwerk", password: "Passwort",
       copy: "Kopieren", copied: "Kopiert", rules: "Hausregeln", beaches: "Strände", windQ: "Welcher Wind weht heute?",
@@ -420,6 +425,9 @@
           (x.prijs ? '<span class="price">' + esc(x.prijs) + "</span>" : "") +
           (hostDigits ? '<a class="btn" href="https://wa.me/' + hostDigits + "?text=" + encodeURIComponent(msg) + '" target="_blank" rel="noopener"' + ev("extra-aanvraag", tx(x.titel)) + '>' + esc(u.request) + "</a>" : "") + "</div>";
       }).join("") + "</div>"]);
+
+    // Spel
+    sections.push(["spel", u.game.title, '<div class="card"><p>' + esc(u.game.text) + '</p><div><a class="btn" href="' + esc(withUtm("https://aundi.sardegnaautentica.com/")) + '" target="_blank" rel="noopener"' + ev("spel-openen", "") + '>' + esc(u.game.btn) + "</a></div></div>"]);
 
     // Nood
     var sos = arr(g.nood).filter(function (n) { return n.nummer; });
